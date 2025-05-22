@@ -1,3 +1,4 @@
+from typing import List, Dict
 from pydantic import BaseModel
 
 class PromptRequest(BaseModel):
@@ -9,3 +10,7 @@ class Recommendation(BaseModel):
     state: str
     description: str
     rating: float
+
+class RecommendationResponse(BaseModel):
+    recommendations: List[Recommendation]
+    classifier_probabilities: Dict[str, float]

@@ -1,21 +1,37 @@
 import pandas as pd
 import torch
+import torch.nn.functional as F
 from sentence_transformers import SentenceTransformer, util
 from models.prompt_model import Recommendation
 from db.mongodb import prefs_collection
+from models.classifier_loader import load_classifier
+
+
+class SimpleClassifier(torch.nn.Module):
+    def __init__(self, embedding_dim, num_classes):
+        super(SimpleClassifier, self).__init__()
+        self.fc = torch.nn.Linear(embedding_dim, num_classes)
+
+    def forward(self, x):
+        return self.fc(x)
 
 
 df = pd.read_csv("Top Indian Places to Visit.csv")
-model = SentenceTransformer('all-MiniLM-L6-v2')
+
+
+sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
+
+classifier, label_classes = load_classifier()
+num_classes = len(label_classes)
 
 def get_embedding(text):
-    return model.encode(text, convert_to_tensor=True)
+    return sbert_model.encode(text, convert_to_tensor=True)
 
 def get_place_description(row):
     return f"{row['Name']} - {row['Type']} - {row['Significance']}"
 
 def extract_keywords(prompt: str):
-    """Simple keyword extractor for city, state, and type from the prompt."""
+  
     prompt = prompt.lower()
     cities = df['City'].str.lower().unique()
     states = df['State'].str.lower().unique()
@@ -28,7 +44,6 @@ def extract_keywords(prompt: str):
     return found_city, found_state, found_type
 
 async def get_recommendations(user_id: str, prompt: str):
-
     city, state, sig_type = extract_keywords(prompt)
     filtered_df = df.copy()
     if city:
@@ -41,21 +56,43 @@ async def get_recommendations(user_id: str, prompt: str):
     if filtered_df.empty:
         filtered_df = df.copy()
 
+    
+    filtered_df = filtered_df.reset_index(drop=True)
+
     query_embedding = get_embedding(prompt)
-
     filtered_df['description'] = filtered_df.apply(get_place_description, axis=1)
-    desc_embeddings = model.encode(filtered_df['description'].tolist(), convert_to_tensor=True)
+    desc_embeddings = sbert_model.encode(filtered_df['description'].tolist(), convert_to_tensor=True)
 
-    # Similarity scoring
-    scores = util.pytorch_cos_sim(query_embedding, desc_embeddings)[0]
-    top_indices = torch.topk(scores, k=min(8, len(filtered_df))).indices.tolist()
+    
+    with torch.no_grad():
+        output = classifier(query_embedding.unsqueeze(0))  
+        probs = F.softmax(output, dim=1).squeeze(0)
 
-    # Prepare recommendations and inferred preferences
+    sig_prob_map = {label_classes[i]: probs[i].item() for i in range(num_classes)}
+
+    
+    sim_scores = util.pytorch_cos_sim(query_embedding, desc_embeddings)[0]
+
+    combined_scores = []
+    for idx, row in filtered_df.iterrows():  
+        significance = row['Significance']
+        prob_score = sig_prob_map.get(significance, 0)
+        sim_score = sim_scores[idx].item()   
+        combined_score = 0.6 * sim_score + 0.4 * prob_score
+        combined_scores.append((idx, combined_score))
+        
+
+    
+    combined_scores.sort(key=lambda x: x[1], reverse=True)
+    print(combined_score)
+    
+    top_indices = [idx for idx, _ in combined_scores[:9]]
+
     recommendations = []
     inferred = {}
 
     for idx in top_indices:
-        row = filtered_df.iloc[idx]
+        row = filtered_df.loc[idx]
         significance = row['Significance']
         inferred[significance] = inferred.get(significance, 0) + 1
 
@@ -67,15 +104,13 @@ async def get_recommendations(user_id: str, prompt: str):
             rating=row['Google review rating']
         ))
 
-    # Fetch existing preferences
+    
     existing_doc = await prefs_collection.find_one({"user_id": user_id})
     existing_prefs = existing_doc.get("inferred_preferences", {}) if existing_doc else {}
 
-    # Append to existing preferences
     for k, v in inferred.items():
         existing_prefs[k] = existing_prefs.get(k, 0) + v
 
-    # Save back to DB
     await prefs_collection.update_one(
         {"user_id": user_id},
         {"$set": {"inferred_preferences": existing_prefs}},
@@ -85,8 +120,7 @@ async def get_recommendations(user_id: str, prompt: str):
     return recommendations
 
 async def get_inferred_based_recommendations(user_id: str):
-    # Fetch user prefs
-    user = await prefs_collection.find_one({ "user_id": user_id })
+    user = await prefs_collection.find_one({"user_id": user_id})
     if not user or "inferred_preferences" not in user:
         return []
 
@@ -113,6 +147,6 @@ async def get_inferred_based_recommendations(user_id: str):
                 seen.add(key)
                 count += 1
             if count >= 5:
-                break  
+                break
 
     return recommended
