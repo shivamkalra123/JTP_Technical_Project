@@ -67,7 +67,9 @@ async def get_recommendations(user_id: str, prompt: str):
     with torch.no_grad():
         output = classifier(query_embedding.unsqueeze(0))  
         probs = F.softmax(output, dim=1).squeeze(0)
-
+    predicted_idx = torch.argmax(probs).item()
+    predicted_class = label_classes[predicted_idx]
+    print(f"🧠 Classifier thinks this prompt relates to: '{predicted_class}'")
     sig_prob_map = {label_classes[i]: probs[i].item() for i in range(num_classes)}
 
     

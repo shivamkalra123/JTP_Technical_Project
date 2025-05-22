@@ -1,7 +1,8 @@
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
-
-MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://admin:admin@cluster0.jdzfnt4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+from dotenv import load_dotenv
+load_dotenv()
+MONGO_URI = os.getenv("MONGO_URI")
 client = AsyncIOMotorClient(MONGO_URI)
 db = client["Users"]
 
