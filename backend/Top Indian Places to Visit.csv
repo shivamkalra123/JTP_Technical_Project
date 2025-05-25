@@ -1,4 +1,4 @@
-sno.,Zone,State,City,Name,Type,Establishment Year,time needed to visit in hrs,Google review rating,Entrance Fee in INR,Airport with 50km Radius,Weekly Off,Significance,DSLR Allowed,Number of google review in lakhs,Best Time to visit
+sno,Zone,State,City,Name,Type,Establishment Year,time needed to visit in hrs,Google review rating,Entrance Fee in INR,Airport with 50km Radius,Weekly Off,Significance,DSLR Allowed,Number of google review in lakhs,Best Time to visit
 0,Northern,Delhi,Delhi,India Gate,War Memorial,1921,0.5,4.6,0,Yes,None,Historical,Yes,2.6,Evening
 1,Northern,Delhi,Delhi,Humayun's Tomb,Tomb,1572,2.0,4.5,30,Yes,None,Historical,Yes,0.4,Afternoon
 2,Northern,Delhi,Delhi,Akshardham Temple,Temple,2005,5.0,4.6,60,Yes,None,Religious,No,0.4,Afternoon

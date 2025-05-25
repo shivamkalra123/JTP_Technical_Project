@@ -1,0 +1,1005 @@
+sno.,Zone,State,City,Name,Type,Establishment Year,time needed to visit in hrs,Google review rating,Entrance Fee in INR,Airport with 50km Radius,Weekly Off,Significance,DSLR Allowed,Number of google review in lakhs,Best Time to visit
+1,Northern,Delhi,Delhi,India Gate,War Memorial,1921,1,5,0,Yes,None,Historical,Yes,3,Evening
+2,Northern,Delhi,Delhi,Humayun's Tomb,Tomb,1572,2,5,30,Yes,None,Historical,Yes,0,Afternoon
+3,Northern,Delhi,Delhi,Akshardham Temple,Temple,2005,5,5,60,Yes,None,Religious,No,0,Afternoon
+4,Northern,Delhi,Delhi,Waste to Wonder Park,Theme Park,2019,2,4,50,Yes,Monday,Environmental,Yes,0,Evening
+5,North-Eastern,Assam,Guwahati,Rasmussen PLC Museum,Museum,1835,3,3.8,10,Yes,Friday,Natural,No,4.4,Evening
+6,Eastern,Odisha,Bhubaneswar,"Ortiz, Thompson and Vazquez Temple",War Memorial,1652,3,3.6,10,Yes,Friday,Architectural,No,0.1,Evening
+7,Western,Gujarat,Ahmedabad,"Trujillo, Frazier and Martinez Temple",Zoo,1938,5,5,100,Yes,Wednesday,Cultural,Yes,0.7,Summer
+8,Southern,Tamil Nadu,Chennai,Smith Ltd Fort,Hill Station,1752,5,4.8,0,Yes,Sunday,Historical,Yes,1.5,Afternoon
+9,Western,Maharashtra,Mumbai,Proctor-Price Temple,Zoo,1767,3,3.8,100,No,Sunday,Cultural,Yes,0.7,Evening
+10,Western,Rajasthan,Jaipur,"Johnson, Bowman and Hampton Museum",Hill Station,1942,2,4.8,100,Yes,Saturday,Environmental,No,2,Morning
+11,Eastern,Odisha,Bhubaneswar,"Miles, Bruce and Robinson Temple",Temple,1986,5,3.5,100,Yes,Monday,Cultural,Yes,0.2,Winter
+12,Central,Madhya Pradesh,Bhopal,Mcdowell LLC Temple,Theme Park,1780,3,5,0,Yes,Monday,Religious,Yes,1.5,Evening
+13,Central,Madhya Pradesh,Bhopal,"Robinson, Cardenas and Rogers Fort",Lake,1675,1,4.3,10,Yes,Saturday,Historical,Yes,3.9,Winter
+14,Western,Rajasthan,Jaipur,Stewart-Schmidt Temple,Hill Station,1767,6,4.1,20,Yes,Saturday,Natural,Yes,2.8,Summer
+15,North-Eastern,Assam,Guwahati,"Sanchez, Perez and Chambers Museum",Hill Station,1566,4,4.4,50,Yes,Sunday,Historical,No,2.3,Winter
+16,Southern,Kerala,Kochi,Davis LLC Temple,Sanctuary,1510,3,3.7,50,Yes,Monday,Environmental,No,3.4,Evening
+17,North-Eastern,Meghalaya,Shillong,King LLC Fort,Museum,2020,1,4.5,100,Yes,Tuesday,Natural,Yes,1.9,Evening
+18,North-Eastern,Assam,Guwahati,"Carter, Calhoun and Woods Memorial",Sanctuary,1561,3,4,0,Yes,Tuesday,Religious,No,3.2,Morning
+19,North-Eastern,Meghalaya,Shillong,Jones-Powell Memorial,Temple,2017,5,4,30,Yes,None,Environmental,No,1,Winter
+20,Western,Gujarat,Ahmedabad,Fuentes PLC Temple,Theme Park,1618,6,4,20,Yes,Saturday,Religious,No,0.4,Afternoon
+21,Western,Rajasthan,Jaipur,"Rodgers, Irwin and Lewis Memorial",Fort,1712,2,3.9,50,Yes,Wednesday,Architectural,Yes,1.9,Winter
+22,Central,Madhya Pradesh,Bhopal,Moore-Nelson Temple,Zoo,1593,3,4,30,Yes,Wednesday,Historical,No,0.8,Morning
+23,North-Eastern,Assam,Guwahati,"Mercer, Guzman and Smith Memorial",Sanctuary,1816,4,3.9,30,Yes,Monday,Cultural,No,3,Summer
+24,Western,Maharashtra,Mumbai,"Mendez, Freeman and Jones Park",Temple,1998,1,4,100,Yes,Thursday,Cultural,Yes,1.8,Afternoon
+25,Southern,Kerala,Kochi,"Phillips, Hines and Carrillo Memorial",Sanctuary,1966,2,3.7,0,Yes,Wednesday,Historical,Yes,1.5,Evening
+26,Southern,Tamil Nadu,Chennai,"Lopez, Long and Lawson Park",Hill Station,1862,2,4.4,30,Yes,Sunday,Natural,No,0.6,Afternoon
+27,Western,Gujarat,Ahmedabad,Stuart-Strong Temple,Tomb,1695,6,4.4,30,No,Tuesday,Religious,No,0.1,Summer
+28,Western,Rajasthan,Jaipur,"Williams, Smith and Bates Memorial",War Memorial,2016,3,4.3,50,No,Monday,Natural,No,2.4,Afternoon
+29,Central,Madhya Pradesh,Bhopal,"King, Kelley and Taylor Park",Hill Station,1566,2,3.7,10,Yes,Saturday,Cultural,No,2.6,Afternoon
+30,Eastern,West Bengal,Kolkata,"Solis, Whitehead and Wilson Memorial",Museum,1969,3,4.2,30,Yes,Saturday,Historical,Yes,4.3,Winter
+31,Southern,Tamil Nadu,Chennai,Hernandez-Colon Fort,Museum,1516,2,4,100,Yes,Wednesday,Environmental,No,4.5,Morning
+32,Western,Rajasthan,Jaipur,Frank PLC Museum,Lake,1555,1,4.4,0,Yes,Friday,Architectural,No,3.2,Winter
+33,Eastern,West Bengal,Kolkata,Welch-Snyder Fort,Zoo,1845,6,3.8,30,Yes,Wednesday,Cultural,Yes,2.9,Summer
+34,Western,Gujarat,Ahmedabad,Williams and Sons Fort,Sanctuary,1614,6,3.8,100,Yes,Sunday,Environmental,No,4.9,Morning
+35,Western,Maharashtra,Mumbai,Rivera-Smith Fort,Lake,1880,4,3.6,50,Yes,Sunday,Historical,No,3.4,Afternoon
+36,Eastern,Odisha,Bhubaneswar,"Hill, Weber and Miller Museum",Theme Park,1633,4,4.7,10,Yes,Saturday,Historical,Yes,1.6,Summer
+37,Northern,Punjab,Amritsar,Smith Inc Park,Fort,1693,2,3.7,50,Yes,Saturday,Natural,Yes,3.1,Morning
+38,Northern,Punjab,Amritsar,Sanchez Group Memorial,Temple,1944,2,4.5,100,Yes,Sunday,Natural,No,1.2,Morning
+39,Western,Gujarat,Ahmedabad,Burch and Sons Park,Museum,1538,2,3.8,30,No,Friday,Environmental,No,1.4,Morning
+40,North-Eastern,Meghalaya,Shillong,"Waters, Marshall and Blankenship Memorial",Zoo,1587,3,3.9,20,Yes,Tuesday,Religious,No,3.9,Morning
+41,North-Eastern,Assam,Guwahati,"Wood, Black and Mahoney Museum",Museum,1657,6,3.7,10,No,None,Natural,No,1.7,Evening
+42,Southern,Karnataka,Bengaluru,"Fisher, Murray and Haley Memorial",War Memorial,1673,3,4.6,50,Yes,Monday,Historical,No,4.7,Evening
+43,Southern,Karnataka,Bengaluru,Bailey-Boyd Memorial,Tomb,1874,6,3.7,100,Yes,Monday,Natural,No,2.5,Evening
+44,North-Eastern,Meghalaya,Shillong,Scott Inc Park,Fort,1711,1,4.7,100,Yes,Wednesday,Environmental,No,0.6,Evening
+45,North-Eastern,Assam,Guwahati,Bowers-Russell Fort,Lake,1743,2,3.7,10,Yes,Sunday,Architectural,No,1.9,Summer
+46,Southern,Karnataka,Bengaluru,Williams Inc Museum,Lake,1532,2,4.5,100,Yes,None,Religious,No,0.2,Evening
+47,North-Eastern,Assam,Guwahati,Chen-Johnston Memorial,Zoo,1615,6,3.7,50,Yes,Tuesday,Religious,No,0.1,Summer
+48,Northern,Uttar Pradesh,Agra,Martin PLC Temple,Hill Station,1565,6,3.5,10,Yes,Monday,Religious,No,0.5,Evening
+49,North-Eastern,Meghalaya,Shillong,Davis Inc Museum,Hill Station,1680,2,3.6,10,Yes,Friday,Cultural,No,1.2,Winter
+50,North-Eastern,Assam,Guwahati,Lee-Rodgers Museum,Theme Park,1649,5,4.4,100,Yes,Friday,Historical,No,0.1,Evening
+51,Western,Rajasthan,Jaipur,Cooper-Ayala Fort,Lake,1831,3,4.2,50,No,Thursday,Natural,Yes,0.8,Morning
+52,North-Eastern,Assam,Guwahati,White LLC Memorial,Lake,1949,1,4.7,0,No,Tuesday,Historical,No,2.8,Afternoon
+53,Western,Gujarat,Ahmedabad,Hughes LLC Fort,War Memorial,1597,5,3.9,100,Yes,Wednesday,Architectural,Yes,0.9,Morning
+54,Western,Gujarat,Ahmedabad,Williams-Austin Memorial,Hill Station,1732,5,4.3,100,Yes,Tuesday,Natural,No,3.4,Morning
+55,Central,Madhya Pradesh,Bhopal,Smith-Vargas Fort,Fort,1704,4,4.7,30,No,Wednesday,Architectural,No,4.4,Evening
+56,Central,Madhya Pradesh,Bhopal,"Chavez, Burke and Hull Museum",Fort,1653,6,4.5,100,Yes,Thursday,Environmental,No,4.5,Afternoon
+57,Northern,Punjab,Amritsar,Werner-Hayden Museum,Fort,1811,3,4.1,0,Yes,Thursday,Architectural,Yes,1.2,Morning
+58,North-Eastern,Meghalaya,Shillong,Hoover-Zamora Memorial,Sanctuary,1889,2,4.9,50,Yes,Thursday,Natural,Yes,3.8,Evening
+59,Central,Madhya Pradesh,Bhopal,"Raymond, Miller and Casey Temple",Temple,1921,3,4.3,0,Yes,Friday,Historical,Yes,0.7,Winter
+60,Western,Maharashtra,Mumbai,Sherman Group Fort,Temple,2020,2,3.6,20,Yes,Monday,Religious,No,4.9,Evening
+61,Southern,Kerala,Kochi,Simpson Ltd Museum,Hill Station,1702,3,4.8,20,Yes,Tuesday,Religious,Yes,0.3,Winter
+62,North-Eastern,Meghalaya,Shillong,"Hull, Frye and Miller Museum",Lake,1510,3,4.8,100,Yes,Saturday,Architectural,No,0.3,Winter
+63,Eastern,West Bengal,Kolkata,Roberts-Miller Temple,Sanctuary,1845,6,5,30,Yes,Sunday,Cultural,No,1.4,Winter
+64,Eastern,West Bengal,Kolkata,Webb PLC Museum,War Memorial,1649,2,4.1,0,Yes,Tuesday,Environmental,No,4.8,Morning
+65,Central,Madhya Pradesh,Bhopal,Hughes Inc Park,Lake,1552,5,4.4,10,Yes,Saturday,Historical,Yes,4.3,Morning
+66,Western,Maharashtra,Mumbai,Kent LLC Museum,Museum,1565,3,3.9,30,Yes,Tuesday,Historical,No,3.4,Evening
+67,Eastern,West Bengal,Kolkata,Leonard LLC Museum,Sanctuary,1517,2,4.9,30,Yes,Monday,Religious,Yes,4.1,Summer
+68,Eastern,West Bengal,Kolkata,"Mercado, Dyer and Mathews Park",Tomb,1643,2,3.7,0,Yes,Thursday,Historical,No,4.8,Evening
+69,Eastern,Odisha,Bhubaneswar,"Smith, Perry and Ramirez Temple",War Memorial,1884,4,3.6,20,Yes,Friday,Cultural,Yes,3.7,Evening
+70,Eastern,Odisha,Bhubaneswar,"Baker, Smith and Willis Memorial",Zoo,1547,1,4,50,Yes,Friday,Environmental,No,1.6,Afternoon
+71,Central,Madhya Pradesh,Bhopal,"Johnson, Clark and Singleton Museum",Zoo,1530,2,4.8,100,Yes,Monday,Natural,Yes,0.9,Winter
+72,Western,Gujarat,Ahmedabad,Hall-Horn Temple,Theme Park,2018,2,4.9,10,Yes,Saturday,Natural,Yes,2.1,Morning
+73,North-Eastern,Assam,Guwahati,Gray Inc Fort,Fort,1881,1,4.3,20,Yes,Thursday,Environmental,No,1.6,Winter
+74,Northern,Uttar Pradesh,Agra,"Obrien, Montgomery and Barnett Fort",Hill Station,2018,1,4.8,50,Yes,Wednesday,Natural,Yes,2.7,Evening
+75,Eastern,West Bengal,Kolkata,Tucker Group Park,War Memorial,1752,1,4.8,0,No,Tuesday,Environmental,No,1,Summer
+76,Southern,Tamil Nadu,Chennai,"Frye, Hahn and Paul Fort",Theme Park,1763,6,4.2,0,Yes,Friday,Environmental,No,2.6,Morning
+77,Northern,Delhi,Delhi,"Robinson, Bentley and Kelley Museum",Museum,1719,3,3.8,30,Yes,Friday,Natural,Yes,0.8,Evening
+78,Central,Madhya Pradesh,Bhopal,Franklin-Esparza Temple,Tomb,1590,6,4.4,0,Yes,Monday,Environmental,Yes,3.7,Winter
+79,Southern,Karnataka,Bengaluru,Clark-Lloyd Museum,Zoo,1700,1,4,50,Yes,Wednesday,Cultural,Yes,3.7,Winter
+80,Central,Madhya Pradesh,Bhopal,Williams PLC Museum,Tomb,1838,1,4.2,30,Yes,Friday,Architectural,Yes,4.5,Evening
+81,Western,Rajasthan,Jaipur,"Richardson, Rojas and Gomez Fort",Museum,1811,6,4.6,30,Yes,None,Historical,No,0.9,Summer
+82,Central,Madhya Pradesh,Bhopal,Dunn and Sons Fort,War Memorial,1794,6,3.6,0,Yes,Saturday,Natural,Yes,1.8,Summer
+83,Central,Madhya Pradesh,Bhopal,Morales Ltd Memorial,Lake,1938,2,4.7,50,Yes,None,Historical,No,1.3,Afternoon
+84,Southern,Kerala,Kochi,"Murphy, Hensley and Johnson Fort",Fort,1947,6,3.5,30,Yes,Friday,Cultural,Yes,1.9,Summer
+85,Western,Rajasthan,Jaipur,Ford-Diaz Museum,Fort,1565,5,4,0,Yes,Thursday,Architectural,No,0.5,Evening
+86,Northern,Punjab,Amritsar,"Bennett, Lopez and Medina Museum",Fort,1623,2,4.3,100,Yes,Saturday,Environmental,No,3,Evening
+87,Western,Maharashtra,Mumbai,"Sullivan, Crawford and Frazier Memorial",Sanctuary,1881,1,4,30,Yes,Monday,Historical,Yes,1.9,Summer
+88,Northern,Uttar Pradesh,Agra,"Adams, Saunders and Morgan Temple",Zoo,1585,4,4.8,20,Yes,Tuesday,Architectural,No,2.3,Afternoon
+89,Northern,Uttar Pradesh,Agra,Gonzalez-Ramsey Park,Temple,1972,4,4.7,10,Yes,Wednesday,Natural,No,0.2,Summer
+90,Eastern,Odisha,Bhubaneswar,Bowman Ltd Museum,Hill Station,1552,5,4.4,50,Yes,Friday,Architectural,Yes,4.5,Afternoon
+91,Eastern,West Bengal,Kolkata,Johnson Group Park,Lake,1605,1,4.5,100,Yes,Sunday,Environmental,Yes,2.9,Evening
+92,Northern,Punjab,Amritsar,"Harper, Garza and Bass Memorial",Sanctuary,1913,5,3.6,30,No,Wednesday,Religious,Yes,1.8,Afternoon
+93,Central,Madhya Pradesh,Bhopal,Hall Inc Museum,Fort,1942,3,4.7,30,Yes,Saturday,Religious,No,3.3,Summer
+94,Northern,Delhi,Delhi,Williams-Cervantes Temple,Theme Park,2011,1,3.6,0,Yes,Monday,Cultural,Yes,2.6,Morning
+95,North-Eastern,Assam,Guwahati,Washington-Knox Park,Zoo,1682,3,3.5,0,Yes,None,Natural,No,2.3,Summer
+96,Central,Madhya Pradesh,Bhopal,"Rose, Carr and Armstrong Fort",Theme Park,1970,3,4,0,Yes,Sunday,Historical,Yes,2.2,Morning
+97,Southern,Karnataka,Bengaluru,Wolfe Inc Memorial,Fort,2007,3,4,0,Yes,Friday,Cultural,No,3.8,Evening
+98,Southern,Karnataka,Bengaluru,Johnson-Pratt Memorial,Hill Station,1676,6,3.8,30,Yes,Monday,Historical,Yes,0.3,Afternoon
+99,Eastern,Odisha,Bhubaneswar,"Rowland, Tanner and Moore Temple",Theme Park,1570,5,4.6,10,Yes,Monday,Historical,No,1.6,Evening
+100,Central,Madhya Pradesh,Bhopal,Liu Inc Museum,Theme Park,1937,5,4.2,0,Yes,Tuesday,Architectural,No,2.3,Winter
+101,Central,Madhya Pradesh,Bhopal,"Nguyen, Taylor and Francis Temple",Temple,1856,6,3.8,50,Yes,Tuesday,Architectural,No,2,Summer
+102,Western,Maharashtra,Mumbai,"Gray, Schaefer and Garcia Museum",Zoo,1989,1,4.8,10,Yes,Friday,Architectural,Yes,2,Summer
+103,Northern,Delhi,Delhi,Dixon LLC Museum,Tomb,1991,5,4.4,50,Yes,Thursday,Historical,Yes,3.4,Afternoon
+104,Southern,Tamil Nadu,Chennai,Shea Ltd Memorial,Hill Station,1759,3,4.9,0,Yes,Friday,Religious,No,2.9,Winter
+105,Eastern,West Bengal,Kolkata,Mckee Inc Memorial,Zoo,1636,2,4.9,20,Yes,Tuesday,Historical,No,1.7,Summer
+106,North-Eastern,Assam,Guwahati,"Price, Page and Gay Temple",Theme Park,1722,3,4.6,10,Yes,Monday,Environmental,No,1.7,Afternoon
+107,Central,Madhya Pradesh,Bhopal,Mitchell LLC Museum,Lake,1683,6,4.3,50,Yes,Wednesday,Environmental,No,3.8,Summer
+108,Western,Maharashtra,Mumbai,Anderson-Miller Temple,Hill Station,1893,6,4.5,10,Yes,None,Cultural,No,1.8,Summer
+109,Western,Maharashtra,Mumbai,Lowery Inc Park,Zoo,1989,6,5,100,Yes,Friday,Historical,Yes,1.4,Evening
+110,Central,Madhya Pradesh,Bhopal,Rivera LLC Park,Temple,1531,3,4.8,100,Yes,None,Historical,Yes,0.9,Winter
+111,Eastern,Odisha,Bhubaneswar,Riley-Manning Park,Fort,1560,5,3.5,30,Yes,Sunday,Environmental,No,2.7,Evening
+112,Northern,Uttar Pradesh,Agra,Dixon PLC Museum,Theme Park,1872,6,3.5,100,Yes,None,Natural,No,0.2,Evening
+113,Eastern,West Bengal,Kolkata,Kim and Sons Temple,Zoo,1948,4,4.4,20,Yes,Sunday,Architectural,No,3.8,Summer
+114,Southern,Karnataka,Bengaluru,Carpenter-Wallace Fort,Temple,1760,6,3.7,50,Yes,Wednesday,Environmental,Yes,4.6,Evening
+115,Southern,Karnataka,Bengaluru,Baker PLC Temple,War Memorial,1862,1,3.6,0,Yes,Thursday,Environmental,No,4.9,Afternoon
+116,North-Eastern,Meghalaya,Shillong,Fitzgerald-Mills Park,War Memorial,1806,1,4.1,50,Yes,None,Architectural,Yes,2.8,Winter
+117,Eastern,West Bengal,Kolkata,"Butler, Cook and Lopez Temple",Lake,1805,3,4.8,20,Yes,Tuesday,Natural,No,2.2,Morning
+118,Eastern,West Bengal,Kolkata,Padilla Inc Park,Sanctuary,1639,3,3.7,20,Yes,Thursday,Historical,No,3.5,Afternoon
+119,Northern,Uttar Pradesh,Agra,"Pennington, Williamson and Gilbert Temple",Fort,1650,5,4.5,10,Yes,Monday,Environmental,Yes,3.3,Afternoon
+120,Western,Maharashtra,Mumbai,"Diaz, Wilson and Thomas Park",Tomb,1530,4,4.2,30,No,Saturday,Architectural,No,1.7,Morning
+121,Northern,Delhi,Delhi,Glenn Inc Park,Fort,1958,2,4,50,Yes,Friday,Natural,No,2,Afternoon
+122,Central,Madhya Pradesh,Bhopal,"Moody, Graves and Donovan Museum",War Memorial,1826,2,5,10,Yes,None,Architectural,No,1,Evening
+123,North-Eastern,Assam,Guwahati,Frazier-Frye Park,War Memorial,1502,3,3.6,0,Yes,None,Architectural,No,2.4,Morning
+124,North-Eastern,Meghalaya,Shillong,"Finley, Johnson and Vasquez Fort",War Memorial,1651,1,4.4,10,Yes,Monday,Religious,Yes,2.2,Afternoon
+125,Southern,Kerala,Kochi,"Joseph, Burnett and Hernandez Temple",Sanctuary,1772,1,4.4,10,Yes,Tuesday,Natural,Yes,4.1,Summer
+126,Central,Madhya Pradesh,Bhopal,Farley and Sons Memorial,Hill Station,1960,6,4.5,30,Yes,Saturday,Natural,Yes,4.6,Morning
+127,Southern,Karnataka,Bengaluru,Harris-Galvan Museum,Theme Park,1928,3,4.7,20,Yes,Monday,Natural,Yes,1.5,Evening
+128,Eastern,Odisha,Bhubaneswar,"Bonilla, Flores and Wright Museum",Museum,1782,6,3.5,30,Yes,Thursday,Historical,Yes,3.5,Evening
+129,Central,Madhya Pradesh,Bhopal,Boyle Ltd Fort,Museum,1840,5,4.4,30,No,Monday,Historical,No,3.8,Summer
+130,Central,Madhya Pradesh,Bhopal,"Ware, Nelson and Downs Museum",Sanctuary,1771,1,4.6,50,Yes,Monday,Historical,Yes,1.8,Afternoon
+131,Central,Madhya Pradesh,Bhopal,Hutchinson and Sons Memorial,War Memorial,1614,5,4.1,20,Yes,Saturday,Natural,Yes,2,Afternoon
+132,Western,Gujarat,Ahmedabad,Cohen-Young Memorial,Hill Station,1537,4,4.9,10,Yes,Monday,Cultural,Yes,4.1,Morning
+133,North-Eastern,Assam,Guwahati,"Brown, Wood and Miller Park",Lake,1790,4,3.9,30,Yes,None,Natural,No,1.8,Winter
+134,Western,Rajasthan,Jaipur,Morse LLC Memorial,Fort,1774,1,4.3,20,Yes,Friday,Architectural,Yes,3.6,Winter
+135,Central,Madhya Pradesh,Bhopal,"Evans, Diaz and Sutton Park",Lake,1879,5,4.8,100,Yes,Tuesday,Historical,No,1.3,Afternoon
+136,North-Eastern,Assam,Guwahati,"Anthony, Brown and Myers Memorial",Zoo,1922,2,5,100,Yes,Wednesday,Historical,Yes,4.6,Summer
+137,Eastern,West Bengal,Kolkata,Huerta-Jones Park,Tomb,1845,2,4.3,30,Yes,Monday,Architectural,No,4.6,Evening
+138,Southern,Kerala,Kochi,Li and Sons Memorial,Lake,1779,2,4.4,20,Yes,Friday,Environmental,No,3.8,Afternoon
+139,Western,Maharashtra,Mumbai,Brown LLC Fort,Tomb,1906,1,5,100,Yes,None,Cultural,Yes,1.9,Summer
+140,Southern,Kerala,Kochi,Wells Ltd Memorial,Museum,1806,3,4.1,0,Yes,Sunday,Architectural,No,3.5,Evening
+141,Southern,Karnataka,Bengaluru,Gonzalez and Sons Memorial,Hill Station,1735,6,4,0,Yes,Friday,Natural,No,2.4,Summer
+142,Eastern,West Bengal,Kolkata,Bradley PLC Temple,Fort,1685,3,4.1,50,Yes,Saturday,Historical,Yes,1.8,Evening
+143,Northern,Punjab,Amritsar,Hanson-Adkins Museum,Temple,1780,3,3.6,100,Yes,None,Architectural,No,3.9,Afternoon
+144,Western,Rajasthan,Jaipur,"Williams, Williams and Cooper Memorial",War Memorial,1878,6,3.5,10,Yes,Friday,Cultural,No,4.8,Morning
+145,Northern,Uttar Pradesh,Agra,Miller-Richardson Temple,Lake,1633,1,3.5,20,Yes,Sunday,Cultural,No,3.7,Summer
+146,Central,Madhya Pradesh,Bhopal,Armstrong-Underwood Temple,Hill Station,1518,2,4.3,10,No,Tuesday,Cultural,No,1.1,Morning
+147,Northern,Uttar Pradesh,Agra,Garrett PLC Fort,Zoo,1838,1,4.7,100,Yes,Saturday,Environmental,No,2.7,Morning
+148,Eastern,West Bengal,Kolkata,Lee-Bailey Fort,Zoo,1976,2,3.9,0,Yes,Tuesday,Natural,Yes,4.9,Summer
+149,North-Eastern,Assam,Guwahati,"Richard, Johnston and Cruz Memorial",Tomb,1705,6,5,0,Yes,Thursday,Architectural,No,0.2,Evening
+150,Central,Madhya Pradesh,Bhopal,"Marsh, Todd and Evans Memorial",War Memorial,1562,1,4.8,0,Yes,Sunday,Religious,Yes,3.8,Summer
+151,Southern,Tamil Nadu,Chennai,Johnson-Smith Memorial,Sanctuary,1683,5,3.9,0,Yes,Monday,Historical,No,1.1,Afternoon
+152,Northern,Delhi,Delhi,Hale-Young Memorial,Tomb,1720,4,3.9,10,Yes,Wednesday,Environmental,Yes,1.8,Morning
+153,Northern,Delhi,Delhi,Brady and Sons Memorial,Hill Station,1835,3,4.1,10,Yes,None,Natural,No,2.8,Evening
+154,Central,Madhya Pradesh,Bhopal,"Grant, Shea and Carey Memorial",Temple,1912,5,4.5,0,Yes,Monday,Environmental,Yes,2.8,Winter
+155,North-Eastern,Meghalaya,Shillong,Charles Ltd Fort,Tomb,1974,6,4.8,50,Yes,Monday,Environmental,Yes,3,Winter
+156,Eastern,Odisha,Bhubaneswar,"Roberts, Reed and Sanchez Memorial",Sanctuary,1529,3,3.5,50,Yes,Tuesday,Religious,Yes,3.3,Morning
+157,Southern,Kerala,Kochi,"Gentry, Davidson and Gilmore Museum",Theme Park,1514,5,3.9,100,Yes,Tuesday,Historical,Yes,2.4,Winter
+158,Northern,Uttar Pradesh,Agra,"Wood, Mercado and Lambert Park",Theme Park,1775,1,4.1,100,Yes,Monday,Environmental,Yes,4.8,Afternoon
+159,Western,Rajasthan,Jaipur,"Lopez, Robinson and Carson Memorial",Theme Park,1979,3,3.9,20,Yes,Friday,Natural,Yes,2.4,Afternoon
+160,Eastern,West Bengal,Kolkata,"Carpenter, Garcia and Barnes Temple",Museum,1747,3,4.6,100,Yes,Monday,Religious,No,3.2,Winter
+161,North-Eastern,Assam,Guwahati,Taylor PLC Fort,Hill Station,1545,6,5,10,Yes,Thursday,Cultural,Yes,2.7,Afternoon
+162,Northern,Uttar Pradesh,Agra,Turner Group Fort,Museum,1769,5,4.8,100,Yes,Wednesday,Religious,No,2.2,Winter
+163,Western,Maharashtra,Mumbai,Cordova-Martinez Memorial,Museum,1551,2,4.1,50,Yes,Thursday,Natural,No,3.5,Winter
+164,Western,Gujarat,Ahmedabad,"Holland, Davis and Hudson Park",War Memorial,1926,1,4.8,0,Yes,Saturday,Historical,No,2.1,Winter
+165,Northern,Uttar Pradesh,Agra,Bowen-Long Memorial,Temple,1943,5,3.5,30,Yes,Thursday,Architectural,No,3.3,Winter
+166,Central,Madhya Pradesh,Bhopal,Pruitt-Andrews Temple,War Memorial,1503,1,4.8,10,Yes,Saturday,Cultural,No,1.4,Morning
+167,Southern,Kerala,Kochi,Cruz-Meyer Museum,Temple,1968,2,3.5,10,Yes,Monday,Environmental,Yes,3.7,Summer
+168,Eastern,West Bengal,Kolkata,Thomas PLC Fort,Fort,1644,1,4.6,100,Yes,Thursday,Environmental,No,3.2,Morning
+169,North-Eastern,Meghalaya,Shillong,Roberts PLC Memorial,Temple,1789,1,4,30,Yes,None,Natural,Yes,0.6,Afternoon
+170,Northern,Uttar Pradesh,Agra,Smith-Myers Fort,Zoo,1985,2,3.6,10,Yes,Friday,Natural,Yes,2.6,Morning
+171,Western,Maharashtra,Mumbai,Hernandez and Sons Fort,Lake,2020,6,4.2,50,Yes,Tuesday,Cultural,No,0.4,Morning
+172,Northern,Punjab,Amritsar,"Powers, Tucker and Allen Fort",War Memorial,1668,2,4.7,20,No,Tuesday,Cultural,No,3.2,Evening
+173,North-Eastern,Assam,Guwahati,"Walker, Murphy and Hancock Museum",Sanctuary,1513,3,4.4,100,Yes,Sunday,Religious,No,2.5,Afternoon
+174,North-Eastern,Assam,Guwahati,Tapia LLC Museum,Lake,1537,4,4.3,20,Yes,Wednesday,Natural,No,3.3,Summer
+175,Eastern,Odisha,Bhubaneswar,Martinez-Watson Memorial,Hill Station,1585,6,3.6,30,Yes,Saturday,Environmental,No,1.1,Afternoon
+176,Central,Madhya Pradesh,Bhopal,"Kennedy, Melton and Dawson Park",Tomb,1927,6,3.6,100,Yes,Sunday,Cultural,No,4.5,Afternoon
+177,Central,Madhya Pradesh,Bhopal,Schmidt Inc Museum,War Memorial,1828,1,4.5,0,Yes,Thursday,Environmental,No,5,Evening
+178,Western,Maharashtra,Mumbai,Carrillo-Simmons Museum,Hill Station,1970,6,3.8,0,Yes,Tuesday,Cultural,Yes,1.4,Afternoon
+179,North-Eastern,Assam,Guwahati,White Ltd Fort,Theme Park,1515,1,4.1,30,Yes,Saturday,Architectural,No,1.7,Evening
+180,Northern,Uttar Pradesh,Agra,Alexander Ltd Fort,Sanctuary,1577,1,4.6,30,Yes,Wednesday,Natural,No,2.3,Winter
+181,Southern,Kerala,Kochi,Walters-Parsons Museum,Sanctuary,1667,4,4.6,30,Yes,None,Cultural,Yes,1,Summer
+182,Southern,Kerala,Kochi,Russo-Mercado Temple,Tomb,1558,6,4.2,100,Yes,Friday,Architectural,Yes,2.9,Summer
+183,Southern,Karnataka,Bengaluru,Clark-Guzman Fort,Theme Park,1799,3,3.9,100,Yes,Wednesday,Natural,No,1.5,Morning
+184,Western,Maharashtra,Mumbai,"Sparks, Lopez and Burke Museum",Lake,1609,2,4.4,100,Yes,Thursday,Historical,Yes,4.3,Winter
+185,Western,Rajasthan,Jaipur,Moore-Richardson Temple,Museum,1937,6,4.8,0,Yes,Thursday,Historical,Yes,2.4,Afternoon
+186,Southern,Tamil Nadu,Chennai,"Castro, Edwards and Rosario Museum",Theme Park,1628,4,4.9,100,Yes,Friday,Historical,No,2.6,Afternoon
+187,Southern,Kerala,Kochi,Weber and Sons Museum,Museum,1700,6,3.9,0,Yes,Monday,Religious,Yes,0.8,Winter
+188,Central,Madhya Pradesh,Bhopal,"Rose, Reeves and Jackson Memorial",Zoo,1898,1,4.5,30,Yes,Thursday,Architectural,Yes,3.9,Afternoon
+189,Southern,Tamil Nadu,Chennai,"Smith, Martinez and Nash Memorial",Hill Station,1844,5,3.9,20,Yes,Thursday,Natural,No,0.4,Evening
+190,Central,Madhya Pradesh,Bhopal,Pollard-Wilson Museum,Sanctuary,1919,4,3.9,50,No,Sunday,Religious,No,0.9,Afternoon
+191,Eastern,West Bengal,Kolkata,"Black, Zamora and Lara Memorial",Hill Station,1709,5,4.2,0,Yes,Wednesday,Architectural,Yes,2.9,Morning
+192,Eastern,Odisha,Bhubaneswar,Wang and Sons Park,War Memorial,1874,3,3.7,10,No,None,Historical,Yes,3.7,Summer
+193,Western,Gujarat,Ahmedabad,"Leach, Moore and Harris Museum",War Memorial,1720,4,3.6,50,Yes,Sunday,Architectural,No,3.6,Summer
+194,Northern,Uttar Pradesh,Agra,Thompson-Simpson Temple,Sanctuary,1548,4,3.5,30,Yes,Saturday,Cultural,Yes,3.8,Evening
+195,North-Eastern,Assam,Guwahati,"Hall, Brown and Owens Fort",Lake,1592,6,4.4,30,Yes,Friday,Natural,Yes,2.7,Winter
+196,North-Eastern,Assam,Guwahati,"Davis, Williams and Cox Park",Sanctuary,1695,6,3.6,10,Yes,Thursday,Historical,Yes,1.1,Morning
+197,Eastern,Odisha,Bhubaneswar,"Kaufman, Roman and Kim Fort",Theme Park,1906,4,4.1,100,Yes,Thursday,Natural,Yes,1.2,Morning
+198,Southern,Kerala,Kochi,"Wyatt, Clark and Ayers Park",Theme Park,1656,4,4.9,0,Yes,Friday,Architectural,Yes,4.5,Afternoon
+199,Eastern,West Bengal,Kolkata,Howard LLC Fort,Museum,1900,6,4,10,Yes,Thursday,Architectural,Yes,2.5,Winter
+200,North-Eastern,Meghalaya,Shillong,"Harvey, Alvarado and Lyons Fort",War Memorial,1762,6,4.7,50,Yes,Sunday,Religious,No,0.4,Winter
+201,Southern,Tamil Nadu,Chennai,Oneal LLC Memorial,Museum,1758,3,4.4,30,Yes,Monday,Natural,No,4.8,Summer
+202,Eastern,West Bengal,Kolkata,Keller-Mendoza Park,Temple,1534,6,4.6,30,Yes,Tuesday,Religious,No,1.5,Evening
+203,Eastern,West Bengal,Kolkata,Wheeler-Baker Park,Fort,1745,4,4.2,0,Yes,Thursday,Cultural,No,0.7,Morning
+204,Northern,Punjab,Amritsar,"Smith, Long and Weber Park",Zoo,1759,3,4.4,30,Yes,Monday,Natural,Yes,2.2,Morning
+205,Western,Gujarat,Ahmedabad,"Thompson, Graham and Phillips Fort",Temple,1704,2,4.6,20,Yes,Tuesday,Environmental,Yes,1,Afternoon
+206,Northern,Uttar Pradesh,Agra,"Miller, Sanchez and Parker Park",Theme Park,1694,1,3.7,50,Yes,Saturday,Historical,No,0.7,Winter
+207,Eastern,West Bengal,Kolkata,West LLC Memorial,War Memorial,1586,2,4.8,0,Yes,Wednesday,Historical,No,3.5,Morning
+208,Northern,Punjab,Amritsar,Edwards-Keller Museum,Museum,1889,6,4.2,0,Yes,Monday,Cultural,No,4.5,Summer
+209,Southern,Karnataka,Bengaluru,Foley PLC Temple,Theme Park,1594,6,4.8,30,Yes,Tuesday,Religious,Yes,4.9,Evening
+210,Southern,Karnataka,Bengaluru,"Mitchell, Gomez and Coffey Park",Zoo,1598,6,4.3,50,Yes,Friday,Religious,No,3,Morning
+211,Southern,Karnataka,Bengaluru,Hines-Cruz Fort,Sanctuary,1895,6,4.9,0,Yes,Friday,Religious,No,2.7,Winter
+212,Central,Madhya Pradesh,Bhopal,Miller-Henderson Temple,Tomb,1593,5,3.6,20,Yes,Wednesday,Historical,Yes,0.6,Winter
+213,Southern,Kerala,Kochi,"Reid, Anderson and Welch Temple",Zoo,1598,4,4.9,20,Yes,None,Religious,No,3.7,Morning
+214,Eastern,West Bengal,Kolkata,Robinson-Smith Fort,Hill Station,1694,6,4.4,30,No,Friday,Natural,Yes,3.6,Afternoon
+215,Eastern,West Bengal,Kolkata,Hoffman Ltd Fort,Theme Park,1594,5,4.9,10,Yes,Friday,Historical,No,1.1,Winter
+216,Central,Madhya Pradesh,Bhopal,Gutierrez Group Fort,Zoo,1807,4,4.1,20,Yes,Tuesday,Historical,Yes,2,Morning
+217,Northern,Delhi,Delhi,Thomas Inc Museum,Tomb,1908,4,4.6,50,Yes,Sunday,Cultural,No,3.6,Afternoon
+218,Eastern,West Bengal,Kolkata,Carter Group Park,Temple,1964,3,4.3,20,Yes,Sunday,Natural,No,2.4,Evening
+219,Central,Madhya Pradesh,Bhopal,Davis and Sons Fort,War Memorial,1759,1,4.3,20,Yes,Wednesday,Historical,Yes,2.8,Evening
+220,Central,Madhya Pradesh,Bhopal,Parker Group Museum,Tomb,1844,3,4.4,50,Yes,Wednesday,Historical,Yes,3.3,Afternoon
+221,North-Eastern,Meghalaya,Shillong,Beltran-Snow Museum,Temple,1762,1,3.6,10,Yes,None,Natural,Yes,3.3,Evening
+222,Eastern,West Bengal,Kolkata,Butler-Strong Temple,Zoo,1502,6,4.6,10,Yes,Monday,Environmental,Yes,4.4,Evening
+223,Southern,Karnataka,Bengaluru,Ochoa-Hansen Park,Hill Station,1898,3,3.8,30,Yes,Saturday,Cultural,Yes,2,Afternoon
+224,Northern,Delhi,Delhi,"Martinez, Evans and Pitts Memorial",Hill Station,1842,2,4.6,10,Yes,Thursday,Environmental,No,0.3,Morning
+225,Northern,Delhi,Delhi,Long-Coffey Park,Sanctuary,1635,2,3.9,100,Yes,Friday,Natural,No,4.1,Evening
+226,Central,Madhya Pradesh,Bhopal,Johnson-Mills Museum,Tomb,1570,6,4,100,Yes,Friday,Historical,No,2.7,Summer
+227,Eastern,Odisha,Bhubaneswar,Vasquez-Ross Temple,Lake,1816,3,3.8,100,Yes,Sunday,Environmental,No,2.8,Summer
+228,Central,Madhya Pradesh,Bhopal,Elliott Ltd Temple,Museum,1751,5,3.5,100,Yes,None,Cultural,Yes,3.9,Morning
+229,Eastern,Odisha,Bhubaneswar,Wilson-Ortiz Temple,Tomb,1846,2,3.7,10,No,Sunday,Environmental,No,3.3,Summer
+230,North-Eastern,Meghalaya,Shillong,"Medina, Lopez and Rose Park",Zoo,1628,1,4.4,20,Yes,Tuesday,Cultural,Yes,4,Morning
+231,Southern,Tamil Nadu,Chennai,"Petersen, Brown and Tran Museum",Zoo,1960,5,4.6,20,Yes,Monday,Architectural,No,1.2,Winter
+232,Eastern,Odisha,Bhubaneswar,"Diaz, Hunt and Miller Memorial",Theme Park,1956,5,4,20,No,Thursday,Cultural,No,0.7,Afternoon
+233,Central,Madhya Pradesh,Bhopal,Diaz Ltd Park,Sanctuary,2003,6,3.8,100,Yes,Wednesday,Cultural,Yes,0.9,Morning
+234,Central,Madhya Pradesh,Bhopal,Nelson-Welch Temple,War Memorial,1514,1,4.9,50,Yes,None,Historical,Yes,3,Winter
+235,North-Eastern,Meghalaya,Shillong,Webster and Sons Museum,Sanctuary,1689,1,4.4,100,Yes,Wednesday,Architectural,Yes,0.4,Afternoon
+236,Southern,Karnataka,Bengaluru,Spencer-Byrd Memorial,Hill Station,1983,3,4.8,0,Yes,Sunday,Historical,No,1.5,Winter
+237,Central,Madhya Pradesh,Bhopal,Long PLC Fort,Theme Park,1923,5,3.8,10,Yes,None,Architectural,No,0.8,Afternoon
+238,Western,Rajasthan,Jaipur,Perkins LLC Park,War Memorial,1573,5,4,10,No,Saturday,Religious,Yes,2.3,Afternoon
+239,Southern,Karnataka,Bengaluru,Hanson-Stone Fort,War Memorial,1707,6,4.7,10,Yes,Monday,Natural,No,0.2,Afternoon
+240,North-Eastern,Meghalaya,Shillong,Lewis-Williams Fort,Museum,1691,4,4.5,10,Yes,Monday,Religious,Yes,2.4,Winter
+241,Central,Madhya Pradesh,Bhopal,Eaton-Logan Fort,Theme Park,1685,4,4.5,10,No,Thursday,Environmental,Yes,3.3,Evening
+242,North-Eastern,Assam,Guwahati,Wilson-Hubbard Memorial,Lake,1850,5,4,20,Yes,Friday,Cultural,Yes,2.6,Evening
+243,Central,Madhya Pradesh,Bhopal,Tyler Ltd Temple,Lake,1937,3,3.9,100,Yes,Sunday,Natural,No,2.1,Summer
+244,Northern,Delhi,Delhi,Flynn-Delacruz Museum,Sanctuary,1673,5,4.2,0,Yes,Thursday,Cultural,Yes,2.1,Winter
+245,Northern,Uttar Pradesh,Agra,"Macdonald, Lopez and Garza Memorial",Lake,1535,5,4.2,0,Yes,Sunday,Natural,No,4.6,Evening
+246,Central,Madhya Pradesh,Bhopal,Mcfarland and Sons Fort,Sanctuary,1890,3,4.8,100,Yes,Tuesday,Religious,No,3.2,Afternoon
+247,Southern,Kerala,Kochi,"Lopez, Moore and Cortez Park",Sanctuary,1612,2,4.6,0,Yes,Saturday,Cultural,No,4.5,Winter
+248,Northern,Uttar Pradesh,Agra,Webster-Martinez Temple,Fort,1995,5,3.7,0,Yes,Sunday,Religious,Yes,4.4,Summer
+249,Southern,Kerala,Kochi,Bell Inc Temple,Tomb,1739,1,4.3,10,Yes,Sunday,Architectural,Yes,4.8,Morning
+250,Central,Madhya Pradesh,Bhopal,"Watson, Ramirez and Andrade Museum",Zoo,1965,6,4.6,50,Yes,Wednesday,Environmental,No,1.3,Afternoon
+251,Western,Rajasthan,Jaipur,King LLC Museum,Museum,1832,5,4.2,0,Yes,Saturday,Religious,Yes,2.6,Morning
+252,Eastern,West Bengal,Kolkata,Mcknight-Allen Temple,Temple,1613,5,4.2,0,Yes,Thursday,Environmental,No,3.7,Evening
+253,Eastern,West Bengal,Kolkata,Jones-Greene Memorial,Fort,1718,1,4.5,0,Yes,Wednesday,Cultural,Yes,5,Afternoon
+254,Western,Gujarat,Ahmedabad,"Guerrero, Brown and Dennis Memorial",Zoo,1862,6,3.8,20,Yes,Friday,Environmental,No,0.2,Summer
+255,Southern,Tamil Nadu,Chennai,"Davenport, Woods and Nguyen Museum",Museum,1579,1,3.8,100,Yes,Monday,Religious,No,1.9,Morning
+256,Western,Maharashtra,Mumbai,Mckay-Collins Park,Sanctuary,1948,3,3.7,50,Yes,Thursday,Natural,No,0.7,Evening
+257,North-Eastern,Assam,Guwahati,Moore-Powers Fort,Lake,1588,3,4.5,50,Yes,Saturday,Religious,Yes,3.7,Morning
+258,Western,Gujarat,Ahmedabad,Finley Group Memorial,Theme Park,1853,3,4.7,10,Yes,Friday,Historical,No,1.1,Morning
+259,Western,Rajasthan,Jaipur,"Miller, Weaver and Day Memorial",Theme Park,1760,1,4,30,Yes,Friday,Natural,Yes,0,Summer
+260,Northern,Uttar Pradesh,Agra,Thompson-Zhang Museum,Sanctuary,1859,1,4.6,0,Yes,Wednesday,Environmental,Yes,2.3,Afternoon
+261,Southern,Tamil Nadu,Chennai,"Johnson, Johnson and Brooks Fort",Museum,1899,4,4.6,10,Yes,None,Religious,No,1.7,Evening
+262,Western,Rajasthan,Jaipur,Knox-Rose Memorial,Fort,1633,2,4.9,100,Yes,Monday,Religious,Yes,0.1,Afternoon
+263,Northern,Punjab,Amritsar,"Khan, Baxter and Mckinney Park",Fort,1689,5,3.9,0,Yes,Monday,Cultural,No,0.5,Morning
+264,North-Eastern,Meghalaya,Shillong,"Ramos, Meyers and Hughes Memorial",Lake,1585,3,4.1,50,Yes,Thursday,Historical,Yes,2.3,Morning
+265,Western,Maharashtra,Mumbai,Ferguson-Cook Museum,Zoo,1903,5,3.9,100,Yes,Sunday,Natural,No,3.9,Evening
+266,Northern,Punjab,Amritsar,Perez-Shaw Park,Fort,1686,2,4.8,0,Yes,Monday,Natural,Yes,3.5,Morning
+267,Central,Madhya Pradesh,Bhopal,"Robinson, Jensen and Cooley Fort",War Memorial,1794,3,4.1,10,Yes,Monday,Natural,No,2.4,Afternoon
+268,Central,Madhya Pradesh,Bhopal,Nelson-Fuentes Memorial,Museum,2016,4,4.9,0,Yes,Monday,Historical,Yes,0.6,Afternoon
+269,Eastern,West Bengal,Kolkata,Cruz-Vega Fort,Temple,1784,4,4.3,0,No,Wednesday,Environmental,No,0.8,Summer
+270,Southern,Karnataka,Bengaluru,"Mills, Bryant and Jones Park",Zoo,1775,2,3.7,20,No,Monday,Architectural,Yes,1.2,Winter
+271,Western,Maharashtra,Mumbai,Anderson Inc Memorial,Museum,1531,4,4.9,100,Yes,Thursday,Historical,Yes,0.5,Summer
+272,Eastern,Odisha,Bhubaneswar,Beard PLC Museum,Zoo,1523,2,4.2,30,Yes,Wednesday,Historical,No,1.9,Winter
+273,Western,Rajasthan,Jaipur,West-Morris Memorial,Fort,1723,5,4,10,Yes,Sunday,Environmental,Yes,3.5,Evening
+274,Southern,Karnataka,Bengaluru,"Reilly, Savage and Rubio Park",Lake,1897,2,4.7,100,Yes,Saturday,Religious,No,1.2,Evening
+275,Western,Gujarat,Ahmedabad,Williams-Sloan Temple,Fort,1530,5,4.9,20,Yes,Wednesday,Historical,No,3.9,Summer
+276,Eastern,West Bengal,Kolkata,Russell Inc Fort,Lake,1757,3,3.8,20,Yes,Saturday,Religious,No,0.2,Afternoon
+277,Western,Maharashtra,Mumbai,"Gill, Martin and Davis Temple",Fort,1551,4,4,0,Yes,Monday,Cultural,No,2.3,Afternoon
+278,Eastern,Odisha,Bhubaneswar,Bowman-Dyer Park,Hill Station,1743,6,4.9,10,Yes,Wednesday,Environmental,Yes,4.6,Summer
+279,Western,Gujarat,Ahmedabad,Baker-Young Temple,Fort,1694,6,4.7,100,Yes,None,Natural,No,3.3,Winter
+280,Central,Madhya Pradesh,Bhopal,"Thomas, Collins and Roberts Memorial",Lake,1886,6,4.8,20,Yes,Wednesday,Architectural,No,2.6,Evening
+281,Western,Gujarat,Ahmedabad,"Clark, Baker and Evans Fort",Zoo,1645,1,3.6,100,Yes,Thursday,Environmental,Yes,4.2,Morning
+282,Central,Madhya Pradesh,Bhopal,Monroe Ltd Temple,War Memorial,1843,4,4.3,30,Yes,Monday,Environmental,Yes,2.8,Winter
+283,Central,Madhya Pradesh,Bhopal,Terrell-Banks Memorial,War Memorial,1902,2,4.3,50,No,Saturday,Cultural,No,1.5,Morning
+284,Central,Madhya Pradesh,Bhopal,Schneider-Stewart Temple,Fort,1641,3,4.7,20,Yes,Thursday,Architectural,Yes,4.8,Summer
+285,Northern,Uttar Pradesh,Agra,Pratt PLC Temple,Sanctuary,1802,6,4.8,0,Yes,Saturday,Environmental,No,0.9,Morning
+286,Northern,Punjab,Amritsar,"Vazquez, Gordon and Garcia Park",Fort,1637,4,4.5,0,Yes,Thursday,Environmental,No,0.1,Morning
+287,Western,Gujarat,Ahmedabad,Robinson Inc Fort,Lake,1951,1,3.7,100,Yes,Wednesday,Cultural,Yes,1,Morning
+288,Central,Madhya Pradesh,Bhopal,Lopez and Sons Fort,Tomb,1583,3,4.3,0,Yes,Sunday,Architectural,No,4.1,Afternoon
+289,Eastern,Odisha,Bhubaneswar,"Woods, Harper and Roberts Park",Sanctuary,1803,1,3.8,10,Yes,Friday,Religious,No,1.5,Winter
+290,Southern,Tamil Nadu,Chennai,Fleming Group Museum,Lake,1746,5,4,100,Yes,Friday,Architectural,Yes,4.2,Afternoon
+291,Southern,Kerala,Kochi,Perez-Carter Fort,Museum,1591,5,4.7,20,Yes,Sunday,Historical,No,0.9,Summer
+292,Central,Madhya Pradesh,Bhopal,Bryant and Sons Fort,Lake,1829,3,4.8,10,Yes,Saturday,Environmental,Yes,2.1,Afternoon
+293,North-Eastern,Assam,Guwahati,"Johnson, Tucker and Singh Temple",Tomb,1828,5,3.7,50,Yes,Saturday,Environmental,Yes,5,Morning
+294,North-Eastern,Meghalaya,Shillong,Ferguson-Young Temple,Temple,1668,4,4.8,10,Yes,Thursday,Environmental,No,1.4,Morning
+295,Northern,Punjab,Amritsar,Johnson-Smith Fort,Fort,1957,6,3.9,0,No,None,Natural,Yes,4.4,Afternoon
+296,Western,Gujarat,Ahmedabad,"Craig, Hill and Burke Park",War Memorial,1759,1,4.9,20,Yes,None,Environmental,Yes,4.3,Summer
+297,Southern,Kerala,Kochi,Wagner-Kelley Fort,Museum,1991,1,4.3,20,Yes,Tuesday,Religious,Yes,0.5,Afternoon
+298,Northern,Delhi,Delhi,Lee and Sons Fort,Museum,1605,6,3.8,100,Yes,Sunday,Religious,Yes,2,Evening
+299,Western,Rajasthan,Jaipur,Perez-Carroll Fort,Temple,1602,6,3.9,10,Yes,Friday,Environmental,No,4.6,Summer
+300,Northern,Uttar Pradesh,Agra,Lopez Inc Park,Theme Park,1659,6,4.8,30,Yes,Monday,Environmental,No,3.5,Morning
+301,Northern,Delhi,Delhi,Foster Inc Fort,Temple,1928,4,3.8,30,Yes,Wednesday,Historical,No,4.3,Morning
+302,North-Eastern,Assam,Guwahati,Taylor-Green Park,Fort,1662,3,4.8,30,Yes,Wednesday,Architectural,No,2.6,Winter
+303,North-Eastern,Assam,Guwahati,"Mccarty, Fletcher and Perkins Memorial",Theme Park,1604,4,3.9,100,Yes,Monday,Religious,Yes,0.6,Winter
+304,Central,Madhya Pradesh,Bhopal,Rodgers-Davis Memorial,War Memorial,1929,6,4.1,30,Yes,None,Architectural,Yes,3.7,Afternoon
+305,Southern,Karnataka,Bengaluru,"Aguirre, Evans and Johnson Park",Lake,2005,5,4.2,20,Yes,None,Religious,No,2.8,Summer
+306,Eastern,Odisha,Bhubaneswar,Miller LLC Fort,Fort,1835,5,4.2,30,Yes,Monday,Historical,Yes,2.5,Afternoon
+307,Western,Rajasthan,Jaipur,Daniels Ltd Park,Lake,1586,4,4.3,100,Yes,Tuesday,Natural,Yes,4.2,Afternoon
+308,North-Eastern,Meghalaya,Shillong,Matthews-King Temple,Tomb,1672,3,4.6,10,Yes,Friday,Historical,Yes,4.8,Morning
+309,Western,Gujarat,Ahmedabad,Alvarez Group Fort,Lake,1880,5,4,0,Yes,None,Natural,Yes,3.7,Afternoon
+310,Western,Rajasthan,Jaipur,"Frazier, Mcmahon and Cole Memorial",Temple,1509,4,3.9,0,Yes,Saturday,Historical,No,2.3,Morning
+311,North-Eastern,Assam,Guwahati,"Love, Schmidt and Rivera Fort",Fort,1508,2,4.1,20,Yes,Thursday,Environmental,No,0.6,Summer
+312,Northern,Punjab,Amritsar,"Bartlett, Wood and Anderson Memorial",Fort,1503,5,4.9,50,Yes,Wednesday,Environmental,Yes,4.5,Morning
+313,Central,Madhya Pradesh,Bhopal,"Smith, Ellison and Bean Park",Zoo,1524,1,4.9,0,Yes,Thursday,Religious,Yes,3.6,Summer
+314,North-Eastern,Assam,Guwahati,Blake PLC Memorial,Museum,1965,5,4.6,0,Yes,Saturday,Religious,Yes,2.7,Summer
+315,Eastern,Odisha,Bhubaneswar,Stewart-Baldwin Memorial,Lake,1902,3,4,30,Yes,Monday,Cultural,Yes,3.8,Summer
+316,Southern,Tamil Nadu,Chennai,White LLC Park,Fort,1795,2,3.8,100,Yes,Monday,Architectural,No,4.7,Evening
+317,Western,Maharashtra,Mumbai,Anderson-Williams Memorial,Tomb,1626,6,4.3,30,Yes,Monday,Environmental,Yes,0,Evening
+318,Northern,Punjab,Amritsar,"Acevedo, Dillon and Miller Fort",Fort,1526,3,4.4,100,Yes,Friday,Environmental,No,2.2,Evening
+319,Central,Madhya Pradesh,Bhopal,Gonzales Inc Park,Sanctuary,1748,6,3.7,50,Yes,Friday,Architectural,No,4.5,Afternoon
+320,Northern,Delhi,Delhi,"Kennedy, Singh and Meyer Fort",Lake,1616,4,4.9,10,Yes,Wednesday,Natural,No,1.4,Winter
+321,Northern,Delhi,Delhi,Marshall Ltd Fort,Fort,1529,1,4.4,20,No,Monday,Religious,Yes,4.3,Winter
+322,North-Eastern,Assam,Guwahati,"Ellis, Bailey and Holland Park",Fort,1962,1,4.2,100,Yes,Thursday,Architectural,Yes,3.1,Afternoon
+323,Southern,Tamil Nadu,Chennai,Hall LLC Temple,Temple,1694,3,4.6,100,Yes,Wednesday,Environmental,No,2.1,Summer
+324,North-Eastern,Assam,Guwahati,Miles Ltd Museum,Theme Park,1833,2,4.4,0,Yes,Monday,Religious,Yes,2.7,Morning
+325,Southern,Karnataka,Bengaluru,"Hunter, Sanders and Johnson Fort",Fort,1907,4,4.5,20,No,Sunday,Architectural,Yes,2.8,Evening
+326,Eastern,West Bengal,Kolkata,"Barrera, Cox and Davis Fort",Zoo,1866,6,3.5,100,Yes,Monday,Religious,Yes,5,Morning
+327,North-Eastern,Assam,Guwahati,Kirby and Sons Park,Museum,1933,4,4.9,10,Yes,Sunday,Natural,Yes,0.7,Winter
+328,North-Eastern,Meghalaya,Shillong,"Gray, Romero and Henry Fort",Lake,1657,5,4.1,10,Yes,Wednesday,Natural,Yes,0.3,Morning
+329,Northern,Punjab,Amritsar,Brown LLC Museum,Museum,1743,3,4.6,30,Yes,Thursday,Natural,Yes,2.1,Summer
+330,North-Eastern,Assam,Guwahati,"Lara, Carrillo and Scott Memorial",Temple,1697,1,4.6,20,No,Saturday,Cultural,No,2.7,Evening
+331,Western,Gujarat,Ahmedabad,Petersen-Ortega Temple,Zoo,1732,2,3.7,20,Yes,Friday,Environmental,No,1.2,Afternoon
+332,Northern,Punjab,Amritsar,Weaver Group Park,Theme Park,1847,4,3.5,10,Yes,Monday,Environmental,No,4.2,Summer
+333,Central,Madhya Pradesh,Bhopal,Martinez and Sons Museum,Sanctuary,1835,4,4.6,20,Yes,Sunday,Environmental,No,3.4,Afternoon
+334,North-Eastern,Meghalaya,Shillong,"Lowe, Moody and Dickson Fort",Hill Station,1883,1,3.7,50,Yes,Wednesday,Architectural,Yes,0.8,Afternoon
+335,North-Eastern,Assam,Guwahati,Carpenter Group Memorial,Lake,1745,6,3.7,100,No,Friday,Architectural,Yes,3.2,Afternoon
+336,North-Eastern,Meghalaya,Shillong,Warren PLC Temple,Temple,1522,3,3.7,10,Yes,Thursday,Environmental,No,0.6,Summer
+337,Eastern,West Bengal,Kolkata,Fitzgerald Group Park,War Memorial,1828,6,4.5,100,Yes,Tuesday,Historical,No,3.7,Afternoon
+338,Northern,Punjab,Amritsar,Garza-Clark Museum,War Memorial,1776,6,4.8,0,Yes,Thursday,Cultural,Yes,0.9,Afternoon
+339,Northern,Delhi,Delhi,Ray LLC Museum,Museum,1993,1,4.3,20,Yes,None,Historical,No,5,Summer
+340,Eastern,West Bengal,Kolkata,Shea Group Temple,Fort,1937,4,4.5,50,Yes,Tuesday,Historical,Yes,1.2,Evening
+341,North-Eastern,Assam,Guwahati,Carrillo-Moore Fort,Lake,1638,4,4.4,10,Yes,Monday,Natural,Yes,4.4,Afternoon
+342,North-Eastern,Assam,Guwahati,Murray PLC Memorial,Fort,1754,2,4.6,100,Yes,Thursday,Natural,Yes,1.3,Morning
+343,Southern,Kerala,Kochi,Guerrero-Peck Memorial,Zoo,1590,4,3.9,10,Yes,Sunday,Historical,Yes,3.2,Summer
+344,Northern,Uttar Pradesh,Agra,Fitzpatrick-Powell Park,Lake,1680,5,3.8,100,Yes,Wednesday,Natural,No,4.2,Winter
+345,Northern,Punjab,Amritsar,Flynn-Ferguson Museum,Fort,1519,3,3.8,20,Yes,Wednesday,Natural,Yes,1.1,Summer
+346,Central,Madhya Pradesh,Bhopal,"Sanchez, Cervantes and Smith Memorial",Tomb,1676,2,4.9,20,Yes,None,Historical,No,0.8,Evening
+347,North-Eastern,Meghalaya,Shillong,"Leon, Jimenez and Silva Museum",War Memorial,1506,2,3.6,30,Yes,Wednesday,Cultural,No,1,Summer
+348,Western,Gujarat,Ahmedabad,"Frazier, Griffin and Baldwin Fort",Hill Station,1803,3,4.5,100,Yes,Thursday,Historical,No,1.2,Afternoon
+349,Northern,Punjab,Amritsar,Solomon LLC Museum,Hill Station,1951,1,4.4,0,Yes,Monday,Natural,Yes,2.5,Evening
+350,Central,Madhya Pradesh,Bhopal,"Evans, Miller and Bennett Park",Museum,1594,6,4.9,10,Yes,Friday,Historical,Yes,3.5,Evening
+351,Central,Madhya Pradesh,Bhopal,Butler Group Museum,Sanctuary,1547,4,3.8,50,Yes,Thursday,Historical,No,4.7,Afternoon
+352,Eastern,Odisha,Bhubaneswar,Moran Group Memorial,Hill Station,1693,4,4.4,50,Yes,Tuesday,Architectural,Yes,2.7,Afternoon
+353,Southern,Karnataka,Bengaluru,Knox-Tucker Park,Tomb,1878,4,4.6,100,Yes,Wednesday,Architectural,Yes,4.3,Morning
+354,Western,Rajasthan,Jaipur,Johnson-Jones Museum,Fort,1702,2,4.3,100,No,Friday,Cultural,No,4.3,Evening
+355,Eastern,West Bengal,Kolkata,Gallagher-Tucker Park,Museum,1584,6,5,20,Yes,Wednesday,Religious,Yes,2.1,Afternoon
+356,Western,Maharashtra,Mumbai,Morris-Fowler Park,War Memorial,1633,6,3.7,20,Yes,Monday,Environmental,Yes,0.6,Summer
+357,Central,Madhya Pradesh,Bhopal,Li-Cox Temple,Lake,1825,5,4.7,20,Yes,Friday,Cultural,Yes,0.7,Summer
+358,Eastern,Odisha,Bhubaneswar,"Diaz, Smith and Morris Museum",Zoo,1910,5,4.5,30,Yes,Thursday,Natural,No,4.5,Evening
+359,Northern,Delhi,Delhi,Anderson-Hoffman Temple,Zoo,1827,2,3.5,20,Yes,None,Historical,No,4.7,Winter
+360,Northern,Uttar Pradesh,Agra,"Moore, Williams and Love Museum",Fort,1702,3,4.4,50,No,Wednesday,Natural,Yes,4.6,Morning
+361,North-Eastern,Assam,Guwahati,"Diaz, Aguirre and Montoya Park",Tomb,1991,5,4.3,0,Yes,Thursday,Religious,No,1.9,Winter
+362,Eastern,Odisha,Bhubaneswar,"Fisher, Brewer and Mccoy Fort",Zoo,1551,6,4.7,20,Yes,Sunday,Environmental,Yes,1.5,Winter
+363,North-Eastern,Meghalaya,Shillong,Horn-Sutton Temple,Tomb,2004,6,3.9,0,Yes,Friday,Cultural,No,2,Morning
+364,Western,Gujarat,Ahmedabad,"Goodwin, Smith and Thomas Fort",War Memorial,2004,2,4.1,20,Yes,Saturday,Environmental,No,2.4,Evening
+365,Western,Gujarat,Ahmedabad,Jones Ltd Park,Lake,1503,2,4.1,50,Yes,Friday,Natural,No,3.4,Evening
+366,Western,Gujarat,Ahmedabad,"Barrera, Knight and Smith Memorial",Hill Station,1949,1,4,100,No,None,Religious,No,1.5,Morning
+367,Western,Maharashtra,Mumbai,"Cowan, Miller and Smith Temple",Sanctuary,1583,5,4.8,100,Yes,Friday,Environmental,No,5,Evening
+368,Western,Gujarat,Ahmedabad,Moody-Walker Museum,Sanctuary,1808,6,5,10,Yes,Thursday,Architectural,No,2.3,Afternoon
+369,Eastern,West Bengal,Kolkata,Norris Inc Memorial,Lake,1663,6,4.4,50,Yes,Thursday,Historical,Yes,3.7,Evening
+370,Northern,Punjab,Amritsar,Miller-Torres Temple,Tomb,1759,6,4.8,20,Yes,Saturday,Natural,No,3.3,Morning
+371,North-Eastern,Meghalaya,Shillong,Austin Inc Memorial,War Memorial,1832,1,3.6,30,Yes,Friday,Religious,No,0.6,Summer
+372,Central,Madhya Pradesh,Bhopal,Murray-Mcknight Temple,Lake,1709,5,4.3,100,Yes,Sunday,Environmental,Yes,1,Summer
+373,Central,Madhya Pradesh,Bhopal,"Davis, Young and Gonzalez Museum",Theme Park,1846,2,3.6,10,Yes,Tuesday,Environmental,Yes,1,Summer
+374,Northern,Punjab,Amritsar,Whitaker-Wallace Memorial,Temple,1626,2,4.2,100,Yes,Saturday,Environmental,Yes,3.4,Afternoon
+375,Eastern,Odisha,Bhubaneswar,Ramirez Group Museum,Theme Park,1519,4,4.3,0,Yes,Monday,Natural,Yes,0.8,Morning
+376,North-Eastern,Assam,Guwahati,Stone-Spencer Park,Hill Station,1853,2,4,100,Yes,Wednesday,Religious,Yes,1.9,Winter
+377,Western,Gujarat,Ahmedabad,Brandt-Richards Memorial,Fort,1818,4,3.8,10,Yes,Friday,Environmental,Yes,4.3,Winter
+378,Northern,Delhi,Delhi,Booth-Mcconnell Park,Museum,1840,2,4.6,100,No,Saturday,Environmental,No,4.8,Morning
+379,Eastern,West Bengal,Kolkata,Osborne-Williams Park,Fort,1825,3,4.8,30,Yes,None,Natural,No,2.9,Evening
+380,Eastern,Odisha,Bhubaneswar,Lang-Becker Memorial,Temple,1860,2,3.8,10,Yes,Wednesday,Environmental,No,1.1,Morning
+381,Western,Maharashtra,Mumbai,Garcia-Donovan Museum,Zoo,1971,3,4.4,0,Yes,Wednesday,Architectural,Yes,1.7,Afternoon
+382,Central,Madhya Pradesh,Bhopal,"Jackson, Ellis and Howell Temple",Hill Station,1800,1,4.9,10,Yes,Thursday,Natural,Yes,4.7,Evening
+383,Central,Madhya Pradesh,Bhopal,Jarvis-Gonzalez Temple,Temple,1923,3,4.6,30,Yes,Saturday,Natural,No,4.9,Evening
+384,Western,Rajasthan,Jaipur,"Jordan, Hanna and Matthews Temple",War Memorial,1561,4,4.5,50,No,Friday,Religious,Yes,2.1,Evening
+385,Central,Madhya Pradesh,Bhopal,Thornton-Rodriguez Memorial,Fort,1533,4,3.9,0,Yes,Sunday,Architectural,No,0.7,Morning
+386,Western,Maharashtra,Mumbai,Haley and Sons Fort,Temple,1737,5,4.5,10,Yes,Monday,Cultural,Yes,4,Morning
+387,North-Eastern,Assam,Guwahati,Cummings and Sons Fort,Zoo,1824,2,5,0,Yes,Thursday,Cultural,Yes,4.2,Morning
+388,Central,Madhya Pradesh,Bhopal,Moore-Wagner Temple,Tomb,1738,5,3.8,0,Yes,Wednesday,Natural,No,4.5,Morning
+389,Eastern,Odisha,Bhubaneswar,Rodriguez-Smith Temple,War Memorial,1858,3,4.8,20,Yes,Monday,Environmental,Yes,4.5,Summer
+390,North-Eastern,Assam,Guwahati,"Parsons, Brooks and Scott Temple",Tomb,1977,1,4.3,20,Yes,Tuesday,Natural,No,3.8,Evening
+391,Eastern,West Bengal,Kolkata,Garcia-Rocha Park,Museum,1523,3,3.6,50,Yes,Sunday,Historical,No,1.4,Afternoon
+392,Eastern,West Bengal,Kolkata,Garcia LLC Museum,War Memorial,1508,3,4.6,100,Yes,Friday,Cultural,Yes,2.3,Winter
+393,Southern,Tamil Nadu,Chennai,Morgan-Shaw Memorial,Theme Park,2010,5,3.6,100,Yes,None,Religious,Yes,1.9,Winter
+394,Southern,Kerala,Kochi,Martinez-Kelly Fort,Zoo,1557,4,4.6,10,Yes,Saturday,Environmental,No,3.7,Afternoon
+395,Eastern,Odisha,Bhubaneswar,"Crawford, Franklin and Morton Fort",Museum,1973,3,3.6,0,Yes,Saturday,Natural,No,2,Afternoon
+396,Western,Gujarat,Ahmedabad,"Mcdaniel, Huff and Taylor Museum",Temple,1571,5,4,30,No,None,Cultural,No,2.3,Afternoon
+397,Southern,Kerala,Kochi,Rocha and Sons Memorial,Theme Park,1709,6,4.6,0,Yes,Sunday,Historical,No,3.9,Afternoon
+398,Southern,Kerala,Kochi,Myers-Brown Fort,Theme Park,1996,4,3.5,20,Yes,Monday,Religious,Yes,1.5,Winter
+399,Northern,Delhi,Delhi,Banks Ltd Fort,Fort,1797,3,4.1,20,Yes,Tuesday,Religious,Yes,4.7,Winter
+400,Northern,Punjab,Amritsar,"Rodriguez, Jones and Ramirez Temple",Sanctuary,1931,6,4.6,100,Yes,Friday,Architectural,No,2.1,Summer
+401,Western,Gujarat,Ahmedabad,Martinez-Poole Fort,Sanctuary,1709,5,4,20,Yes,Tuesday,Cultural,Yes,4,Afternoon
+402,Western,Maharashtra,Mumbai,Hebert PLC Memorial,Fort,1588,4,4,10,Yes,Wednesday,Historical,No,4.9,Summer
+403,Western,Rajasthan,Jaipur,"Rubio, Harris and Cordova Fort",Hill Station,2017,3,4.9,20,Yes,None,Natural,No,0.7,Winter
+404,Central,Madhya Pradesh,Bhopal,Rodriguez and Sons Fort,Sanctuary,1633,3,3.8,30,Yes,None,Architectural,Yes,4.6,Summer
+405,North-Eastern,Meghalaya,Shillong,"Sanchez, Hill and Anderson Memorial",Lake,1739,4,4.7,30,Yes,Wednesday,Historical,Yes,0.3,Evening
+406,Eastern,Odisha,Bhubaneswar,Martin Ltd Memorial,Theme Park,1847,6,3.7,20,Yes,Tuesday,Historical,No,0,Afternoon
+407,Western,Gujarat,Ahmedabad,"Hurst, Thompson and Briggs Fort",Temple,1993,2,4.4,10,Yes,Tuesday,Historical,Yes,1.6,Summer
+408,Western,Rajasthan,Jaipur,"Wallace, Choi and Gillespie Park",Tomb,1857,3,3.7,10,Yes,Tuesday,Architectural,No,0.4,Morning
+409,Western,Gujarat,Ahmedabad,"Bowman, Moore and Conner Memorial",Lake,1775,1,4.9,100,Yes,Wednesday,Natural,No,4.7,Evening
+410,Northern,Punjab,Amritsar,"Booth, Moore and Kelly Park",Fort,1997,6,4,0,Yes,Friday,Religious,No,0.1,Winter
+411,Central,Madhya Pradesh,Bhopal,"Shea, Gill and Olson Museum",War Memorial,1822,4,4.9,10,Yes,Tuesday,Cultural,No,1.4,Winter
+412,Northern,Delhi,Delhi,Donovan-Sanchez Memorial,Theme Park,1666,5,4.5,50,Yes,Saturday,Environmental,Yes,1.8,Afternoon
+413,Central,Madhya Pradesh,Bhopal,"Wells, Santiago and Odom Museum",Fort,1994,5,3.5,100,Yes,Tuesday,Architectural,Yes,2.5,Evening
+414,Western,Maharashtra,Mumbai,"Gray, Morse and Lawrence Memorial",Lake,1647,1,4.8,100,Yes,Friday,Architectural,No,1.3,Winter
+415,Northern,Delhi,Delhi,Roberts-Baker Museum,Hill Station,1573,5,3.6,100,Yes,Sunday,Religious,Yes,4.4,Afternoon
+416,Central,Madhya Pradesh,Bhopal,King Group Museum,Sanctuary,1592,2,4.3,20,Yes,Wednesday,Natural,Yes,4.5,Afternoon
+417,Central,Madhya Pradesh,Bhopal,"Miller, Howard and Ramos Temple",Fort,2021,3,4,0,Yes,Sunday,Environmental,No,4,Morning
+418,Northern,Punjab,Amritsar,Thomas-Nelson Memorial,Zoo,1592,1,3.8,30,Yes,Tuesday,Natural,Yes,3.7,Winter
+419,Eastern,Odisha,Bhubaneswar,Rivera-Mcfarland Fort,Hill Station,1521,1,3.8,10,Yes,Sunday,Historical,Yes,2.8,Morning
+420,Southern,Karnataka,Bengaluru,Gordon-Austin Park,War Memorial,1512,1,4.1,0,Yes,None,Natural,No,4.7,Afternoon
+421,Eastern,West Bengal,Kolkata,Smith Group Memorial,Hill Station,1755,4,4.6,30,Yes,Monday,Cultural,Yes,4.1,Summer
+422,Eastern,Odisha,Bhubaneswar,Reyes Group Park,Lake,1694,3,3.9,100,Yes,Wednesday,Environmental,No,0.7,Morning
+423,Eastern,Odisha,Bhubaneswar,Holmes Inc Memorial,Tomb,1874,6,4.9,0,Yes,Monday,Cultural,Yes,3.5,Morning
+424,Central,Madhya Pradesh,Bhopal,Ward-Wagner Temple,Zoo,1791,4,3.6,100,Yes,Tuesday,Architectural,Yes,0.2,Summer
+425,Northern,Uttar Pradesh,Agra,Tate-Henderson Fort,Sanctuary,1646,2,4.4,20,Yes,None,Cultural,Yes,0.9,Afternoon
+426,Eastern,West Bengal,Kolkata,Marsh-Sharp Memorial,Theme Park,1781,6,5,50,Yes,None,Religious,No,4.1,Summer
+427,Southern,Karnataka,Bengaluru,"Reed, Thompson and Walters Museum",Fort,1502,2,3.6,10,Yes,Thursday,Environmental,Yes,1.8,Winter
+428,Southern,Tamil Nadu,Chennai,Snyder-Spencer Park,Hill Station,1595,1,3.5,10,Yes,Wednesday,Architectural,Yes,2.4,Afternoon
+429,North-Eastern,Assam,Guwahati,"Garcia, Roberts and Love Park",Fort,1580,6,3.9,100,Yes,Saturday,Environmental,Yes,3.3,Winter
+430,Eastern,Odisha,Bhubaneswar,"Washington, Cain and Nguyen Fort",Zoo,1740,2,3.7,30,Yes,Monday,Natural,No,4.4,Summer
+431,Central,Madhya Pradesh,Bhopal,Mcbride Inc Memorial,Lake,1589,1,4,50,Yes,Monday,Environmental,No,0.7,Winter
+432,Southern,Kerala,Kochi,Wong LLC Temple,War Memorial,1578,5,4.7,100,Yes,Thursday,Architectural,No,4.5,Afternoon
+433,Western,Rajasthan,Jaipur,Pearson and Sons Temple,Theme Park,1545,4,4.7,30,Yes,Sunday,Natural,Yes,4.2,Winter
+434,Southern,Tamil Nadu,Chennai,Green Inc Fort,Theme Park,1540,5,3.9,30,Yes,Saturday,Architectural,No,3.8,Morning
+435,Eastern,West Bengal,Kolkata,"Phillips, Charles and Mitchell Temple",Lake,1941,6,4.3,50,Yes,None,Historical,No,2.4,Afternoon
+436,North-Eastern,Assam,Guwahati,Welch-Sutton Museum,Theme Park,1967,3,4.7,10,Yes,Friday,Natural,Yes,0.8,Evening
+437,North-Eastern,Meghalaya,Shillong,Madden PLC Memorial,Sanctuary,1741,4,5,20,Yes,Tuesday,Religious,Yes,2.8,Evening
+438,Western,Rajasthan,Jaipur,Hall-Allen Museum,Sanctuary,1514,4,4.1,50,Yes,Thursday,Architectural,Yes,3.4,Summer
+439,Southern,Tamil Nadu,Chennai,Fernandez PLC Memorial,Fort,1614,6,4.1,50,Yes,Tuesday,Natural,Yes,3,Afternoon
+440,Eastern,West Bengal,Kolkata,Hunt LLC Fort,Temple,1569,6,4.2,20,Yes,Saturday,Cultural,No,2.4,Summer
+441,Southern,Tamil Nadu,Chennai,Gamble-Wise Fort,Lake,1853,3,4.7,50,Yes,Saturday,Historical,No,1.6,Evening
+442,North-Eastern,Meghalaya,Shillong,Smith PLC Temple,War Memorial,1838,6,4.7,10,Yes,Friday,Historical,No,1.9,Morning
+443,North-Eastern,Meghalaya,Shillong,Nelson and Sons Fort,Lake,1809,2,4.1,50,No,Friday,Cultural,Yes,4.6,Morning
+444,Eastern,Odisha,Bhubaneswar,Ross and Sons Memorial,Hill Station,1932,1,3.6,100,Yes,Wednesday,Cultural,No,0.1,Winter
+445,Central,Madhya Pradesh,Bhopal,Barrett Ltd Temple,Theme Park,1903,2,4.7,100,No,Wednesday,Historical,Yes,2.8,Afternoon
+446,Southern,Kerala,Kochi,"Robinson, King and Scott Museum",Tomb,1860,2,4.7,10,Yes,None,Environmental,Yes,3.1,Winter
+447,Central,Madhya Pradesh,Bhopal,Allen-Adams Fort,Tomb,1628,5,4.3,50,Yes,Tuesday,Cultural,No,2.5,Winter
+448,North-Eastern,Assam,Guwahati,Wright-Barron Museum,Hill Station,1553,6,3.7,10,Yes,Wednesday,Cultural,Yes,3.9,Afternoon
+449,North-Eastern,Meghalaya,Shillong,Morse Inc Memorial,Temple,1581,3,3.8,50,Yes,Saturday,Architectural,No,0.7,Afternoon
+450,Southern,Karnataka,Bengaluru,"Curry, Hendricks and Proctor Fort",Temple,1615,6,4.1,10,Yes,Sunday,Historical,Yes,2.6,Winter
+451,North-Eastern,Assam,Guwahati,Oliver-Evans Temple,Zoo,1718,2,3.9,10,Yes,Thursday,Religious,Yes,1.4,Summer
+452,North-Eastern,Meghalaya,Shillong,Allen and Sons Museum,Lake,1909,6,3.8,50,Yes,Saturday,Religious,Yes,3,Afternoon
+453,Central,Madhya Pradesh,Bhopal,Medina-Andrade Museum,Museum,1955,2,4.5,10,Yes,Friday,Religious,Yes,1.1,Summer
+454,North-Eastern,Meghalaya,Shillong,Turner PLC Fort,Hill Station,1899,4,4.6,20,Yes,Friday,Religious,No,0.1,Afternoon
+455,Eastern,Odisha,Bhubaneswar,"Boyer, Miller and Lopez Fort",Museum,1586,3,3.7,10,Yes,Sunday,Natural,No,2.9,Evening
+456,Southern,Tamil Nadu,Chennai,Davidson LLC Temple,War Memorial,1968,6,4.7,0,Yes,Tuesday,Architectural,No,1.6,Evening
+457,Southern,Karnataka,Bengaluru,Gonzales LLC Memorial,Tomb,1623,3,4.9,30,Yes,Wednesday,Religious,No,4.8,Morning
+458,Northern,Punjab,Amritsar,Kennedy Ltd Memorial,Tomb,1782,6,4,30,Yes,Wednesday,Natural,Yes,3.5,Winter
+459,Northern,Delhi,Delhi,Rich-Mckay Museum,Lake,1683,2,3.5,100,Yes,Saturday,Environmental,No,3.3,Evening
+460,Central,Madhya Pradesh,Bhopal,"Smith, White and Perkins Museum",Temple,1938,3,4.3,100,Yes,Friday,Environmental,Yes,2.1,Afternoon
+461,Western,Gujarat,Ahmedabad,Brown-Moody Fort,Sanctuary,1848,6,3.8,50,Yes,Saturday,Cultural,Yes,1.8,Morning
+462,Northern,Punjab,Amritsar,Howell Inc Memorial,Museum,1716,2,3.7,50,Yes,Monday,Cultural,No,2.8,Winter
+463,Southern,Kerala,Kochi,Hughes Group Memorial,Fort,1695,4,4.5,100,No,Monday,Religious,No,0.7,Summer
+464,Eastern,West Bengal,Kolkata,Stevens PLC Fort,Lake,1955,1,3.9,100,No,Thursday,Cultural,Yes,4.2,Summer
+465,North-Eastern,Meghalaya,Shillong,"Jones, Oconnor and Aguirre Memorial",Sanctuary,1821,1,4.4,30,Yes,None,Cultural,Yes,2.3,Summer
+466,North-Eastern,Meghalaya,Shillong,"Kim, Ware and Hughes Museum",Theme Park,1979,5,3.6,100,No,None,Environmental,Yes,1.6,Winter
+467,Western,Rajasthan,Jaipur,"Pennington, Frey and Burton Museum",Temple,1849,3,3.8,30,Yes,None,Historical,Yes,1.3,Morning
+468,Northern,Punjab,Amritsar,Cook-Murillo Fort,War Memorial,1671,5,4.3,10,Yes,Friday,Environmental,Yes,3.8,Afternoon
+469,Central,Madhya Pradesh,Bhopal,Thomas-Harris Museum,Fort,1799,6,3.7,20,Yes,None,Environmental,No,4.8,Morning
+470,Western,Gujarat,Ahmedabad,Gomez-Stanley Temple,Lake,1630,3,3.7,0,Yes,Tuesday,Environmental,Yes,4.8,Summer
+471,Eastern,West Bengal,Kolkata,"Jackson, Waters and Barton Temple",Theme Park,1957,2,3.8,30,Yes,Tuesday,Natural,Yes,2.2,Evening
+472,Eastern,West Bengal,Kolkata,"Thompson, White and Davidson Fort",Theme Park,1816,2,4.2,100,Yes,None,Historical,Yes,4.8,Summer
+473,Central,Madhya Pradesh,Bhopal,Moses Ltd Fort,War Memorial,1621,2,4.4,50,Yes,Wednesday,Historical,No,3.9,Morning
+474,Western,Gujarat,Ahmedabad,"Bates, Sanchez and Warner Park",Temple,1716,6,4.2,100,Yes,Monday,Environmental,Yes,1.3,Afternoon
+475,Northern,Delhi,Delhi,"Garcia, Smith and Bridges Park",Hill Station,1887,6,3.9,30,No,Thursday,Environmental,No,4.3,Winter
+476,Southern,Tamil Nadu,Chennai,Santos LLC Temple,Tomb,1649,2,3.7,10,Yes,None,Religious,No,4.1,Afternoon
+477,Southern,Tamil Nadu,Chennai,Bowers PLC Temple,Tomb,1852,3,3.7,50,Yes,Wednesday,Architectural,No,3.8,Evening
+478,Western,Gujarat,Ahmedabad,Smith-Harmon Museum,Hill Station,1750,4,4.9,100,Yes,None,Environmental,Yes,0.8,Evening
+479,Western,Rajasthan,Jaipur,Shah Ltd Memorial,Temple,1551,5,3.6,20,Yes,Friday,Architectural,Yes,0.7,Morning
+480,Central,Madhya Pradesh,Bhopal,Klein Ltd Temple,Hill Station,1993,2,3.8,20,Yes,Friday,Religious,Yes,3.7,Winter
+481,Central,Madhya Pradesh,Bhopal,Flynn-Dodson Memorial,Tomb,1911,3,4.7,50,Yes,Thursday,Historical,No,1.6,Evening
+482,North-Eastern,Assam,Guwahati,"Simmons, Gillespie and Hayes Memorial",Lake,1567,5,4.8,100,Yes,Friday,Natural,No,2.9,Evening
+483,Eastern,West Bengal,Kolkata,Friedman PLC Temple,Zoo,1638,3,3.9,20,No,Thursday,Environmental,No,3.9,Winter
+484,Southern,Kerala,Kochi,Brown-Smith Museum,Sanctuary,1556,4,4.9,20,Yes,None,Architectural,No,4.4,Summer
+485,Eastern,West Bengal,Kolkata,"Green, Ball and Jones Fort",Temple,1610,3,4.2,0,Yes,Monday,Environmental,No,4.8,Afternoon
+486,Central,Madhya Pradesh,Bhopal,"Hunter, Harmon and Arnold Fort",Fort,2003,6,3.5,50,No,Wednesday,Natural,Yes,1.3,Evening
+487,Northern,Punjab,Amritsar,Cole Inc Museum,Fort,1604,2,3.9,100,Yes,None,Religious,Yes,5,Summer
+488,Northern,Delhi,Delhi,Evans-Miller Fort,Museum,1874,1,4.3,30,Yes,None,Cultural,Yes,0.9,Evening
+489,Eastern,West Bengal,Kolkata,"Herrera, Thomas and Elliott Museum",Zoo,1572,1,4,100,No,Friday,Architectural,Yes,2.9,Summer
+490,North-Eastern,Assam,Guwahati,Chaney Group Museum,Hill Station,1711,5,4,30,Yes,Tuesday,Architectural,Yes,3.3,Winter
+491,Central,Madhya Pradesh,Bhopal,Arias PLC Fort,Fort,1889,4,4.6,100,Yes,Wednesday,Environmental,Yes,4.2,Morning
+492,North-Eastern,Assam,Guwahati,"Barrett, Gutierrez and Thompson Fort",War Memorial,1660,3,4.2,100,Yes,Friday,Historical,No,3.6,Winter
+493,Eastern,West Bengal,Kolkata,Mcintyre Ltd Fort,Fort,2022,6,3.5,100,No,Thursday,Natural,No,3.2,Afternoon
+494,Northern,Delhi,Delhi,Schneider-Tanner Museum,Theme Park,1962,2,4.8,0,Yes,None,Architectural,Yes,3,Evening
+495,Southern,Tamil Nadu,Chennai,Curtis-Lambert Fort,Museum,1800,1,4.9,20,Yes,Monday,Architectural,No,0.5,Afternoon
+496,North-Eastern,Assam,Guwahati,Smith-May Fort,Tomb,1839,4,4.2,100,No,None,Religious,Yes,1.1,Morning
+497,North-Eastern,Assam,Guwahati,"Boone, Walton and Riley Memorial",War Memorial,1680,5,4.3,100,Yes,Thursday,Religious,Yes,4.7,Afternoon
+498,Southern,Kerala,Kochi,"Crosby, Thompson and Evans Park",War Memorial,1731,3,4.9,50,Yes,Monday,Cultural,No,3.5,Morning
+499,Southern,Tamil Nadu,Chennai,Stewart-Johnson Memorial,Lake,1832,1,4.4,20,Yes,Wednesday,Cultural,No,3.8,Summer
+500,Eastern,Odisha,Bhubaneswar,Harvey LLC Memorial,Fort,1503,3,4.7,0,Yes,Friday,Architectural,Yes,4.3,Evening
+501,Northern,Uttar Pradesh,Agra,Manning Inc Temple,Temple,1943,4,4.1,20,Yes,Tuesday,Religious,Yes,3.4,Morning
+502,North-Eastern,Assam,Guwahati,Garza PLC Fort,Hill Station,1546,1,3.8,30,Yes,Wednesday,Natural,Yes,0.3,Morning
+503,Western,Rajasthan,Jaipur,"Price, Jennings and Ingram Fort",War Memorial,1963,5,4.1,50,Yes,Monday,Natural,Yes,4.5,Winter
+504,Western,Maharashtra,Mumbai,"Howard, Powell and Glover Temple",Zoo,1674,6,4.7,20,Yes,Monday,Historical,Yes,4.8,Winter
+505,North-Eastern,Meghalaya,Shillong,Campbell Group Memorial,Tomb,1818,3,4.1,10,No,None,Cultural,No,1.7,Summer
+506,North-Eastern,Assam,Guwahati,"Pham, Turner and Scott Memorial",Museum,1844,1,3.5,0,Yes,Sunday,Religious,No,4.6,Summer
+507,North-Eastern,Meghalaya,Shillong,Alvarez-Singleton Museum,Fort,1686,1,3.6,50,Yes,Friday,Architectural,No,0.3,Summer
+508,Northern,Uttar Pradesh,Agra,Lynch Group Fort,Museum,1518,4,4.5,30,No,None,Cultural,No,3.6,Morning
+509,Eastern,West Bengal,Kolkata,"Murray, Mayer and Gonzales Memorial",Museum,1962,6,4.8,100,Yes,Thursday,Historical,No,0.3,Afternoon
+510,Eastern,West Bengal,Kolkata,"Kim, Andrews and Murphy Temple",Zoo,1591,3,4,0,Yes,Friday,Historical,Yes,3.9,Afternoon
+511,Eastern,West Bengal,Kolkata,Moody-Brown Temple,Temple,1936,1,3.6,20,Yes,Saturday,Cultural,Yes,1.2,Afternoon
+512,Northern,Uttar Pradesh,Agra,Simmons and Sons Park,Hill Station,1901,6,4.3,100,Yes,Wednesday,Cultural,No,4.5,Morning
+513,Central,Madhya Pradesh,Bhopal,Garza-Proctor Park,Temple,2011,5,4.1,30,Yes,Monday,Natural,No,3.6,Afternoon
+514,Central,Madhya Pradesh,Bhopal,Bennett-Burke Museum,Temple,1893,6,4,50,Yes,Wednesday,Historical,Yes,1.9,Summer
+515,Western,Rajasthan,Jaipur,"Knox, Russell and Walker Memorial",War Memorial,1763,4,4.8,50,Yes,Friday,Historical,No,4.1,Afternoon
+516,Northern,Delhi,Delhi,Smith-Lopez Park,Sanctuary,1851,3,4.1,30,Yes,Saturday,Architectural,No,3.7,Evening
+517,Western,Gujarat,Ahmedabad,Ford-King Fort,Sanctuary,2003,2,4.5,0,Yes,Saturday,Cultural,No,4.3,Afternoon
+518,Central,Madhya Pradesh,Bhopal,Mcfarland-Harrison Park,Tomb,1530,3,4.9,50,Yes,Monday,Architectural,No,4,Afternoon
+519,Southern,Tamil Nadu,Chennai,Reyes-Ross Temple,Museum,1917,4,5,0,Yes,Thursday,Architectural,No,0.5,Winter
+520,Southern,Kerala,Kochi,"Martinez, Thomas and Diaz Fort",Theme Park,1577,3,3.6,100,Yes,Tuesday,Historical,No,0.2,Morning
+521,North-Eastern,Meghalaya,Shillong,White Ltd Memorial,Theme Park,1760,1,3.5,20,No,Wednesday,Religious,Yes,4.1,Evening
+522,Northern,Uttar Pradesh,Agra,Kelly Ltd Museum,Sanctuary,1968,6,3.7,20,Yes,Saturday,Cultural,No,1.8,Winter
+523,Eastern,West Bengal,Kolkata,Wheeler-Boyd Temple,Fort,1713,3,4.2,20,Yes,Monday,Cultural,No,1.9,Winter
+524,North-Eastern,Assam,Guwahati,"Mendez, Evans and Cox Memorial",Museum,1705,4,4.9,50,Yes,None,Historical,Yes,3.9,Winter
+525,Eastern,West Bengal,Kolkata,Jenkins PLC Memorial,Tomb,2002,4,3.5,20,Yes,Saturday,Natural,No,2.3,Evening
+526,Eastern,Odisha,Bhubaneswar,White-Butler Fort,Sanctuary,1974,6,4,20,Yes,Sunday,Historical,No,3.9,Afternoon
+527,North-Eastern,Assam,Guwahati,"Flores, Sellers and Walker Fort",Sanctuary,1852,2,4.8,20,Yes,Thursday,Religious,No,4.6,Morning
+528,Southern,Tamil Nadu,Chennai,Taylor-Johns Fort,Sanctuary,1831,1,4.9,0,No,Friday,Natural,No,3.9,Evening
+529,Central,Madhya Pradesh,Bhopal,Ryan Inc Museum,Theme Park,2012,1,4.3,50,Yes,None,Cultural,No,4,Summer
+530,Eastern,West Bengal,Kolkata,Walsh-Quinn Memorial,Theme Park,1864,5,4.4,100,Yes,Saturday,Natural,Yes,3.3,Evening
+531,Central,Madhya Pradesh,Bhopal,Proctor and Sons Temple,Fort,1540,2,3.8,50,Yes,Saturday,Natural,No,3.4,Morning
+532,Northern,Delhi,Delhi,Stewart-Brooks Museum,Lake,1506,3,4.1,0,Yes,Wednesday,Cultural,Yes,0.4,Summer
+533,North-Eastern,Assam,Guwahati,Miller-Colon Park,Zoo,1874,6,4.8,30,Yes,Sunday,Environmental,Yes,4.8,Summer
+534,Northern,Uttar Pradesh,Agra,Brown-Kramer Memorial,Zoo,1987,2,4.2,30,Yes,Friday,Architectural,Yes,3,Morning
+535,Central,Madhya Pradesh,Bhopal,"Edwards, Pena and Shaw Temple",Museum,1594,4,4.8,50,Yes,Sunday,Religious,No,3,Evening
+536,Northern,Uttar Pradesh,Agra,Prince-Gomez Fort,Tomb,1701,1,4.7,30,Yes,None,Religious,No,1.7,Morning
+537,Central,Madhya Pradesh,Bhopal,"Thomas, Palmer and Bowen Park",Sanctuary,1934,4,4,0,Yes,Wednesday,Historical,Yes,1,Afternoon
+538,Southern,Tamil Nadu,Chennai,Jones Inc Memorial,Temple,1872,6,3.5,20,Yes,Friday,Environmental,Yes,1.3,Winter
+539,North-Eastern,Assam,Guwahati,Robinson-Myers Museum,Sanctuary,1908,3,4.8,100,Yes,Thursday,Architectural,Yes,0.9,Summer
+540,Southern,Tamil Nadu,Chennai,Green Inc Memorial,Zoo,1758,1,3.7,20,Yes,Sunday,Architectural,Yes,4,Morning
+541,Eastern,Odisha,Bhubaneswar,"Fields, Barber and Clarke Memorial",Temple,1844,5,3.6,50,No,Friday,Environmental,No,2.3,Evening
+542,Southern,Karnataka,Bengaluru,Diaz-Guzman Park,Theme Park,1607,3,4.1,50,Yes,Monday,Historical,Yes,0.2,Evening
+543,Northern,Punjab,Amritsar,"Clarke, Beard and Gregory Temple",Sanctuary,1948,3,4,0,Yes,Thursday,Architectural,Yes,1.2,Summer
+544,Southern,Tamil Nadu,Chennai,"Todd, Jones and Clark Park",Museum,2020,2,4.6,10,No,Saturday,Religious,No,0.8,Morning
+545,Western,Maharashtra,Mumbai,"Garza, Krueger and Ward Park",Museum,1887,6,4.5,30,No,Tuesday,Historical,Yes,0.8,Morning
+546,Southern,Tamil Nadu,Chennai,"Miller, Schwartz and Fletcher Fort",Tomb,1721,4,4.9,0,Yes,Wednesday,Historical,Yes,3.5,Morning
+547,Eastern,West Bengal,Kolkata,"Nelson, Elliott and Myers Fort",Museum,1910,5,4.7,50,Yes,Monday,Natural,No,0.4,Evening
+548,Northern,Uttar Pradesh,Agra,Hale Group Fort,Theme Park,1592,5,4.1,0,Yes,None,Historical,No,3.2,Winter
+549,Southern,Kerala,Kochi,Lara-Russell Museum,Sanctuary,1883,5,4.2,100,Yes,Tuesday,Architectural,Yes,2.2,Afternoon
+550,Western,Maharashtra,Mumbai,"Nguyen, Lyons and Johnson Temple",Fort,1717,3,4.7,20,Yes,Thursday,Cultural,Yes,4,Evening
+551,Northern,Punjab,Amritsar,Little-Burnett Memorial,Temple,1674,4,4.3,50,Yes,Wednesday,Cultural,No,4.9,Morning
+552,Western,Rajasthan,Jaipur,Mccoy Group Fort,Sanctuary,1787,1,3.7,0,No,Tuesday,Environmental,No,2.8,Evening
+553,North-Eastern,Meghalaya,Shillong,"Anderson, Lee and Galloway Memorial",Fort,1776,4,5,10,Yes,Wednesday,Environmental,No,1.3,Summer
+554,Central,Madhya Pradesh,Bhopal,"Mathews, Floyd and Larson Memorial",Theme Park,1712,2,4.9,100,Yes,Monday,Religious,Yes,4.8,Summer
+555,Eastern,Odisha,Bhubaneswar,"Johnson, Sharp and Smith Memorial",Lake,1908,2,3.8,10,Yes,Sunday,Historical,Yes,5,Summer
+556,Western,Gujarat,Ahmedabad,Khan-Sexton Temple,Museum,1684,5,4.2,20,No,Saturday,Environmental,No,1,Summer
+557,Central,Madhya Pradesh,Bhopal,Mendez-Poole Temple,Tomb,1756,1,3.9,0,Yes,Wednesday,Cultural,Yes,2.3,Summer
+558,Western,Rajasthan,Jaipur,"Floyd, Johnson and Roy Memorial",Fort,1772,1,4.6,50,Yes,Thursday,Environmental,Yes,5,Afternoon
+559,Southern,Kerala,Kochi,Medina and Sons Memorial,Fort,1721,3,4.6,20,Yes,Saturday,Environmental,No,3.5,Summer
+560,North-Eastern,Meghalaya,Shillong,Martin-Crawford Temple,Museum,1983,4,3.7,50,Yes,None,Religious,Yes,4.7,Winter
+561,Southern,Karnataka,Bengaluru,"Lowe, Barber and Rivas Park",Hill Station,1636,4,3.7,10,Yes,Tuesday,Historical,No,2.5,Afternoon
+562,Central,Madhya Pradesh,Bhopal,Dominguez-Morris Museum,Theme Park,1705,4,4.2,30,Yes,Sunday,Architectural,Yes,1,Summer
+563,Northern,Delhi,Delhi,Colon-Macias Park,Zoo,1890,6,4.1,50,Yes,Tuesday,Cultural,Yes,1.2,Afternoon
+564,North-Eastern,Assam,Guwahati,Martin-Morse Fort,Theme Park,1658,4,4.5,10,Yes,Tuesday,Historical,Yes,1.6,Winter
+565,North-Eastern,Assam,Guwahati,Wright-Patterson Temple,Sanctuary,1993,6,4.7,30,Yes,Thursday,Environmental,Yes,1.9,Afternoon
+566,Eastern,West Bengal,Kolkata,"Mcbride, Johnson and Nunez Museum",Tomb,1572,3,4.1,30,Yes,Wednesday,Architectural,No,4.3,Summer
+567,North-Eastern,Meghalaya,Shillong,"Ramsey, Carrillo and Cox Park",Zoo,1820,2,3.6,20,No,Sunday,Natural,No,3.9,Summer
+568,Western,Gujarat,Ahmedabad,Thompson LLC Museum,Hill Station,1952,2,5,100,Yes,Thursday,Natural,Yes,1.5,Afternoon
+569,Eastern,Odisha,Bhubaneswar,Clark Ltd Temple,Lake,1691,1,4.6,0,Yes,Thursday,Natural,No,1.1,Summer
+570,Western,Gujarat,Ahmedabad,"Hernandez, Gardner and Robinson Park",Tomb,1669,5,3.6,30,Yes,Wednesday,Historical,Yes,4.4,Morning
+571,Southern,Karnataka,Bengaluru,"Willis, Bartlett and Caldwell Fort",Fort,1527,6,3.7,10,Yes,Saturday,Cultural,Yes,2.7,Summer
+572,Northern,Uttar Pradesh,Agra,"Crosby, Chambers and Walker Fort",Sanctuary,1788,3,3.5,30,Yes,Friday,Environmental,No,0.9,Evening
+573,Eastern,West Bengal,Kolkata,"Martinez, Bates and Mitchell Memorial",Temple,1899,4,4.7,50,Yes,Tuesday,Cultural,Yes,2.4,Morning
+574,North-Eastern,Assam,Guwahati,Evans-Terry Park,Zoo,1707,1,4.8,100,Yes,Wednesday,Cultural,No,0.1,Morning
+575,Central,Madhya Pradesh,Bhopal,Roberts-Dudley Fort,Sanctuary,1915,5,3.6,20,Yes,Wednesday,Historical,No,1.2,Evening
+576,Eastern,West Bengal,Kolkata,Valenzuela-Bowers Fort,Zoo,1502,4,3.7,0,Yes,Monday,Natural,No,3.9,Winter
+577,Eastern,Odisha,Bhubaneswar,Fox Group Temple,Tomb,1834,2,4.3,100,Yes,None,Architectural,Yes,0.1,Winter
+578,Western,Maharashtra,Mumbai,Hernandez Ltd Temple,Fort,1908,3,5,10,Yes,Wednesday,Cultural,No,1.2,Evening
+579,North-Eastern,Assam,Guwahati,Brewer PLC Park,Temple,1615,6,4.3,10,Yes,Wednesday,Natural,Yes,3.8,Summer
+580,North-Eastern,Meghalaya,Shillong,Holloway-Robinson Museum,Temple,1520,6,4.9,30,Yes,Saturday,Natural,No,0.2,Afternoon
+581,Southern,Karnataka,Bengaluru,"Castillo, Perez and Hernandez Museum",Fort,1812,5,4.2,0,Yes,Monday,Religious,Yes,1.4,Morning
+582,Southern,Karnataka,Bengaluru,"Noble, Juarez and Gross Temple",Fort,1924,3,3.9,50,Yes,None,Cultural,Yes,0.3,Summer
+583,Southern,Tamil Nadu,Chennai,"Obrien, Jones and Maldonado Memorial",Zoo,1804,6,4.8,20,Yes,Thursday,Architectural,No,0.2,Winter
+584,Northern,Punjab,Amritsar,Brennan-Young Fort,Fort,1720,3,4.2,0,Yes,Thursday,Natural,Yes,0.6,Summer
+585,Northern,Uttar Pradesh,Agra,Wallace-Mitchell Memorial,Tomb,1982,5,4.9,50,Yes,Tuesday,Architectural,Yes,4.7,Winter
+586,Eastern,Odisha,Bhubaneswar,Hill Ltd Temple,Lake,1538,2,3.7,0,Yes,Tuesday,Architectural,Yes,3.6,Afternoon
+587,Eastern,Odisha,Bhubaneswar,Owens Inc Temple,Hill Station,1680,2,4.7,0,Yes,Friday,Architectural,No,2.3,Winter
+588,North-Eastern,Assam,Guwahati,"Welch, Elliott and Henry Fort",Museum,1561,5,4,100,Yes,Thursday,Architectural,Yes,4.2,Morning
+589,Western,Gujarat,Ahmedabad,"Hanna, Murray and Williams Temple",Tomb,1614,5,4,20,Yes,Friday,Religious,Yes,4,Summer
+590,North-Eastern,Assam,Guwahati,Campbell Ltd Memorial,Tomb,1786,1,4.1,50,Yes,Monday,Architectural,No,0.1,Evening
+591,Northern,Uttar Pradesh,Agra,"Robinson, Rose and Graham Fort",Fort,1568,1,4.5,50,Yes,Monday,Religious,No,1.4,Afternoon
+592,Eastern,West Bengal,Kolkata,Simon-Huff Park,Theme Park,1748,4,5,20,Yes,Thursday,Cultural,No,3.9,Evening
+593,North-Eastern,Assam,Guwahati,"Blackburn, Rogers and Wood Fort",Sanctuary,1627,1,3.7,30,No,Saturday,Architectural,No,4.3,Afternoon
+594,Southern,Karnataka,Bengaluru,"Kelly, Hernandez and Hayes Memorial",Theme Park,1938,6,4.8,10,Yes,Saturday,Architectural,Yes,1.7,Winter
+595,Southern,Karnataka,Bengaluru,"Jones, Smith and Rice Temple",Zoo,1656,2,4.9,0,Yes,Friday,Religious,Yes,3.4,Summer
+596,North-Eastern,Meghalaya,Shillong,Wood Ltd Park,Museum,1906,2,4.1,50,Yes,Wednesday,Natural,No,2.5,Morning
+597,Western,Rajasthan,Jaipur,"Day, Bennett and Nelson Park",Tomb,1811,1,4.4,0,Yes,Tuesday,Religious,No,1.5,Morning
+598,Northern,Punjab,Amritsar,Mckenzie LLC Park,Hill Station,2014,1,3.8,10,Yes,Saturday,Natural,No,3.2,Evening
+599,Central,Madhya Pradesh,Bhopal,"Fry, Carroll and Kelly Museum",Zoo,1855,5,3.7,20,Yes,Thursday,Environmental,Yes,4.7,Winter
+600,Central,Madhya Pradesh,Bhopal,Martin-Robertson Temple,Museum,1505,6,3.9,0,Yes,Sunday,Religious,No,4.7,Evening
+601,Eastern,West Bengal,Kolkata,Jenkins-Webb Fort,War Memorial,1893,4,3.8,50,Yes,Thursday,Architectural,No,3.5,Evening
+602,Central,Madhya Pradesh,Bhopal,Miller-Allen Park,Fort,1969,5,4.2,10,Yes,Monday,Historical,No,1.6,Summer
+603,Southern,Kerala,Kochi,Gross Group Temple,Temple,1897,5,3.6,30,Yes,Saturday,Architectural,Yes,4.1,Afternoon
+604,Central,Madhya Pradesh,Bhopal,Lee LLC Fort,Sanctuary,1751,6,4.1,0,Yes,Wednesday,Architectural,No,3.1,Afternoon
+605,North-Eastern,Meghalaya,Shillong,Clements LLC Memorial,Hill Station,1788,6,4.6,0,Yes,Saturday,Historical,Yes,3.9,Afternoon
+606,Eastern,Odisha,Bhubaneswar,Fletcher-Davis Museum,Hill Station,1993,1,4.9,50,Yes,Friday,Environmental,Yes,1.6,Afternoon
+607,Western,Maharashtra,Mumbai,Rogers-Hughes Fort,Temple,1866,1,4.5,0,Yes,None,Historical,Yes,0.9,Afternoon
+608,North-Eastern,Meghalaya,Shillong,Parker-Humphrey Fort,Sanctuary,1684,3,4.4,0,Yes,Thursday,Religious,No,4.6,Afternoon
+609,Northern,Uttar Pradesh,Agra,Martin Ltd Park,Sanctuary,1962,3,4.4,100,Yes,Sunday,Religious,Yes,1.8,Winter
+610,Southern,Tamil Nadu,Chennai,Martin-Jefferson Memorial,Museum,1652,6,4,0,Yes,Saturday,Historical,Yes,4.6,Summer
+611,Northern,Punjab,Amritsar,"Wilson, Garcia and Phillips Temple",Lake,1636,2,3.9,50,Yes,None,Natural,No,2.1,Summer
+612,Northern,Uttar Pradesh,Agra,Washington and Sons Park,Tomb,1820,3,4.5,100,Yes,None,Environmental,Yes,1.1,Summer
+613,Northern,Uttar Pradesh,Agra,Kelly PLC Museum,Tomb,1657,4,4.5,50,Yes,Monday,Architectural,No,0.8,Winter
+614,Southern,Tamil Nadu,Chennai,"Flynn, Espinoza and Henson Park",Hill Station,1709,2,4.4,30,Yes,Thursday,Natural,No,3.6,Winter
+615,Eastern,Odisha,Bhubaneswar,Holland and Sons Museum,Lake,1967,2,4.4,100,Yes,Tuesday,Cultural,No,2.6,Winter
+616,Central,Madhya Pradesh,Bhopal,Lopez-Mcfarland Fort,Sanctuary,1606,3,3.6,10,Yes,Wednesday,Environmental,No,2.6,Winter
+617,Eastern,Odisha,Bhubaneswar,Peterson-Peters Park,Temple,1910,6,4.2,0,Yes,Monday,Natural,Yes,4,Winter
+618,Western,Maharashtra,Mumbai,"Bailey, Thomas and Richards Temple",Temple,1619,4,4.5,0,Yes,Wednesday,Religious,No,3.5,Afternoon
+619,Central,Madhya Pradesh,Bhopal,Ferguson Group Fort,Lake,1948,3,3.8,100,Yes,Monday,Architectural,Yes,1.4,Afternoon
+620,Northern,Punjab,Amritsar,"Sanchez, Valdez and Ramos Memorial",Hill Station,1989,1,4.9,10,Yes,Wednesday,Cultural,No,3.1,Evening
+621,Northern,Uttar Pradesh,Agra,Odom Inc Temple,Lake,1669,6,4.7,10,Yes,Wednesday,Architectural,No,3.7,Morning
+622,Northern,Delhi,Delhi,"Daniels, Lawson and Hart Museum",Lake,1527,2,4.2,50,Yes,Wednesday,Historical,Yes,2.3,Morning
+623,Central,Madhya Pradesh,Bhopal,Perez Group Park,Hill Station,1734,5,3.9,0,Yes,Sunday,Historical,No,3,Morning
+624,Southern,Kerala,Kochi,Dennis Ltd Memorial,War Memorial,1776,2,4.1,30,No,Thursday,Architectural,No,1,Summer
+625,North-Eastern,Meghalaya,Shillong,Sanders Inc Fort,War Memorial,1807,3,4.1,100,Yes,Thursday,Environmental,No,4.8,Winter
+626,Central,Madhya Pradesh,Bhopal,Clayton Ltd Temple,Temple,1981,6,4.8,50,Yes,None,Cultural,No,4.1,Afternoon
+627,Southern,Kerala,Kochi,Farmer PLC Temple,Theme Park,1842,1,5,50,Yes,Monday,Religious,Yes,1.4,Morning
+628,Southern,Tamil Nadu,Chennai,"Bender, Wilson and Ortega Memorial",Museum,1969,2,4.3,20,Yes,Thursday,Natural,Yes,2.9,Summer
+629,North-Eastern,Assam,Guwahati,"Robertson, Morgan and Gonzalez Museum",Tomb,1728,5,3.7,0,Yes,Thursday,Environmental,No,2.4,Evening
+630,Western,Maharashtra,Mumbai,"Davis, Miller and Solis Museum",Tomb,1957,6,4.5,10,Yes,Monday,Architectural,No,0.8,Summer
+631,Eastern,Odisha,Bhubaneswar,Gonzalez-Osborne Memorial,Theme Park,1693,2,4.8,50,Yes,None,Historical,No,1.9,Evening
+632,Northern,Uttar Pradesh,Agra,Pierce-Gomez Temple,Museum,1518,6,4.6,20,Yes,None,Natural,Yes,4.4,Morning
+633,Southern,Kerala,Kochi,"Edwards, Medina and Gordon Memorial",Temple,1573,3,4.2,50,Yes,Monday,Environmental,No,0.8,Morning
+634,Northern,Delhi,Delhi,"Diaz, Vaughan and Mills Museum",Theme Park,1869,2,4.4,50,Yes,Sunday,Architectural,Yes,2.2,Evening
+635,Southern,Tamil Nadu,Chennai,"Duarte, Cunningham and Wagner Museum",Hill Station,1844,5,3.7,20,No,Friday,Natural,No,4.2,Evening
+636,Western,Gujarat,Ahmedabad,Serrano and Sons Park,Hill Station,1564,5,4.7,0,Yes,Wednesday,Architectural,No,2.9,Morning
+637,Northern,Uttar Pradesh,Agra,"Watkins, Johnson and Jones Memorial",War Memorial,1697,1,3.7,30,Yes,Saturday,Architectural,No,2.5,Evening
+638,Eastern,Odisha,Bhubaneswar,Steele LLC Fort,Tomb,1800,3,4.4,10,Yes,Friday,Environmental,No,2.6,Winter
+639,Eastern,West Bengal,Kolkata,Hernandez Inc Museum,Sanctuary,1959,4,4.4,10,Yes,Thursday,Environmental,No,3.2,Summer
+640,Eastern,Odisha,Bhubaneswar,"Pena, Boyer and Martinez Museum",Tomb,1683,2,4.2,100,Yes,Wednesday,Religious,No,4.8,Evening
+641,North-Eastern,Assam,Guwahati,Miller-Lopez Fort,Lake,1644,3,4.6,50,Yes,Monday,Cultural,No,2.6,Morning
+642,Southern,Karnataka,Bengaluru,Frazier-Zamora Memorial,Museum,1630,2,4.5,30,Yes,Friday,Cultural,No,4.5,Summer
+643,Western,Maharashtra,Mumbai,Williams and Sons Fort,Museum,1620,5,3.7,50,Yes,Wednesday,Historical,No,3.1,Evening
+644,North-Eastern,Meghalaya,Shillong,"Chavez, Nicholson and Bullock Park",Tomb,1737,1,3.6,100,No,Thursday,Architectural,Yes,3.4,Morning
+645,North-Eastern,Meghalaya,Shillong,Wright-Cannon Fort,Hill Station,1993,1,3.7,0,Yes,Saturday,Religious,Yes,1.1,Summer
+646,Eastern,West Bengal,Kolkata,Williams-Ritter Museum,Zoo,1693,5,4.1,20,Yes,Thursday,Religious,Yes,0.9,Summer
+647,Southern,Tamil Nadu,Chennai,Black Group Memorial,Sanctuary,1680,3,4.1,10,Yes,None,Environmental,No,3.8,Morning
+648,Southern,Karnataka,Bengaluru,"Pham, Simpson and Lopez Museum",Museum,1570,3,4.7,0,Yes,Monday,Environmental,Yes,0.4,Winter
+649,Southern,Kerala,Kochi,"Moore, Foster and Watson Park",Tomb,1646,3,4.5,100,Yes,Wednesday,Historical,No,2,Evening
+650,Eastern,West Bengal,Kolkata,Cooper-Anderson Memorial,War Memorial,1861,4,3.5,100,Yes,Saturday,Religious,No,3.8,Morning
+651,Eastern,Odisha,Bhubaneswar,"Gutierrez, Jacobs and Patterson Museum",War Memorial,1630,1,3.7,50,Yes,Tuesday,Historical,Yes,1.6,Winter
+652,Western,Rajasthan,Jaipur,Taylor-Young Temple,Lake,1802,4,4.1,50,Yes,Wednesday,Natural,No,3.6,Evening
+653,Southern,Karnataka,Bengaluru,Wright and Sons Park,Lake,1811,6,4.3,20,Yes,Sunday,Cultural,Yes,3.8,Winter
+654,Western,Gujarat,Ahmedabad,Scott-Boyd Fort,War Memorial,1842,4,4.6,30,Yes,Wednesday,Architectural,Yes,0.5,Summer
+655,Southern,Tamil Nadu,Chennai,"White, Jarvis and Graves Park",Lake,2007,3,3.7,100,Yes,None,Natural,No,1.4,Winter
+656,Western,Maharashtra,Mumbai,Park Inc Park,Sanctuary,1773,1,4.8,0,Yes,None,Religious,No,1,Morning
+657,North-Eastern,Meghalaya,Shillong,Peters Group Park,War Memorial,1644,4,4.2,0,Yes,Wednesday,Historical,No,3.1,Morning
+658,Southern,Kerala,Kochi,James-Rogers Memorial,Sanctuary,1945,2,4.7,20,Yes,None,Historical,No,4.6,Summer
+659,North-Eastern,Assam,Guwahati,Elliott and Sons Fort,Hill Station,1609,2,4.2,30,Yes,Saturday,Architectural,Yes,1.8,Morning
+660,Southern,Tamil Nadu,Chennai,"Vazquez, Velez and Beard Fort",Hill Station,1563,1,3.6,0,Yes,Tuesday,Historical,No,0.1,Winter
+661,Eastern,Odisha,Bhubaneswar,Smith-Gonzales Museum,Temple,1620,2,4,50,Yes,Sunday,Environmental,No,2.5,Evening
+662,Western,Rajasthan,Jaipur,Rodriguez-Norton Fort,Sanctuary,1903,1,4.7,100,Yes,Wednesday,Cultural,Yes,4.5,Evening
+663,Western,Rajasthan,Jaipur,"Burns, Villarreal and Cohen Museum",Museum,1593,2,4.8,50,Yes,Wednesday,Architectural,No,2.7,Summer
+664,North-Eastern,Assam,Guwahati,Weaver and Sons Temple,War Memorial,1945,4,4,20,Yes,Saturday,Cultural,No,4.7,Afternoon
+665,Southern,Kerala,Kochi,Murphy-Cooke Park,Museum,1890,1,3.6,0,Yes,Sunday,Architectural,Yes,0.3,Winter
+666,Northern,Punjab,Amritsar,Stevens-Cook Museum,Museum,1706,2,4.9,20,No,None,Natural,Yes,2,Afternoon
+667,Northern,Punjab,Amritsar,"White, Garcia and Fisher Park",Museum,1765,2,3.6,0,Yes,Sunday,Historical,No,4.6,Winter
+668,Central,Madhya Pradesh,Bhopal,Mcdonald-Cook Park,War Memorial,1975,3,4,100,Yes,Monday,Architectural,No,0.1,Summer
+669,Northern,Uttar Pradesh,Agra,Jenkins-Ward Park,Theme Park,1936,3,4.9,100,Yes,Thursday,Historical,No,0.1,Morning
+670,Central,Madhya Pradesh,Bhopal,"Crawford, Franklin and Hughes Fort",Fort,1655,1,4.9,0,Yes,Tuesday,Religious,No,0.6,Summer
+671,North-Eastern,Meghalaya,Shillong,Bryant-Young Memorial,Sanctuary,2019,3,4.9,100,Yes,Friday,Historical,Yes,2.1,Summer
+672,Western,Rajasthan,Jaipur,Norris-Perez Fort,Lake,1698,3,4.7,10,Yes,Monday,Environmental,Yes,3.2,Evening
+673,Southern,Kerala,Kochi,"Johnson, Thomas and Torres Park",Museum,1635,4,4.3,50,Yes,Sunday,Environmental,No,0.2,Morning
+674,Northern,Punjab,Amritsar,Williams Ltd Memorial,Temple,1531,5,4.9,50,Yes,Friday,Architectural,Yes,4.1,Afternoon
+675,Southern,Karnataka,Bengaluru,"Parrish, Smith and Reynolds Fort",Zoo,1757,5,4.1,50,Yes,Saturday,Religious,No,1.4,Summer
+676,Central,Madhya Pradesh,Bhopal,Cook-Wells Memorial,Tomb,1606,2,3.6,10,Yes,Saturday,Architectural,Yes,1.6,Summer
+677,Central,Madhya Pradesh,Bhopal,Fletcher and Sons Museum,Theme Park,1665,5,3.8,10,Yes,Sunday,Religious,No,0.5,Winter
+678,Northern,Uttar Pradesh,Agra,Smith and Sons Fort,Tomb,1976,2,4.3,50,No,Friday,Cultural,Yes,3.1,Morning
+679,Southern,Tamil Nadu,Chennai,Bailey LLC Temple,Theme Park,1943,2,4.5,20,Yes,Saturday,Historical,No,4.5,Winter
+680,Northern,Uttar Pradesh,Agra,Moore-Smith Park,War Memorial,1782,2,4.1,50,No,None,Natural,No,1.4,Morning
+681,Northern,Delhi,Delhi,"Barton, Hill and Cook Museum",Tomb,1839,1,4.9,30,Yes,Tuesday,Historical,Yes,2.5,Summer
+682,Northern,Punjab,Amritsar,Cline Group Fort,Zoo,1663,4,3.8,100,Yes,Saturday,Religious,No,2.7,Summer
+683,Southern,Tamil Nadu,Chennai,Jones and Sons Museum,Fort,1954,4,4.3,50,Yes,Thursday,Architectural,Yes,0.8,Afternoon
+684,Central,Madhya Pradesh,Bhopal,Lopez Group Temple,Zoo,1991,4,5,10,Yes,Thursday,Historical,No,3.2,Morning
+685,North-Eastern,Assam,Guwahati,Turner LLC Fort,Tomb,1695,6,4.5,100,Yes,Monday,Architectural,No,4.9,Summer
+686,North-Eastern,Meghalaya,Shillong,Doyle Inc Temple,Lake,2018,2,4.1,20,Yes,Sunday,Cultural,No,3,Afternoon
+687,Southern,Kerala,Kochi,Owens-Hayes Park,Tomb,1545,1,5,50,Yes,None,Historical,No,2.9,Winter
+688,Southern,Kerala,Kochi,"Weaver, Solis and Rogers Memorial",Sanctuary,1858,5,4.9,0,Yes,Saturday,Natural,Yes,1.1,Morning
+689,Northern,Punjab,Amritsar,Brooks-Carr Temple,Hill Station,1611,6,3.7,100,Yes,Tuesday,Historical,No,2.6,Summer
+690,Southern,Kerala,Kochi,"Mcclure, Bishop and Owen Memorial",Zoo,1766,4,3.6,10,No,Sunday,Architectural,No,0.9,Summer
+691,North-Eastern,Assam,Guwahati,Patterson-Fields Temple,Tomb,1863,4,3.9,30,Yes,None,Cultural,Yes,1.6,Summer
+692,Central,Madhya Pradesh,Bhopal,Pennington Group Memorial,Theme Park,1589,2,3.7,10,Yes,Tuesday,Architectural,No,0.9,Winter
+693,North-Eastern,Meghalaya,Shillong,"Wilson, Benitez and Dixon Memorial",Museum,1541,1,4.2,100,Yes,Tuesday,Religious,Yes,3.1,Evening
+694,Eastern,Odisha,Bhubaneswar,"King, Steele and Miller Museum",Theme Park,2015,2,4.4,20,Yes,Thursday,Religious,No,0.5,Summer
+695,North-Eastern,Meghalaya,Shillong,Skinner-Walker Fort,Fort,1918,5,4.5,10,No,Wednesday,Cultural,No,4.5,Summer
+696,Eastern,West Bengal,Kolkata,Sanchez-Lawson Museum,Hill Station,1513,1,4.1,10,No,Saturday,Historical,No,0.8,Winter
+697,Central,Madhya Pradesh,Bhopal,"Jackson, Villa and Huber Memorial",War Memorial,1789,5,4.9,50,Yes,Wednesday,Environmental,No,1.1,Afternoon
+698,Southern,Kerala,Kochi,Miller-Rodriguez Park,Sanctuary,1701,1,3.6,100,Yes,Friday,Religious,No,1.3,Afternoon
+699,Eastern,Odisha,Bhubaneswar,Shaffer PLC Fort,Temple,1946,1,3.8,10,Yes,Saturday,Natural,No,2.1,Summer
+700,Northern,Uttar Pradesh,Agra,Haynes-Dyer Memorial,Zoo,1887,4,3.8,100,Yes,Wednesday,Architectural,No,2.8,Evening
+701,North-Eastern,Meghalaya,Shillong,Mcdonald-Dunn Memorial,Theme Park,1540,2,4.3,0,Yes,Tuesday,Architectural,No,1.3,Summer
+702,Western,Gujarat,Ahmedabad,"Lee, Colon and Lee Museum",Tomb,1936,2,3.5,50,Yes,None,Natural,No,3.5,Winter
+703,Central,Madhya Pradesh,Bhopal,"Hancock, Carter and Wiggins Park",Fort,1999,3,3.6,20,Yes,Monday,Natural,No,3.1,Summer
+704,Northern,Uttar Pradesh,Agra,Hall-Rios Temple,Tomb,1519,3,4,50,No,Sunday,Architectural,No,2.1,Morning
+705,Eastern,Odisha,Bhubaneswar,Fletcher-Bailey Museum,Lake,1616,1,3.8,20,No,Thursday,Architectural,No,3.2,Evening
+706,Western,Maharashtra,Mumbai,Carlson Ltd Museum,Sanctuary,1774,4,4.3,100,Yes,Saturday,Cultural,No,3.3,Summer
+707,North-Eastern,Meghalaya,Shillong,Park Inc Museum,Tomb,1725,1,4.5,10,Yes,Friday,Cultural,Yes,2.7,Winter
+708,Northern,Punjab,Amritsar,Curtis-Gill Park,Lake,2008,4,4.4,100,Yes,Monday,Architectural,Yes,1.1,Evening
+709,Northern,Delhi,Delhi,"Smith, Jenkins and Mills Museum",Sanctuary,1651,5,4.2,0,Yes,None,Architectural,No,3.7,Morning
+710,Western,Rajasthan,Jaipur,Roberts-Hart Museum,Hill Station,1917,1,4.7,50,Yes,Saturday,Natural,No,4.2,Morning
+711,Central,Madhya Pradesh,Bhopal,"Reid, Chapman and Gonzales Memorial",Fort,1878,5,5,30,Yes,Wednesday,Environmental,Yes,1.1,Evening
+712,Eastern,West Bengal,Kolkata,Johnson PLC Museum,Hill Station,1581,1,3.8,10,Yes,Friday,Natural,Yes,1.2,Winter
+713,Western,Maharashtra,Mumbai,Mathews and Sons Temple,Temple,1797,1,4.3,30,Yes,Sunday,Religious,Yes,2.4,Morning
+714,Southern,Kerala,Kochi,Smith-Beltran Memorial,Temple,1943,1,3.7,30,No,Wednesday,Environmental,No,2,Morning
+715,Eastern,West Bengal,Kolkata,Johnson-Anderson Fort,Zoo,1648,3,3.9,10,Yes,Tuesday,Environmental,Yes,3.6,Morning
+716,North-Eastern,Meghalaya,Shillong,Barrett-Jones Memorial,Theme Park,1619,6,4,100,Yes,Thursday,Historical,Yes,1.7,Evening
+717,Western,Rajasthan,Jaipur,Perry Group Park,Theme Park,1668,3,3.7,30,Yes,Thursday,Religious,Yes,0.5,Evening
+718,North-Eastern,Meghalaya,Shillong,Nolan Ltd Temple,Fort,1760,5,4.5,20,Yes,None,Environmental,No,0.5,Summer
+719,Southern,Tamil Nadu,Chennai,"Jennings, Levine and Hicks Temple",Fort,1519,4,4.7,50,Yes,Wednesday,Cultural,Yes,3.5,Summer
+720,Central,Madhya Pradesh,Bhopal,Davis and Sons Fort,Fort,1633,6,3.5,10,Yes,Sunday,Natural,Yes,3,Afternoon
+721,Eastern,West Bengal,Kolkata,"Shaffer, Anderson and Travis Park",Hill Station,1640,5,4.3,20,Yes,None,Natural,No,0.7,Evening
+722,North-Eastern,Assam,Guwahati,"Frey, Compton and Gardner Fort",Tomb,1704,4,3.8,10,Yes,Saturday,Historical,No,3.3,Evening
+723,North-Eastern,Meghalaya,Shillong,Rodgers Inc Park,Museum,1806,2,4.3,50,No,Saturday,Historical,Yes,4.4,Evening
+724,Central,Madhya Pradesh,Bhopal,Johnson-Burns Fort,Lake,1824,4,4.3,50,Yes,Saturday,Environmental,No,0.9,Winter
+725,North-Eastern,Meghalaya,Shillong,Ray-Martin Museum,Fort,1870,5,4.1,50,Yes,Tuesday,Architectural,Yes,4.2,Evening
+726,North-Eastern,Assam,Guwahati,"Miller, Perez and Steele Park",Tomb,1746,3,3.9,50,No,Tuesday,Historical,Yes,0.9,Afternoon
+727,Western,Maharashtra,Mumbai,"Day, Oconnor and Evans Memorial",Lake,1952,4,4.8,100,Yes,Wednesday,Cultural,Yes,4.2,Winter
+728,Southern,Kerala,Kochi,Hernandez LLC Museum,Sanctuary,1691,1,3.9,100,Yes,Tuesday,Historical,Yes,4.5,Afternoon
+729,Northern,Uttar Pradesh,Agra,Diaz-Romero Temple,Tomb,1526,1,4.5,10,Yes,Thursday,Environmental,No,3.6,Afternoon
+730,North-Eastern,Assam,Guwahati,Rodriguez-Gordon Memorial,Hill Station,1640,2,4.8,30,No,Friday,Architectural,No,3,Winter
+731,Eastern,West Bengal,Kolkata,Holland and Sons Memorial,Museum,1806,5,4.6,30,No,Monday,Cultural,Yes,2.7,Morning
+732,North-Eastern,Meghalaya,Shillong,Nash PLC Park,Zoo,1896,2,4.2,30,Yes,Wednesday,Environmental,No,3.9,Evening
+733,Central,Madhya Pradesh,Bhopal,"Gill, Figueroa and Brown Park",Lake,1942,2,4.9,20,No,Friday,Environmental,Yes,2.4,Summer
+734,Western,Maharashtra,Mumbai,"Bradford, Wheeler and Benjamin Park",Tomb,1679,2,4.2,10,Yes,None,Historical,No,2.7,Afternoon
+735,North-Eastern,Assam,Guwahati,Shea PLC Temple,Sanctuary,1809,1,3.7,50,No,Saturday,Religious,Yes,4.2,Afternoon
+736,North-Eastern,Assam,Guwahati,Bradshaw Ltd Museum,Lake,1561,2,3.7,20,No,Thursday,Natural,Yes,5,Morning
+737,Northern,Punjab,Amritsar,Lowe-Mueller Fort,Theme Park,1631,3,4.8,100,Yes,Wednesday,Architectural,Yes,2.3,Summer
+738,Central,Madhya Pradesh,Bhopal,Mcdonald-Estrada Temple,Fort,1726,4,4.6,0,Yes,None,Natural,No,3.7,Winter
+739,Eastern,West Bengal,Kolkata,Wilson Inc Park,Temple,1858,3,4.2,50,Yes,Thursday,Religious,Yes,5,Afternoon
+740,Northern,Uttar Pradesh,Agra,Johnson Ltd Museum,Sanctuary,1584,6,4.6,0,Yes,Tuesday,Environmental,Yes,3,Summer
+741,Eastern,West Bengal,Kolkata,"Hoffman, Fisher and Nichols Memorial",Hill Station,1619,4,5,20,Yes,Thursday,Historical,No,3.4,Afternoon
+742,Central,Madhya Pradesh,Bhopal,Marks-Moore Memorial,Temple,1579,4,4.9,20,Yes,Sunday,Cultural,No,2.7,Evening
+743,Eastern,West Bengal,Kolkata,Thompson PLC Park,Tomb,1518,6,3.8,0,Yes,Wednesday,Natural,No,4.2,Evening
+744,Northern,Delhi,Delhi,Griffith Inc Fort,Sanctuary,1715,4,4.2,30,Yes,None,Environmental,No,1,Winter
+745,Central,Madhya Pradesh,Bhopal,Hatfield-Colon Fort,Tomb,1584,4,4.4,100,Yes,Friday,Architectural,No,3.7,Morning
+746,Eastern,West Bengal,Kolkata,"Griffin, Graham and Mccarthy Museum",Zoo,1965,1,3.7,50,Yes,None,Religious,Yes,2.5,Summer
+747,Central,Madhya Pradesh,Bhopal,"Becker, Lin and Gates Park",Lake,1596,4,4.1,100,Yes,Wednesday,Historical,Yes,0.8,Evening
+748,Eastern,Odisha,Bhubaneswar,Ortiz-Ray Memorial,Lake,1929,2,3.6,30,Yes,None,Environmental,No,0.3,Winter
+749,Eastern,West Bengal,Kolkata,"Riley, Perez and Mitchell Park",Temple,1623,3,3.9,20,Yes,Tuesday,Environmental,Yes,1,Evening
+750,Northern,Delhi,Delhi,"Brown, Brown and Garcia Park",Temple,1658,4,3.8,50,Yes,Friday,Cultural,No,0.9,Summer
+751,Central,Madhya Pradesh,Bhopal,"Garza, Henry and Ramos Memorial",Zoo,1923,5,4.5,50,No,Friday,Environmental,No,3,Evening
+752,Northern,Uttar Pradesh,Agra,"Bailey, Brown and Lee Temple",Theme Park,1893,3,4.3,100,Yes,Saturday,Religious,Yes,4.6,Morning
+753,Central,Madhya Pradesh,Bhopal,Jackson-Wells Museum,Zoo,1784,1,4.6,100,Yes,Saturday,Natural,Yes,3.7,Winter
+754,Western,Maharashtra,Mumbai,Franco and Sons Temple,Museum,1982,4,4.7,100,Yes,None,Environmental,No,3.1,Evening
+755,Eastern,Odisha,Bhubaneswar,"Perez, Ellis and Vargas Memorial",War Memorial,1859,2,4.9,0,Yes,Friday,Cultural,Yes,2.1,Afternoon
+756,North-Eastern,Meghalaya,Shillong,"Barnes, Johnson and Cooper Memorial",Hill Station,1646,4,4.2,0,Yes,Monday,Historical,No,0.4,Summer
+757,Western,Maharashtra,Mumbai,Clayton Inc Museum,Museum,1546,2,4.8,30,No,Monday,Cultural,No,1.3,Afternoon
+758,North-Eastern,Meghalaya,Shillong,"Henderson, Walters and Johnson Memorial",Lake,1552,2,4.7,100,Yes,None,Religious,Yes,3.4,Morning
+759,Eastern,West Bengal,Kolkata,Rodriguez Ltd Park,Theme Park,1735,1,4.1,20,Yes,Wednesday,Historical,No,2.1,Summer
+760,Northern,Delhi,Delhi,"Oconnell, Nixon and Lowe Museum",Temple,1804,4,3.9,0,Yes,Monday,Religious,Yes,3.8,Evening
+761,Western,Rajasthan,Jaipur,Elliott-Barrett Park,Temple,1872,4,3.6,0,Yes,Friday,Architectural,Yes,4.5,Winter
+762,North-Eastern,Assam,Guwahati,Schmidt-Peck Fort,Lake,1638,4,4.2,0,Yes,Sunday,Architectural,Yes,4.1,Summer
+763,Western,Maharashtra,Mumbai,Norris Inc Temple,Temple,1667,5,4.7,0,Yes,Thursday,Architectural,Yes,4.9,Summer
+764,Western,Rajasthan,Jaipur,"Olsen, Webster and Zuniga Fort",Theme Park,1606,1,3.9,10,No,Friday,Religious,No,0.1,Evening
+765,Western,Rajasthan,Jaipur,Zimmerman-Stevens Fort,Temple,1907,5,4.8,100,Yes,None,Religious,No,4.8,Evening
+766,North-Eastern,Meghalaya,Shillong,"Peterson, Howell and Bryant Fort",Zoo,1833,5,4.5,10,Yes,Thursday,Architectural,Yes,4.3,Morning
+767,Southern,Karnataka,Bengaluru,Sullivan and Sons Memorial,Lake,1913,2,3.8,20,Yes,Monday,Religious,No,2.6,Evening
+768,North-Eastern,Meghalaya,Shillong,"Flores, Mendoza and Rogers Park",War Memorial,1878,6,4,10,Yes,Friday,Natural,Yes,1.8,Evening
+769,Eastern,Odisha,Bhubaneswar,Chapman-Smith Temple,Museum,1614,6,4.9,10,Yes,Tuesday,Environmental,No,3.1,Afternoon
+770,Western,Gujarat,Ahmedabad,"Sharp, Mann and Sloan Museum",Theme Park,2018,5,3.6,100,Yes,Saturday,Architectural,Yes,3.1,Evening
+771,Eastern,West Bengal,Kolkata,Dunn PLC Park,Sanctuary,1978,5,4.7,20,Yes,Tuesday,Historical,Yes,0.4,Afternoon
+772,Northern,Uttar Pradesh,Agra,Norris Group Museum,Lake,1532,4,4.9,100,Yes,Wednesday,Environmental,Yes,2,Morning
+773,Southern,Karnataka,Bengaluru,Conway-Lowe Fort,Temple,1803,4,4.7,30,No,None,Architectural,No,1,Summer
+774,Northern,Uttar Pradesh,Agra,"Wilson, Pierce and Skinner Park",Hill Station,1783,5,5,0,Yes,Wednesday,Cultural,No,2.3,Summer
+775,Southern,Tamil Nadu,Chennai,Woodard PLC Fort,Theme Park,1583,3,3.9,0,Yes,Wednesday,Natural,No,3.1,Afternoon
+776,Western,Maharashtra,Mumbai,Williams-Chapman Museum,Temple,1585,1,3.6,100,Yes,Monday,Cultural,No,3.4,Winter
+777,Eastern,West Bengal,Kolkata,Miller PLC Fort,Theme Park,1859,2,3.5,0,Yes,Monday,Architectural,No,2,Morning
+778,Eastern,West Bengal,Kolkata,"Hall, House and Wright Museum",War Memorial,1632,5,4.6,30,Yes,Sunday,Architectural,No,1.4,Summer
+779,Western,Rajasthan,Jaipur,Baker-Thompson Memorial,War Memorial,1849,6,4,50,Yes,Thursday,Cultural,No,1.5,Summer
+780,Central,Madhya Pradesh,Bhopal,Phillips-Conway Fort,Temple,1745,6,4.8,10,Yes,Friday,Historical,No,2.6,Morning
+781,Western,Maharashtra,Mumbai,Hunt-Martinez Memorial,Hill Station,1824,1,3.6,20,Yes,Tuesday,Environmental,Yes,2.2,Afternoon
+782,Central,Madhya Pradesh,Bhopal,"Garcia, Mayo and Mitchell Memorial",Hill Station,1619,2,4.1,30,Yes,Sunday,Natural,Yes,2.7,Evening
+783,Northern,Punjab,Amritsar,Harper-Williams Fort,Museum,1757,5,4.5,20,Yes,Sunday,Natural,Yes,1.8,Afternoon
+784,Southern,Karnataka,Bengaluru,Castillo PLC Museum,Museum,1753,5,4.4,0,Yes,Wednesday,Historical,Yes,3.5,Morning
+785,Western,Rajasthan,Jaipur,Castaneda and Sons Park,Sanctuary,1529,2,3.8,30,Yes,Saturday,Architectural,No,3.6,Winter
+786,Eastern,West Bengal,Kolkata,Jarvis-Bowman Temple,Hill Station,1550,6,4.1,30,Yes,Saturday,Religious,Yes,3.4,Morning
+787,Northern,Delhi,Delhi,May and Sons Fort,War Memorial,1622,4,4.2,20,Yes,Monday,Architectural,Yes,2.7,Winter
+788,Western,Gujarat,Ahmedabad,Patrick-Jones Museum,Lake,1558,3,4.3,50,Yes,None,Architectural,Yes,2.1,Morning
+789,Eastern,Odisha,Bhubaneswar,"Scott, Smith and Ellis Temple",Sanctuary,2021,3,4.1,100,Yes,None,Historical,No,2.5,Afternoon
+790,Western,Maharashtra,Mumbai,Barron Group Temple,Hill Station,1693,1,4.8,100,Yes,Monday,Religious,No,3.5,Summer
+791,North-Eastern,Meghalaya,Shillong,"Hill, Lee and Rios Park",Lake,2011,2,4.9,0,Yes,Saturday,Natural,Yes,4.4,Afternoon
+792,Central,Madhya Pradesh,Bhopal,Lawson LLC Park,Zoo,1828,5,5,10,Yes,Sunday,Architectural,No,4.8,Winter
+793,Eastern,Odisha,Bhubaneswar,Ford and Sons Temple,Fort,1911,6,3.7,50,Yes,Friday,Cultural,No,3,Morning
+794,Southern,Tamil Nadu,Chennai,"Blair, Gardner and Thomas Temple",Hill Station,1743,4,4.4,100,Yes,Saturday,Environmental,No,3,Winter
+795,Southern,Kerala,Kochi,Brooks LLC Park,Hill Station,1555,3,4.3,10,Yes,Tuesday,Historical,Yes,4.3,Evening
+796,Central,Madhya Pradesh,Bhopal,Norris-Sanchez Park,War Memorial,1922,3,4.3,100,Yes,Tuesday,Natural,Yes,0.4,Afternoon
+797,Southern,Tamil Nadu,Chennai,Ruiz Group Memorial,Museum,1844,2,4.9,100,Yes,Thursday,Cultural,No,2.5,Morning
+798,Southern,Karnataka,Bengaluru,Gomez-Ho Park,Fort,1846,3,4.4,50,Yes,Thursday,Cultural,Yes,3,Summer
+799,Western,Rajasthan,Jaipur,"Rodriguez, Hardin and Franco Park",Fort,1533,2,3.7,10,Yes,Saturday,Religious,No,4.3,Winter
+800,Northern,Punjab,Amritsar,Huber-Simmons Fort,Lake,1788,5,4.7,20,Yes,Tuesday,Cultural,Yes,2.1,Summer
+801,Eastern,Odisha,Bhubaneswar,Davis-Simon Memorial,Lake,1899,2,3.7,0,Yes,Tuesday,Religious,Yes,3.9,Evening
+802,Northern,Punjab,Amritsar,Hamilton-Torres Temple,Sanctuary,1528,3,3.5,30,Yes,Saturday,Religious,Yes,0.9,Afternoon
+803,Western,Maharashtra,Mumbai,Rodriguez-Williams Park,Fort,1534,1,4.5,20,Yes,None,Religious,Yes,3.9,Evening
+804,Central,Madhya Pradesh,Bhopal,"Hart, Vargas and Blankenship Memorial",War Memorial,1606,1,4.8,30,Yes,None,Religious,Yes,2.7,Evening
+805,North-Eastern,Meghalaya,Shillong,"Anderson, Lee and Brown Park",Sanctuary,1679,4,3.7,20,Yes,None,Cultural,Yes,3.5,Winter
+806,Central,Madhya Pradesh,Bhopal,"Nelson, Price and Vargas Park",Zoo,1638,1,3.9,100,Yes,Friday,Cultural,No,2.6,Winter
+807,North-Eastern,Assam,Guwahati,Chandler-Hernandez Memorial,Theme Park,1637,4,4.9,100,Yes,Tuesday,Architectural,No,1.7,Morning
+808,Southern,Kerala,Kochi,Howard-Decker Memorial,Theme Park,1909,3,5,0,Yes,Saturday,Architectural,No,3.3,Afternoon
+809,Central,Madhya Pradesh,Bhopal,Hernandez LLC Fort,Sanctuary,1661,5,4.1,50,Yes,Saturday,Natural,No,3,Morning
+810,Southern,Karnataka,Bengaluru,Ross-Adams Temple,Hill Station,1623,5,3.5,100,Yes,Sunday,Cultural,Yes,4.8,Winter
+811,Eastern,West Bengal,Kolkata,Perkins LLC Fort,Tomb,1824,1,4.4,30,Yes,Wednesday,Architectural,Yes,2.5,Evening
+812,Western,Rajasthan,Jaipur,Kane PLC Memorial,Museum,1719,1,3.9,100,Yes,Saturday,Historical,Yes,0.2,Summer
+813,Southern,Karnataka,Bengaluru,"Bailey, Schwartz and Williams Park",Hill Station,1959,4,4.7,100,Yes,Wednesday,Historical,Yes,0.9,Evening
+814,Western,Gujarat,Ahmedabad,Reyes-Hill Park,Theme Park,1801,3,4.2,0,Yes,Thursday,Architectural,No,2.6,Winter
+815,Central,Madhya Pradesh,Bhopal,Odonnell and Sons Fort,Fort,1835,3,4.3,100,Yes,Tuesday,Architectural,No,0.6,Summer
+816,Western,Maharashtra,Mumbai,Lawson-English Museum,Sanctuary,1592,2,3.9,20,Yes,Tuesday,Natural,Yes,0.6,Evening
+817,Southern,Karnataka,Bengaluru,Estrada Ltd Memorial,Temple,1879,3,4.7,30,Yes,Tuesday,Cultural,Yes,4.3,Summer
+818,Western,Maharashtra,Mumbai,"Maldonado, Clark and Smith Fort",Zoo,1891,4,4.4,50,Yes,Tuesday,Environmental,Yes,4.5,Summer
+819,Western,Maharashtra,Mumbai,"Cummings, Cooper and Moody Memorial",Museum,1958,1,4.4,50,Yes,Wednesday,Cultural,No,1.3,Morning
+820,North-Eastern,Assam,Guwahati,Miller and Sons Museum,Fort,1726,3,4.6,10,Yes,None,Religious,Yes,1.1,Summer
+821,Eastern,West Bengal,Kolkata,King-Cisneros Memorial,Theme Park,1961,4,4.8,30,No,Sunday,Cultural,No,2,Winter
+822,Eastern,West Bengal,Kolkata,"Wilson, Owens and White Park",Museum,1660,4,3.6,50,No,Wednesday,Historical,Yes,5,Afternoon
+823,Northern,Delhi,Delhi,Lee Inc Memorial,Temple,1519,4,3.9,20,Yes,Monday,Natural,No,2.4,Winter
+824,Northern,Delhi,Delhi,Moore PLC Fort,Sanctuary,1923,6,4.8,10,Yes,Wednesday,Architectural,Yes,0.3,Summer
+825,Southern,Kerala,Kochi,"Miller, Frederick and Gibson Temple",Theme Park,1905,4,3.6,50,Yes,Sunday,Environmental,Yes,0.8,Morning
+826,Eastern,Odisha,Bhubaneswar,Marshall and Sons Memorial,Theme Park,1848,2,3.9,10,No,Tuesday,Natural,No,2.6,Morning
+827,Central,Madhya Pradesh,Bhopal,"Mccall, Evans and Allen Museum",War Memorial,1928,4,4.8,0,Yes,None,Natural,No,4.1,Summer
+828,North-Eastern,Meghalaya,Shillong,Acosta-Summers Park,Fort,1961,2,3.5,20,Yes,Monday,Cultural,No,1.6,Afternoon
+829,North-Eastern,Meghalaya,Shillong,"Moreno, Carpenter and Ruiz Memorial",Museum,1599,1,3.6,30,Yes,Monday,Religious,Yes,2.3,Morning
+830,Eastern,West Bengal,Kolkata,Dickson Inc Museum,Tomb,1642,3,4.5,20,Yes,Wednesday,Cultural,Yes,4.2,Morning
+831,Southern,Kerala,Kochi,Hernandez-Vaughn Park,Hill Station,1763,6,4.9,100,Yes,Sunday,Environmental,Yes,3.5,Morning
+832,Western,Rajasthan,Jaipur,Cooper and Sons Museum,Museum,1654,3,4.3,50,Yes,Wednesday,Historical,Yes,0.2,Afternoon
+833,Southern,Karnataka,Bengaluru,"Martin, Hoover and Schultz Temple",Theme Park,2009,2,4.5,50,Yes,Monday,Cultural,Yes,4.8,Morning
+834,North-Eastern,Assam,Guwahati,Fowler and Sons Museum,Theme Park,1628,1,4.2,50,Yes,Friday,Environmental,Yes,2.7,Summer
+835,Western,Rajasthan,Jaipur,Porter and Sons Temple,Hill Station,2021,2,3.8,20,Yes,None,Natural,Yes,3.8,Afternoon
+836,Southern,Tamil Nadu,Chennai,Barr-Booth Fort,Fort,1600,1,4.7,10,Yes,Tuesday,Natural,No,3.8,Evening
+837,Southern,Kerala,Kochi,"Fuller, Bautista and Mckay Fort",Hill Station,1526,4,4.6,10,Yes,Wednesday,Architectural,Yes,3.4,Summer
+838,Eastern,Odisha,Bhubaneswar,Smith-Morales Fort,Museum,1775,6,3.9,10,Yes,Sunday,Historical,No,2.3,Summer
+839,Southern,Karnataka,Bengaluru,Williams Ltd Memorial,Sanctuary,1868,1,4.7,50,Yes,Friday,Natural,No,1.2,Morning
+840,Western,Maharashtra,Mumbai,"Lee, Atkins and Beck Temple",Lake,1791,6,4,0,No,Friday,Historical,Yes,0.9,Winter
+841,Eastern,West Bengal,Kolkata,Fuller PLC Temple,Zoo,1930,4,4.5,30,No,Thursday,Natural,Yes,1.3,Summer
+842,Western,Gujarat,Ahmedabad,Young Inc Temple,Temple,1822,2,4.4,50,Yes,Tuesday,Architectural,No,2.8,Winter
+843,Western,Maharashtra,Mumbai,Murphy-Taylor Museum,Sanctuary,1757,5,4.3,50,Yes,Sunday,Cultural,No,3.7,Afternoon
+844,North-Eastern,Meghalaya,Shillong,"Miller, Moyer and Carey Park",Hill Station,1728,6,4.3,10,Yes,None,Religious,No,2.5,Summer
+845,Central,Madhya Pradesh,Bhopal,Henry and Sons Memorial,Fort,1781,5,4.9,30,Yes,Thursday,Environmental,No,4.2,Morning
+846,Central,Madhya Pradesh,Bhopal,"Lara, Davis and Sanchez Memorial",Hill Station,1808,4,4.9,50,Yes,None,Environmental,Yes,1.6,Afternoon
+847,Southern,Karnataka,Bengaluru,Perry and Sons Fort,Tomb,1505,3,4.3,50,Yes,Friday,Architectural,Yes,5,Morning
+848,Southern,Karnataka,Bengaluru,"Ryan, Cooper and Lindsey Fort",Temple,1964,3,4.2,10,Yes,Thursday,Historical,Yes,2.1,Summer
+849,North-Eastern,Meghalaya,Shillong,Rangel PLC Fort,Tomb,1637,4,4.5,50,Yes,Thursday,Natural,No,3.9,Summer
+850,Eastern,Odisha,Bhubaneswar,Parker-Smith Park,War Memorial,1704,6,3.6,10,No,Tuesday,Historical,Yes,1.7,Afternoon
+851,Western,Gujarat,Ahmedabad,"Woods, Hart and Barnett Museum",Theme Park,1975,5,4.3,50,No,Friday,Historical,Yes,3.4,Summer
+852,North-Eastern,Assam,Guwahati,Lawrence-Gonzalez Museum,Tomb,1611,6,4.1,10,Yes,Sunday,Historical,Yes,1.9,Winter
+853,Central,Madhya Pradesh,Bhopal,"Sanders, Mendoza and Bridges Park",War Memorial,1609,4,3.5,0,Yes,Thursday,Historical,No,4.8,Morning
+854,North-Eastern,Meghalaya,Shillong,Marshall and Sons Temple,Hill Station,1572,3,5,100,No,Saturday,Architectural,No,3.3,Afternoon
+855,Eastern,West Bengal,Kolkata,Mckinney Inc Park,Temple,1888,1,4.6,30,Yes,Thursday,Cultural,Yes,4.8,Afternoon
+856,Western,Gujarat,Ahmedabad,Larson-Payne Park,Museum,1570,3,3.8,10,Yes,Wednesday,Cultural,No,0.5,Afternoon
+857,Western,Maharashtra,Mumbai,"Martinez, Armstrong and Barker Memorial",Zoo,1761,2,3.5,50,Yes,Monday,Cultural,Yes,4.6,Evening
+858,Western,Maharashtra,Mumbai,Owen Inc Museum,Lake,1702,5,4.3,10,Yes,Sunday,Religious,Yes,2.7,Summer
+859,Western,Maharashtra,Mumbai,Steele-Love Fort,Fort,1612,3,4.8,30,Yes,Tuesday,Cultural,Yes,2.7,Winter
+860,North-Eastern,Meghalaya,Shillong,Rice Group Park,Zoo,1559,6,4.1,50,Yes,Saturday,Architectural,No,4,Winter
+861,Southern,Karnataka,Bengaluru,Martinez Inc Temple,Sanctuary,1581,6,4.7,10,No,Thursday,Historical,No,2.9,Summer
+862,Northern,Delhi,Delhi,Baker LLC Park,Lake,1839,3,3.6,10,Yes,Tuesday,Religious,No,1.9,Afternoon
+863,Southern,Tamil Nadu,Chennai,House LLC Fort,Lake,1739,5,4.5,10,Yes,Wednesday,Cultural,No,4.6,Afternoon
+864,Western,Rajasthan,Jaipur,Harris PLC Fort,Tomb,1534,3,4.7,20,No,Tuesday,Environmental,Yes,1.2,Summer
+865,Southern,Tamil Nadu,Chennai,Summers PLC Museum,Fort,1716,2,4.9,100,Yes,None,Architectural,Yes,0.7,Morning
+866,Western,Rajasthan,Jaipur,Bennett-Pena Fort,Temple,1686,2,4,0,Yes,Sunday,Environmental,Yes,3.7,Evening
+867,North-Eastern,Assam,Guwahati,Anderson Group Temple,Zoo,1667,6,4.4,10,Yes,Sunday,Cultural,No,2.9,Afternoon
+868,Central,Madhya Pradesh,Bhopal,Anderson-Escobar Temple,Sanctuary,1832,3,4.3,100,Yes,None,Environmental,Yes,4,Morning
+869,Southern,Karnataka,Bengaluru,Morris Group Park,Theme Park,1679,6,4.4,20,Yes,Wednesday,Environmental,No,2.1,Summer
+870,Northern,Punjab,Amritsar,Prince and Sons Temple,Hill Station,1721,3,4.9,20,Yes,Sunday,Religious,Yes,1.6,Morning
+871,Western,Rajasthan,Jaipur,Dixon-Larson Museum,Theme Park,1740,4,4.2,100,Yes,Thursday,Environmental,No,0.2,Morning
+872,North-Eastern,Assam,Guwahati,Brown-Little Memorial,War Memorial,1889,6,4.3,100,Yes,Tuesday,Environmental,No,2.7,Winter
+873,Southern,Tamil Nadu,Chennai,"Schultz, Jones and Nelson Museum",Fort,1709,6,4.9,10,Yes,Monday,Religious,No,2.7,Summer
+874,Southern,Kerala,Kochi,Brown-Stewart Park,Tomb,1831,4,4.6,100,Yes,Wednesday,Historical,No,4.1,Afternoon
+875,Northern,Punjab,Amritsar,Beck Group Memorial,Hill Station,1908,4,4.5,30,Yes,Friday,Cultural,No,1.1,Winter
+876,Central,Madhya Pradesh,Bhopal,Martin-Ayala Fort,Zoo,2022,5,4.5,30,Yes,None,Historical,No,3.2,Afternoon
+877,Western,Maharashtra,Mumbai,Benton-Oliver Park,Hill Station,1999,5,4.8,100,Yes,Monday,Religious,Yes,0.2,Morning
+878,Northern,Uttar Pradesh,Agra,Stewart-Gibson Temple,Tomb,1768,3,4.5,50,Yes,Saturday,Religious,No,1.7,Afternoon
+879,Northern,Punjab,Amritsar,Powell-Hill Temple,Fort,1543,5,4.8,100,Yes,Saturday,Architectural,Yes,4.5,Evening
+880,North-Eastern,Assam,Guwahati,Cruz LLC Museum,Tomb,1639,5,4.4,0,Yes,Thursday,Natural,No,0.6,Morning
+881,Central,Madhya Pradesh,Bhopal,"Valdez, Hanson and Murphy Fort",Theme Park,1585,6,4.8,10,No,Saturday,Natural,No,4,Afternoon
+882,Eastern,West Bengal,Kolkata,Williams Ltd Memorial,Temple,1772,1,4.5,0,Yes,Sunday,Cultural,Yes,3.3,Morning
+883,North-Eastern,Meghalaya,Shillong,"Alvarado, Burgess and Montoya Park",War Memorial,1988,6,4.6,0,Yes,Friday,Cultural,Yes,2.9,Evening
+884,Western,Gujarat,Ahmedabad,"Pope, Russell and Webster Memorial",Theme Park,1844,5,4.7,30,No,Wednesday,Architectural,No,1.1,Winter
+885,Southern,Kerala,Kochi,Rogers PLC Museum,Museum,1823,3,3.6,10,Yes,Friday,Religious,No,2.9,Afternoon
+886,Central,Madhya Pradesh,Bhopal,Smith-Anderson Memorial,Hill Station,1633,2,5,50,Yes,Tuesday,Architectural,Yes,1.1,Morning
+887,Western,Maharashtra,Mumbai,"Williams, Dunlap and Allen Museum",War Memorial,1965,4,4.2,0,Yes,Saturday,Historical,No,0.1,Summer
+888,Northern,Uttar Pradesh,Agra,"Cain, Carroll and Anderson Park",Lake,1885,3,4.8,10,No,Sunday,Natural,No,2.5,Winter
+889,Western,Maharashtra,Mumbai,Carlson-Galloway Memorial,War Memorial,1744,1,4.4,100,No,Tuesday,Religious,No,0.8,Summer
+890,Western,Gujarat,Ahmedabad,"Davidson, Lopez and Kaufman Temple",Hill Station,1669,3,4.7,0,Yes,Friday,Religious,No,4.9,Morning
+891,Eastern,West Bengal,Kolkata,Walker-Dixon Temple,Tomb,1819,6,4.1,100,Yes,Monday,Architectural,Yes,0.7,Morning
+892,North-Eastern,Meghalaya,Shillong,Adams-Flores Fort,Hill Station,1751,6,4.9,100,Yes,Sunday,Architectural,No,1.1,Evening
+893,North-Eastern,Meghalaya,Shillong,Brown Group Memorial,Temple,1690,4,3.9,20,Yes,Saturday,Natural,No,3.2,Evening
+894,Eastern,Odisha,Bhubaneswar,Avila-Hill Memorial,War Memorial,1558,2,3.9,20,Yes,Sunday,Cultural,Yes,3.5,Morning
+895,Northern,Punjab,Amritsar,"Turner, Rice and Wright Museum",Sanctuary,1919,2,3.7,10,Yes,Tuesday,Cultural,No,3.5,Afternoon
+896,Southern,Tamil Nadu,Chennai,Anderson LLC Park,Temple,1884,3,4.3,20,No,Friday,Cultural,No,2.4,Evening
+897,North-Eastern,Meghalaya,Shillong,"Thomas, Clark and Clark Temple",War Memorial,1578,3,3.7,10,Yes,Wednesday,Cultural,No,1.1,Winter
+898,Central,Madhya Pradesh,Bhopal,Patterson-Thomas Memorial,Lake,1804,6,3.5,0,Yes,Tuesday,Historical,No,0.9,Evening
+899,Southern,Karnataka,Bengaluru,"Williams, Wallace and Harris Temple",War Memorial,1794,2,4.2,0,Yes,Tuesday,Architectural,Yes,2.5,Winter
+900,Southern,Tamil Nadu,Chennai,"Carter, Robinson and Church Museum",Lake,1736,5,4,30,Yes,Monday,Cultural,Yes,3.8,Winter
+901,Southern,Kerala,Kochi,"Montgomery, Charles and Williams Museum",Temple,1701,3,4.3,10,Yes,Thursday,Environmental,Yes,1.8,Winter
+902,Central,Madhya Pradesh,Bhopal,Rice Group Temple,Fort,1651,4,4.6,30,Yes,Thursday,Natural,Yes,0.9,Morning
+903,Western,Gujarat,Ahmedabad,"Martin, Wilson and Gibson Museum",Sanctuary,1744,4,4.2,50,Yes,Wednesday,Environmental,Yes,4,Evening
+904,Central,Madhya Pradesh,Bhopal,"Hodge, Delgado and Obrien Museum",War Memorial,1842,4,4,50,Yes,None,Religious,No,1.2,Afternoon
+905,Southern,Tamil Nadu,Chennai,Mcclure and Sons Museum,Sanctuary,1919,1,3.7,100,Yes,Thursday,Environmental,No,1.9,Morning
+906,Western,Maharashtra,Mumbai,Mason-Sanders Park,War Memorial,1687,2,3.8,50,Yes,Friday,Cultural,Yes,1.2,Winter
+907,North-Eastern,Meghalaya,Shillong,"Herrera, Russell and Barnes Park",War Memorial,1812,1,4.3,0,Yes,Thursday,Religious,Yes,3.4,Winter
+908,Southern,Karnataka,Bengaluru,Bautista-Bush Memorial,Temple,1863,2,4,50,Yes,Tuesday,Cultural,Yes,2.8,Afternoon
+909,Eastern,Odisha,Bhubaneswar,White-Lawson Museum,Fort,1515,1,4.3,30,Yes,Wednesday,Historical,No,4.7,Evening
+910,Central,Madhya Pradesh,Bhopal,Liu-Butler Museum,War Memorial,1589,1,3.9,20,Yes,Wednesday,Natural,Yes,2.2,Summer
+911,Eastern,West Bengal,Kolkata,Mcdaniel-Clark Fort,War Memorial,1743,4,3.6,10,Yes,Thursday,Natural,No,0.5,Summer
+912,Northern,Punjab,Amritsar,Jones-Frederick Memorial,Zoo,1715,1,4.9,10,Yes,Sunday,Cultural,Yes,4.3,Morning
+913,Eastern,West Bengal,Kolkata,Mitchell-Dunn Museum,Sanctuary,1652,5,4.4,20,Yes,Friday,Environmental,No,0.9,Afternoon
+914,Western,Maharashtra,Mumbai,Lloyd and Sons Park,Theme Park,1929,3,4.7,50,Yes,Friday,Historical,No,2.6,Summer
+915,Central,Madhya Pradesh,Bhopal,Cuevas-Haney Museum,Temple,1934,2,3.9,20,Yes,Saturday,Historical,Yes,1,Summer
+916,North-Eastern,Meghalaya,Shillong,Walters Group Museum,Theme Park,1925,5,3.5,20,Yes,Saturday,Religious,Yes,4.2,Afternoon
+917,Central,Madhya Pradesh,Bhopal,"Gomez, Medina and Pratt Temple",Temple,1573,3,3.7,30,Yes,Tuesday,Environmental,No,1.1,Winter
+918,Central,Madhya Pradesh,Bhopal,Morris PLC Museum,Lake,1946,5,3.7,20,Yes,Thursday,Religious,Yes,3.7,Evening
+919,Eastern,West Bengal,Kolkata,Tucker-Pugh Park,Fort,1944,5,4.7,30,Yes,Saturday,Historical,No,1,Summer
+920,Western,Rajasthan,Jaipur,Stafford Inc Museum,Lake,1522,1,4.1,100,Yes,Thursday,Historical,Yes,1.8,Winter
+921,Western,Rajasthan,Jaipur,Gonzalez and Sons Museum,Theme Park,1962,6,4.2,50,Yes,Tuesday,Cultural,Yes,4.5,Afternoon
+922,North-Eastern,Meghalaya,Shillong,"Hall, Wright and Mcfarland Fort",Zoo,1611,2,4.8,20,Yes,Friday,Natural,Yes,0.1,Winter
+923,Southern,Tamil Nadu,Chennai,"Mcdowell, Mcdonald and Guerra Museum",Museum,1953,3,3.7,10,Yes,None,Architectural,Yes,3.4,Morning
+924,North-Eastern,Meghalaya,Shillong,Benjamin-Jones Park,Zoo,1984,2,3.7,30,Yes,Tuesday,Cultural,Yes,4.2,Morning
+925,Northern,Uttar Pradesh,Agra,"Holmes, Rogers and Michael Park",Zoo,1543,4,4.4,50,Yes,Saturday,Cultural,Yes,0.9,Morning
+926,Eastern,Odisha,Bhubaneswar,"Craig, Elliott and Cole Park",Lake,1619,2,3.7,0,Yes,None,Natural,Yes,1.7,Afternoon
+927,Western,Gujarat,Ahmedabad,Adams Inc Museum,Sanctuary,1659,4,3.6,30,Yes,Tuesday,Historical,Yes,1.9,Summer
+928,Central,Madhya Pradesh,Bhopal,Carlson-Powell Temple,Lake,1513,5,4.3,30,Yes,Friday,Historical,Yes,3.1,Morning
+929,North-Eastern,Assam,Guwahati,Quinn-Ramos Temple,Tomb,1767,3,3.5,30,Yes,Monday,Religious,Yes,0.7,Evening
+930,Central,Madhya Pradesh,Bhopal,Farmer-Mata Memorial,Sanctuary,1862,3,4.5,100,Yes,Monday,Environmental,Yes,1.9,Afternoon
+931,Central,Madhya Pradesh,Bhopal,Hernandez-Grimes Temple,Hill Station,1510,1,3.6,20,Yes,None,Cultural,Yes,4.7,Morning
+932,Eastern,Odisha,Bhubaneswar,Thompson-Hayes Memorial,Fort,1689,5,4.2,30,Yes,Thursday,Natural,No,3.6,Summer
+933,Eastern,West Bengal,Kolkata,Evans-Palmer Temple,Lake,1948,6,3.6,20,Yes,Wednesday,Cultural,No,5,Evening
+934,Central,Madhya Pradesh,Bhopal,Torres Inc Fort,Sanctuary,1538,3,4.8,100,Yes,Sunday,Religious,Yes,4.2,Morning
+935,Northern,Punjab,Amritsar,Armstrong-Martin Memorial,Lake,1509,3,4.5,20,Yes,Saturday,Religious,No,2.8,Morning
+936,Western,Gujarat,Ahmedabad,Brown LLC Fort,Sanctuary,1809,3,3.7,0,Yes,Friday,Religious,Yes,2.5,Winter
+937,North-Eastern,Meghalaya,Shillong,"Davis, Obrien and Patton Park",Sanctuary,1660,3,4.5,10,Yes,Sunday,Cultural,No,4.4,Winter
+938,Northern,Punjab,Amritsar,Petersen-Hansen Museum,Theme Park,1776,6,3.7,0,Yes,Friday,Environmental,No,3.1,Evening
+939,Southern,Karnataka,Bengaluru,Jackson-Wheeler Fort,Hill Station,1709,1,3.5,0,Yes,Wednesday,Natural,Yes,3.9,Winter
+940,North-Eastern,Assam,Guwahati,"Crawford, Johnson and Wright Memorial",Tomb,1827,1,4,20,Yes,Tuesday,Cultural,No,2.5,Winter
+941,Northern,Delhi,Delhi,Schmidt-Cox Park,War Memorial,1529,4,4.7,20,Yes,None,Natural,Yes,2.8,Afternoon
+942,Southern,Kerala,Kochi,Vincent-Garcia Park,War Memorial,1724,4,4.9,100,Yes,Saturday,Environmental,Yes,1.9,Afternoon
+943,Southern,Karnataka,Bengaluru,"Price, Garza and Brown Temple",Zoo,1692,6,4.2,20,Yes,Tuesday,Historical,No,0.4,Afternoon
+944,Central,Madhya Pradesh,Bhopal,Estrada-Clark Memorial,Zoo,1941,4,4.8,30,Yes,Saturday,Historical,No,1.9,Winter
+945,Southern,Kerala,Kochi,"Fields, Moon and West Memorial",Sanctuary,1773,5,3.7,10,No,Saturday,Religious,Yes,4.2,Summer
+946,North-Eastern,Assam,Guwahati,Carpenter-Wright Fort,Temple,1506,5,5,20,No,Saturday,Natural,No,0.6,Winter
+947,North-Eastern,Meghalaya,Shillong,"Pennington, Thompson and Clayton Park",Theme Park,1667,3,4.9,50,No,Sunday,Cultural,Yes,4.8,Summer
+948,Northern,Delhi,Delhi,Hunt-Decker Park,Fort,1951,4,4.9,100,Yes,Thursday,Cultural,Yes,3,Afternoon
+949,Southern,Tamil Nadu,Chennai,Stafford Group Memorial,Museum,1522,5,4.5,100,Yes,Friday,Natural,Yes,4.9,Morning
+950,Central,Madhya Pradesh,Bhopal,Fletcher-Melendez Museum,Museum,1606,1,3.9,20,Yes,None,Religious,Yes,2.6,Winter
+951,North-Eastern,Meghalaya,Shillong,"Luna, Carlson and Fields Park",Zoo,1890,2,3.7,0,Yes,Friday,Cultural,No,4.1,Evening
+952,Northern,Punjab,Amritsar,"Brown, Hunt and Knapp Park",Zoo,1589,1,4.7,10,Yes,Thursday,Architectural,Yes,3.7,Afternoon
+953,Western,Rajasthan,Jaipur,Shepherd and Sons Fort,War Memorial,1669,3,3.9,10,No,Wednesday,Religious,No,0.8,Afternoon
+954,Western,Rajasthan,Jaipur,Richardson-Bell Temple,Tomb,1576,3,4,100,Yes,Thursday,Religious,Yes,3.6,Evening
+955,Southern,Tamil Nadu,Chennai,"Mckenzie, Lara and Mcfarland Memorial",War Memorial,1702,6,4.3,100,Yes,Sunday,Natural,Yes,4.4,Winter
+956,Western,Gujarat,Ahmedabad,Jarvis-Roberts Museum,Temple,1667,5,4.5,20,Yes,Monday,Natural,No,1.3,Evening
+957,North-Eastern,Meghalaya,Shillong,Hickman-Martin Park,Theme Park,1880,2,3.6,30,Yes,Wednesday,Historical,No,3.6,Evening
+958,North-Eastern,Meghalaya,Shillong,"Howard, Riley and Reynolds Memorial",Museum,1899,5,3.9,50,Yes,Thursday,Environmental,Yes,4.9,Morning
+959,Northern,Delhi,Delhi,Malone-Dickerson Fort,Tomb,1618,1,3.8,30,Yes,Tuesday,Environmental,No,4.9,Summer
+960,Eastern,West Bengal,Kolkata,"Hoover, Wade and Thompson Fort",Lake,1505,6,4.6,30,Yes,Sunday,Cultural,Yes,2.2,Evening
+961,Central,Madhya Pradesh,Bhopal,Bailey and Sons Museum,Sanctuary,1785,4,4.4,10,No,Thursday,Religious,No,0.3,Evening
+962,Southern,Kerala,Kochi,"Welch, Black and Simmons Temple",Zoo,1842,1,3.7,30,Yes,Monday,Cultural,Yes,0.9,Afternoon
+963,Eastern,West Bengal,Kolkata,Forbes PLC Memorial,War Memorial,1736,2,3.9,10,Yes,Monday,Architectural,No,4.7,Afternoon
+964,Northern,Punjab,Amritsar,Cameron-Copeland Museum,Zoo,1606,2,3.5,20,Yes,Saturday,Environmental,Yes,1.6,Summer
+965,Central,Madhya Pradesh,Bhopal,Krause-Rowe Park,Zoo,1763,3,4.4,30,Yes,Wednesday,Natural,No,4.8,Winter
+966,Eastern,West Bengal,Kolkata,Powell-Hart Memorial,Museum,1630,6,3.8,20,Yes,Saturday,Cultural,No,2.9,Winter
+967,Northern,Uttar Pradesh,Agra,Cisneros and Sons Museum,Sanctuary,1563,3,3.8,100,Yes,Friday,Religious,No,2.7,Summer
+968,Central,Madhya Pradesh,Bhopal,"Foster, Bailey and Rodriguez Park",War Memorial,1566,5,4.1,50,Yes,Wednesday,Historical,No,1.6,Afternoon
+969,Central,Madhya Pradesh,Bhopal,Alvarez-Gonzalez Fort,Sanctuary,1569,2,3.7,10,Yes,Friday,Historical,No,4,Afternoon
+970,Northern,Delhi,Delhi,Thornton-Merritt Park,Zoo,2008,6,4.8,100,Yes,Sunday,Architectural,Yes,0.6,Morning
+971,Southern,Kerala,Kochi,Aguilar Inc Park,Museum,1966,6,3.6,50,Yes,Sunday,Natural,Yes,0.6,Evening
+972,North-Eastern,Assam,Guwahati,Smith PLC Fort,Temple,1817,3,4.5,20,Yes,Wednesday,Natural,No,4.8,Afternoon
+973,Northern,Uttar Pradesh,Agra,"Griffith, Vang and Meyer Fort",Theme Park,1607,6,3.8,10,Yes,Wednesday,Religious,No,4.4,Winter
+974,Central,Madhya Pradesh,Bhopal,"Matthews, Trujillo and Miller Temple",War Memorial,1831,3,4,30,Yes,Sunday,Natural,No,1.6,Summer
+975,Northern,Delhi,Delhi,Webster Ltd Fort,Fort,1521,4,4.2,30,Yes,Friday,Environmental,No,1,Morning
+976,Southern,Tamil Nadu,Chennai,Leblanc Group Temple,Temple,1817,2,3.7,50,Yes,Wednesday,Cultural,Yes,1.6,Summer
+977,Southern,Tamil Nadu,Chennai,Simmons-Smith Museum,War Memorial,1858,6,5,10,Yes,Saturday,Religious,No,2.1,Winter
+978,Eastern,Odisha,Bhubaneswar,Johnson-Kennedy Park,Zoo,1849,5,4.6,30,No,Thursday,Religious,No,4.4,Morning
+979,Northern,Punjab,Amritsar,Hodges Group Museum,Sanctuary,1782,6,5,50,Yes,Sunday,Religious,No,2.8,Afternoon
+980,North-Eastern,Meghalaya,Shillong,Rodriguez-Mcdonald Memorial,War Memorial,1747,3,3.7,50,Yes,None,Historical,Yes,3.5,Afternoon
+981,Central,Madhya Pradesh,Bhopal,"Riley, Navarro and Curtis Memorial",Zoo,1838,6,4.2,10,No,Sunday,Natural,Yes,1.7,Summer
+982,Northern,Uttar Pradesh,Agra,"Chapman, Wilson and Harvey Park",Temple,1688,4,4.3,10,Yes,Wednesday,Natural,Yes,4.8,Winter
+983,Eastern,West Bengal,Kolkata,"Nelson, Ferguson and Matthews Museum",Fort,1566,4,5,50,Yes,Tuesday,Religious,Yes,1.1,Morning
+984,Western,Gujarat,Ahmedabad,Mccoy LLC Park,Lake,1607,6,4.2,50,Yes,Saturday,Environmental,Yes,1,Afternoon
+985,North-Eastern,Meghalaya,Shillong,"Wells, Wagner and Curry Fort",Theme Park,1505,4,4.6,10,Yes,Thursday,Natural,Yes,3.8,Evening
+986,Southern,Kerala,Kochi,Lang and Sons Temple,War Memorial,1658,2,4.8,0,Yes,Tuesday,Historical,No,1.3,Afternoon
+987,Eastern,West Bengal,Kolkata,Peters Ltd Memorial,Museum,1772,1,4.4,10,Yes,Friday,Architectural,No,2.5,Morning
+988,North-Eastern,Assam,Guwahati,Rivera LLC Fort,Sanctuary,1947,5,4.3,10,Yes,Saturday,Historical,No,2,Evening
+989,Western,Maharashtra,Mumbai,"Riggs, Rose and Gillespie Fort",Temple,1942,5,4.5,20,Yes,Tuesday,Natural,Yes,3.2,Morning
+990,Northern,Punjab,Amritsar,Miller-Kramer Museum,Temple,1860,1,4,20,Yes,Friday,Environmental,No,0.2,Summer
+991,Northern,Delhi,Delhi,Ashley-Peterson Memorial,Fort,1746,4,3.7,10,Yes,Sunday,Environmental,No,0.9,Winter
+992,Western,Rajasthan,Jaipur,"Bowers, Larsen and Garrett Fort",Theme Park,1915,4,3.8,100,No,Tuesday,Religious,Yes,4.4,Evening
+993,Northern,Uttar Pradesh,Agra,"Hamilton, Lynch and Lopez Park",Sanctuary,1705,4,4.1,30,Yes,Wednesday,Natural,No,1.3,Summer
+994,Southern,Kerala,Kochi,Patterson and Sons Fort,Sanctuary,1914,4,4.2,100,Yes,Thursday,Historical,Yes,0.7,Afternoon
+995,Southern,Tamil Nadu,Chennai,"Garza, Price and Silva Park",Temple,1742,1,4.6,0,Yes,Friday,Environmental,No,1.4,Evening
+996,Northern,Delhi,Delhi,"Harris, Jones and Brewer Park",Sanctuary,1672,1,3.7,30,Yes,None,Historical,Yes,0.9,Summer
+997,Southern,Kerala,Kochi,Brown LLC Fort,Temple,1634,2,3.7,20,Yes,Sunday,Religious,Yes,1.6,Morning
+998,Northern,Delhi,Delhi,Pittman PLC Park,War Memorial,1753,5,3.9,10,Yes,Saturday,Architectural,Yes,4.2,Morning
+999,North-Eastern,Meghalaya,Shillong,"Kennedy, Johnson and Valdez Museum",Temple,1829,2,4,10,Yes,Sunday,Natural,Yes,2.8,Summer
+1000,North-Eastern,Assam,Guwahati,Smith-Moore Temple,Theme Park,1581,3,4.4,100,Yes,Friday,Architectural,No,2.6,Evening
+1001,Western,Rajasthan,Jaipur,Gay LLC Memorial,Museum,1737,6,4.3,20,Yes,Thursday,Religious,No,4.3,Afternoon
+1002,North-Eastern,Assam,Guwahati,Padilla-Swanson Memorial,Sanctuary,1634,3,3.9,10,Yes,Monday,Historical,Yes,1.6,Evening
+1003,North-Eastern,Meghalaya,Shillong,"Smith, Braun and Zamora Fort",Hill Station,1590,2,3.9,0,Yes,Thursday,Religious,Yes,3.6,Morning
+1004,Central,Madhya Pradesh,Bhopal,Young Inc Park,Temple,1675,3,3.6,100,Yes,None,Architectural,Yes,3.4,Morning

@@ -2,9 +2,11 @@ import pandas as pd
 import torch
 import torch.nn.functional as F
 from sentence_transformers import SentenceTransformer, util
-from models.prompt_model import Recommendation
+from models.prompt_model import Recommendation, DepthRecommendation
 from db.mongodb import prefs_collection
 from models.classifier_loader import load_classifier
+import random
+import math
 
 
 class SimpleClassifier(torch.nn.Module):
@@ -99,6 +101,7 @@ async def get_recommendations(user_id: str, prompt: str):
         inferred[significance] = inferred.get(significance, 0) + 1
 
         recommendations.append(Recommendation(
+            sno=row['sno'],
             name=row['Name'],
             city=row['City'],
             state=row['State'],
@@ -133,13 +136,17 @@ async def get_inferred_based_recommendations(user_id: str):
     seen = set()
 
     for t, _ in sorted_types:
-        filtered = df[df['Significance'] == t].sort_values(by='Google review rating', ascending=False)
+        filtered = df[df['Significance'] == t].copy()
+        
+        # Shuffle the filtered DataFrame for randomness
+        filtered = filtered.sample(frac=1).reset_index(drop=True)
 
         count = 0
         for _, row in filtered.iterrows():
             key = f"{row['Name']}|{row['City']}"
             if key not in seen:
                 recommended.append(Recommendation(
+                    sno=row['sno'],
                     name=row['Name'],
                     city=row['City'],
                     state=row['State'],
@@ -152,3 +159,41 @@ async def get_inferred_based_recommendations(user_id: str):
                 break
 
     return recommended
+def safe_str(val):
+    if val is None:
+        return ""
+    if isinstance(val, float) and pd.isna(val):
+        return ""
+    return str(val)
+
+def safe_float(val):
+    if val is None:
+        return 0.0
+    if isinstance(val, float) and pd.isna(val):
+        return 0.0
+    return float(val)
+
+async def get_place_by_sno(sno: int):
+    if 'sno' in df.columns:
+        row = df[df['sno'] == sno]
+        if row.empty:
+            return None
+        row = row.iloc[0]
+    else:
+        if sno <= 0 or sno > len(df):
+            return None
+        row = df.iloc[sno - 1]
+
+    return DepthRecommendation(
+        sno=row['sno'],
+        name=row['Name'],
+        city=row['City'],
+        state=row['State'],
+        description=get_place_description(row),
+        rating=float(row['Google review rating']),
+        Entrance_Fee=float(row['Entrance Fee in INR']) if not math.isnan(row['Entrance Fee in INR']) else 0.0,
+        Establishment_Year=safe_str(row['Establishment Year']),
+        Best_Time_to_visit=safe_str(row['Best Time to visit']),
+        Airport_with_50km_Radius=safe_str(row['Airport with 50km Radius']),
+        dslr_allowed=safe_str(row['DSLR Allowed']),
+    )

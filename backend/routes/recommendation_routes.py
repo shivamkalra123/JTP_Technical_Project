@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from models.prompt_model import PromptRequest, Recommendation
-from services.recommendation_service import get_recommendations, get_inferred_based_recommendations
+from models.prompt_model import PromptRequest, Recommendation, DepthRecommendation
+from services.recommendation_service import get_recommendations, get_inferred_based_recommendations,get_place_by_sno
 
 router = APIRouter()
 

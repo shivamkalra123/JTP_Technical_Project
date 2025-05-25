@@ -1,130 +1,154 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './Recommendation.css';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Recommendation.css";
 
 export default function RecommendationPage() {
   const navigate = useNavigate();
-  const [userId, setUserId] = useState(localStorage.getItem('userId'));
-  const [prompt, setPrompt] = useState('');
+  const [userId, setUserId] = useState(localStorage.getItem("userId"));
+  const [prompt, setPrompt] = useState("");
   const [recommendations, setRecommendations] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     if (!userId) {
-      navigate('/');
-    } else {
-      fetchInferredRecommendations();
+      navigate("/");
+      return;
     }
+    fetchInferredRecommendations();
   }, [userId]);
 
-  const fetchInferredRecommendations = async () => {
+  async function fetchInferredRecommendations() {
     setLoading(true);
-    setPrompt('');
+    setPrompt("");
     try {
       const res = await fetch(`http://localhost:8000/recommend/inferred?user_id=${userId}`);
       const data = await res.json();
-      console.log('Inferred recommendations:', data);
 
       if (Array.isArray(data)) {
         setRecommendations(data);
-        setMessage(data.length > 0
-          ? 'Based on your preferences, you might like:'
-          : "Start searching so we can recommend places you'll love!");
+        setMessage(
+          data.length
+            ? "Based on your preferences, you might like these spots:"
+            : "Tell me what you like, and I’ll find cool places!"
+        );
       } else {
         setRecommendations([]);
-        setMessage("Start searching so we can recommend places you'll love!");
+        setMessage("Hmm, something unexpected happened.");
       }
-    } catch (err) {
-      console.error("Error fetching inferred recommendations:", err);
+    } catch {
       setRecommendations([]);
-      setMessage("Something went wrong. Try again later.");
+      setMessage("Oops, something went wrong. Try refreshing?");
     }
     setLoading(false);
-  };
+  }
 
-  const fetchRecommendations = async () => {
+  async function fetchRecommendations() {
     if (!prompt.trim()) return;
     setLoading(true);
     try {
       const res = await fetch(`http://localhost:8000/recommend?user_id=${userId}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
       });
       const data = await res.json();
-      console.log('Recommendations:', data);
 
       if (Array.isArray(data)) {
         setRecommendations(data);
-        setMessage("Here’s what we found based on your interest:");
+        setMessage("Here’s what I found for you:");
       } else {
         setRecommendations([]);
-        setMessage("Sorry, no recommendations found.");
+        setMessage("No luck with those keywords. Try something else!");
       }
-    } catch (err) {
-      console.error("Error fetching recommendations:", err);
+    } catch {
       setRecommendations([]);
-      setMessage("Something went wrong. Try again later.");
+      setMessage("Oops, network error. Try again later.");
     }
     setLoading(false);
-  };
+  }
 
-  const handleLogout = () => {
-    localStorage.removeItem('userId');
+  function handleRecommendationClick(place) {
+    if (place.sno) {
+      navigate(`/place/${place.sno}`, { state: { place } });
+    } else {
+      alert("No ID found for this place!");
+    }
+  }
+
+  function handleLogout() {
+    localStorage.removeItem("userId");
     setUserId(null);
-    navigate('/');
-  };
+    navigate("/");
+  }
 
   return (
-    <div className="container">
-      <div className="header">
-        <h2
+    <div className="BodyBack">
+    <div className="container" role="main" aria-label="Recommendation page">
+      <header className="header">
+        <h1
           className="title"
-          onClick={fetchInferredRecommendations}
           tabIndex={0}
-          onKeyDown={e => { if (e.key === 'Enter') fetchInferredRecommendations() }}
+          role="button"
+          onClick={fetchInferredRecommendations}
+          onKeyDown={(e) => (e.key === "Enter" ? fetchInferredRecommendations() : null)}
+          aria-label="Refresh recommendations"
         >
-          Hi, Wanderer! 🧭
-        </h2>
-        <button
-          className="logout-button"
-          onClick={handleLogout}
-        >
+          WanderMind 🌍
+        </h1>
+        <button className="logout-button" onClick={handleLogout} aria-label="Logout">
           Logout
+        </button>
+      </header>
+
+      <div className="input-group">
+        <input
+          type="text"
+          className="prompt-input"
+          placeholder="What kind of places do you want to explore?"
+          value={prompt}
+          onChange={(e) => setPrompt(e.target.value)}
+          disabled={loading}
+          aria-label="Search preferences"
+        />
+        <button
+          className="recommend-button"
+          onClick={fetchRecommendations}
+          disabled={loading || !prompt.trim()}
+          aria-label="Get recommendations"
+        >
+          {loading ? "Finding..." : "Explore"}
         </button>
       </div>
 
-      <input
-        className="prompt-input"
-        value={prompt}
-        onChange={(e) => setPrompt(e.target.value)}
-        placeholder="What type of places do you like?"
-      />
-      <button
-        className="recommend-button"
-        onClick={fetchRecommendations}
-        disabled={loading}
-      >
-        {loading ? 'Thinking...' : 'Get Recommendations'}
-      </button>
+      <p className="message" aria-live="polite" aria-atomic="true">
+        {message}
+      </p>
 
-      {message && <p className="message">{message}</p>}
-
-      <ul className="recommendations-list">
-        {Array.isArray(recommendations) && recommendations.length > 0 ? (
-          recommendations.map((r, idx) => (
-            <li key={idx} className="recommendation-item">
-              <h3>{r.name}</h3>
+      <ul className="recommendations-list" tabIndex={0} aria-label="List of recommendations">
+        {recommendations.length > 0 ? (
+          recommendations.map((r, i) => (
+            <li
+              key={r.sno || i}
+              className="recommendation-item"
+              onClick={() => handleRecommendationClick(r)}
+              tabIndex={0}
+              onKeyDown={(e) => (e.key === "Enter" || e.key === " " ? handleRecommendationClick(r) : null)}
+              role="button"
+              aria-label={`${r.name}, located in ${r.city}, ${r.state}. Rating: ${r.rating}`}
+              style={{ animationDelay: `${i * 0.08}s` }}
+            >
+              <h2 className="recommendation-name-text">{r.name}</h2>
               <p className="italic">{r.city}, {r.state}</p>
               <p>{r.description}</p>
               <p><strong>Rating:</strong> {r.rating}</p>
             </li>
           ))
         ) : (
-          <p>No recommendations available.</p>
+          <p style={{ textAlign: "center", color: "#ccc" }}>No recommendations to show yet.</p>
         )}
       </ul>
+    </div>
     </div>
   );
 }
