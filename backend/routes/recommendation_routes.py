@@ -11,3 +11,9 @@ async def recommend_for_user(user_id: str, request: PromptRequest):
 @router.get("/recommend/inferred", response_model=list[Recommendation])
 async def recommend_by_inferred(user_id: str):
     return await get_inferred_based_recommendations(user_id)
+@router.get("/place/{sno}", response_model=DepthRecommendation)
+async def get_place_details(sno: int):
+    place = await get_place_by_sno(sno)
+    if place is None:
+        raise HTTPException(status_code=404, detail="Place not found")
+    return place
