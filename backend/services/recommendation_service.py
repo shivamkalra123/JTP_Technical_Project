@@ -20,10 +20,9 @@ class SimpleClassifier(torch.nn.Module):
 
 df = pd.read_csv("Top Indian Places to Visit.csv")
 
-
 sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
 
-classifier, label_classes = load_classifier()
+classifier, label_classes = load_classifier("trained_recommendation_model.pth")
 num_classes = len(label_classes)
 
 def get_embedding(text):
@@ -90,7 +89,7 @@ async def get_recommendations(user_id: str, prompt: str):
     combined_scores.sort(key=lambda x: x[1], reverse=True)
     print(combined_score)
     
-    top_indices = [idx for idx, _ in combined_scores[:9]]
+    top_indices = [idx for idx, _ in combined_scores[:20]]
 
     recommendations = []
     inferred = {}
@@ -119,6 +118,11 @@ async def get_recommendations(user_id: str, prompt: str):
     await prefs_collection.update_one(
         {"user_id": user_id},
         {"$set": {"inferred_preferences": existing_prefs}},
+        upsert=True
+    )
+    await prefs_collection.update_one(
+        {"user_id": user_id},
+        {"$push": {"prompts": prompt}},  
         upsert=True
     )
 

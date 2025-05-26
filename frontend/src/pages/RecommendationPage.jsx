@@ -9,6 +9,10 @@ export default function RecommendationPage() {
   const [recommendations, setRecommendations] = useState([]);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+  const [recentPrompts, setRecentPrompts] = useState(
+    JSON.parse(localStorage.getItem("recentPrompts")) || []
+  );
+  const [showSuggestions, setShowSuggestions] = useState(false);
 
   useEffect(() => {
     if (!userId) {
@@ -46,6 +50,11 @@ export default function RecommendationPage() {
   async function fetchRecommendations() {
     if (!prompt.trim()) return;
     setLoading(true);
+
+    const updatedPrompts = [prompt, ...recentPrompts.filter(p => p !== prompt)].slice(0, 5);
+    setRecentPrompts(updatedPrompts);
+    localStorage.setItem("recentPrompts", JSON.stringify(updatedPrompts));
+
     try {
       const res = await fetch(`http://localhost:8000/recommend?user_id=${userId}`, {
         method: "POST",
@@ -66,6 +75,7 @@ export default function RecommendationPage() {
       setMessage("Oops, network error. Try again later.");
     }
     setLoading(false);
+    setShowSuggestions(false);
   }
 
   function handleRecommendationClick(place) {
@@ -82,73 +92,108 @@ export default function RecommendationPage() {
     navigate("/");
   }
 
+  const filteredSuggestions = prompt
+    ? recentPrompts.filter((p) => p.toLowerCase().includes(prompt.toLowerCase()))
+    : recentPrompts;
+
   return (
     <div className="BodyBack">
-    <div className="container" role="main" aria-label="Recommendation page">
-      <header className="header">
-        <h1
-          className="title"
-          tabIndex={0}
-          role="button"
-          onClick={fetchInferredRecommendations}
-          onKeyDown={(e) => (e.key === "Enter" ? fetchInferredRecommendations() : null)}
-          aria-label="Refresh recommendations"
-        >
-          WanderMind 🌍
-        </h1>
-        <button className="logout-button" onClick={handleLogout} aria-label="Logout">
-          Logout
-        </button>
-      </header>
+      <div className="container" role="main" aria-label="Recommendation page">
+        <header className="header">
+          <h1
+            className="title"
+            tabIndex={0}
+            role="button"
+            onClick={fetchInferredRecommendations}
+            onKeyDown={(e) => (e.key === "Enter" ? fetchInferredRecommendations() : null)}
+            aria-label="Refresh recommendations"
+          >
+            WanderMind 🌍
+          </h1>
+          <button className="logout-button" onClick={handleLogout} aria-label="Logout">
+            Logout
+          </button>
+        </header>
 
-      <div className="input-group">
-        <input
-          type="text"
-          className="prompt-input"
-          placeholder="What kind of places do you want to explore?"
-          value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-          disabled={loading}
-          aria-label="Search preferences"
-        />
-        <button
-          className="recommend-button"
-          onClick={fetchRecommendations}
-          disabled={loading || !prompt.trim()}
-          aria-label="Get recommendations"
-        >
-          {loading ? "Finding..." : "Explore"}
-        </button>
+        <div className="input-group">
+          <input
+            type="text"
+            className="prompt-input"
+            placeholder="What kind of places do you want to explore?"
+            value={prompt}
+            onChange={(e) => {
+              setPrompt(e.target.value);
+              setShowSuggestions(true);
+            }}
+            onFocus={() => setShowSuggestions(true)}
+            onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+            onKeyDown={(e) => e.key === "Enter" && fetchRecommendations()}
+            disabled={loading}
+            aria-label="Search preferences"
+          />
+          <button
+            className="recommend-button"
+            onClick={fetchRecommendations}
+            disabled={loading || !prompt.trim()}
+            aria-label="Get recommendations"
+          >
+            {loading ? "Finding..." : "Explore"}
+          </button>
+
+          {showSuggestions && filteredSuggestions.length > 0 && (
+            <ul className="recent-prompts-dropdown">
+              {filteredSuggestions.map((p, idx) => (
+                <li
+                  key={idx}
+                  className="recent-prompt-item"
+                  onMouseDown={() => {
+                    setPrompt(p);
+                    fetchRecommendations();
+                  }}
+                >
+                  <span className="history-icon">🕘</span> {p}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        <p className="message" aria-live="polite" aria-atomic="true">
+          {message}
+        </p>
+
+        <ul className="recommendations-list" tabIndex={0} aria-label="List of recommendations">
+          {recommendations.length > 0 ? (
+            recommendations.map((r, i) => (
+              <li
+                key={r.sno || i}
+                className="recommendation-item"
+                onClick={() => handleRecommendationClick(r)}
+                tabIndex={0}
+                onKeyDown={(e) =>
+                  e.key === "Enter" || e.key === " " ? handleRecommendationClick(r) : null
+                }
+                role="button"
+                aria-label={`${r.name}, located in ${r.city}, ${r.state}. Rating: ${r.rating}`}
+                style={{ animationDelay: `${i * 0.08}s` }}
+              >
+                <h2 className="recommendation-name-text">{r.name}</h2>
+                <p className="italic">
+                  {r.city}, {r.state}
+                </p>
+                <p>{r.description}</p>
+                <p>
+                  <strong>Rating:</strong> {r.rating}
+                </p>
+              </li>
+            ))
+          ) : (
+            <p style={{ textAlign: "center", color: "#ccc" }}>
+              No recommendations to show yet.
+            </p>
+          )}
+        </ul>
       </div>
-
-      <p className="message" aria-live="polite" aria-atomic="true">
-        {message}
-      </p>
-
-      <ul className="recommendations-list" tabIndex={0} aria-label="List of recommendations">
-        {recommendations.length > 0 ? (
-          recommendations.map((r, i) => (
-            <li
-              key={r.sno || i}
-              className="recommendation-item"
-              onClick={() => handleRecommendationClick(r)}
-              tabIndex={0}
-              onKeyDown={(e) => (e.key === "Enter" || e.key === " " ? handleRecommendationClick(r) : null)}
-              role="button"
-              aria-label={`${r.name}, located in ${r.city}, ${r.state}. Rating: ${r.rating}`}
-              style={{ animationDelay: `${i * 0.08}s` }}
-            >
-              <h2 className="recommendation-name-text">{r.name}</h2>
-              <p className="italic">{r.city}, {r.state}</p>
-              <p>{r.description}</p>
-              <p><strong>Rating:</strong> {r.rating}</p>
-            </li>
-          ))
-        ) : (
-          <p style={{ textAlign: "center", color: "#ccc" }}>No recommendations to show yet.</p>
-        )}
-      </ul>
-    </div>
     </div>
   );
 }
