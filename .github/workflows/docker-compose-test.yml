@@ -27,25 +27,6 @@ jobs:
       - name: Tear down containers
         run: docker-compose down
 
-  test-on-windows:
-    runs-on: windows-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      # ❌ Removed Docker Buildx step — not supported on Windows
-
-      - name: Build and start containers
-        run: |
-          docker-compose -f docker-compose.yml up -d --build
-
-      - name: Run backend tests inside container
-        run: docker-compose exec backend sh -c "pytest tests/"
-
-      - name: Tear down containers
-        run: docker-compose down
-
   test-on-macos:
     runs-on: macos-latest
 
@@ -62,3 +43,26 @@ jobs:
 
       - name: Tear down containers
         run: docker-compose down
+
+  test-on-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Start containers (Windows-safe)
+        uses: docker/compose-action@v2
+        with:
+          compose-file: docker-compose.yml
+          up-flags: --build -d
+
+      - name: Wait for containers to be healthy
+        run: |
+          timeout 30
+
+      - name: Run backend tests inside container
+        run: docker exec recommendation_system-backend-1 pytest tests/
+
+      - name: Tear down containers
+        run: docker-compose -f docker-compose.yml down
