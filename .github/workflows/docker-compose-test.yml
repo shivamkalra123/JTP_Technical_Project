@@ -51,18 +51,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Start containers (Windows-safe)
-        uses: docker/compose-action@v2
-        with:
-          compose-file: docker-compose.yml
-          up-flags: --build -d
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v2
 
-      - name: Wait for containers to be healthy
+      - name: Build and start containers
         run: |
-          timeout 30
+          docker-compose -f docker-compose.yml up -d --build
+
+      - name: Wait for containers to be ready
+        run: |
+          Start-Sleep -Seconds 30
 
       - name: Run backend tests inside container
-        run: docker exec recommendation_system-backend-1 pytest tests/
+        run: |
+          $containerName = (docker-compose ps -q backend)
+          docker exec $containerName pytest tests/
 
       - name: Tear down containers
         run: docker-compose -f docker-compose.yml down
