@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #0b3d91; /* dark blue */
+    background: linear-gradient(135deg, #00a9cb, #fbc6d7);
     display: flex;
     justify-content: center;
     align-items: center;

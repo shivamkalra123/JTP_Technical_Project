@@ -2,198 +2,212 @@ import pandas as pd
 import torch
 import torch.nn.functional as F
 from sentence_transformers import SentenceTransformer, util
+
 from models.prompt_model import Recommendation, DepthRecommendation
 from db.mongodb import prefs_collection
 from models.classifier_loader import load_classifier
+
 import random
 import math
 
 
 class SimpleClassifier(torch.nn.Module):
-    def __init__(self, embedding_dim, num_classes):
+    def __init__(self, embed_size, n_classes):
         super(SimpleClassifier, self).__init__()
-        self.fc = torch.nn.Linear(embedding_dim, num_classes)
+        self.linear = torch.nn.Linear(embed_size, n_classes)
 
     def forward(self, x):
-        return self.fc(x)
+        return self.linear(x)
 
 
-df = pd.read_csv("Top Indian Places to Visit.csv")
 
-sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
+places_df = pd.read_csv("Top Indian Places to Visit.csv")
 
-classifier, label_classes = load_classifier("trained_recommendation_model.pth")
-num_classes = len(label_classes)
 
-def get_embedding(text):
-    return sbert_model.encode(text, convert_to_tensor=True)
+embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
-def get_place_description(row):
+
+classifier_model, labels_list = load_classifier("trained_recomfmendation_model.pth")
+label_count = len(labels_list)
+
+
+def get_text_vector(text):
+    return embedder.encode(text, convert_to_tensor=True)
+
+
+def compose_description(row):
     return f"{row['Name']} - {row['Type']} - {row['Significance']}"
 
-def extract_keywords(prompt: str):
-  
-    prompt = prompt.lower()
-    cities = df['City'].str.lower().unique()
-    states = df['State'].str.lower().unique()
-    types = df['Significance'].str.lower().unique()
 
-    found_city = next((c for c in cities if c in prompt), None)
-    found_state = next((s for s in states if s in prompt), None)
-    found_type = next((t for t in types if t in prompt), None)
+def extract_keywords(user_prompt: str):
+    prompt_lower = user_prompt.lower()
+    
+    all_cities = places_df['City'].str.lower().unique()
+    all_states = places_df['State'].str.lower().unique()
+    all_types = places_df['Significance'].str.lower().unique()
 
-    return found_city, found_state, found_type
+    city_found = next((c for c in all_cities if c in prompt_lower), None)
+    state_found = next((s for s in all_states if s in prompt_lower), None)
+    type_found = next((t for t in all_types if t in prompt_lower), None)
+
+    return city_found, state_found, type_found
+
 
 async def get_recommendations(user_id: str, prompt: str):
     city, state, sig_type = extract_keywords(prompt)
-    filtered_df = df.copy()
+    results_df = places_df.copy()
+
+    
     if city:
-        filtered_df = filtered_df[filtered_df['City'].str.lower() == city]
+        results_df = results_df[results_df['City'].str.lower() == city]
     if state:
-        filtered_df = filtered_df[filtered_df['State'].str.lower() == state]
+        results_df = results_df[results_df['State'].str.lower() == state]
     if sig_type:
-        filtered_df = filtered_df[filtered_df['Significance'].str.lower() == sig_type]
+        results_df = results_df[results_df['Significance'].str.lower() == sig_type]
 
-    if filtered_df.empty:
-        filtered_df = df.copy()
+    if results_df.empty:
+        results_df = places_df.copy()  
 
+    results_df = results_df.reset_index(drop=True)
     
-    filtered_df = filtered_df.reset_index(drop=True)
+    user_embed = get_text_vector(prompt)
 
-    query_embedding = get_embedding(prompt)
-    filtered_df['description'] = filtered_df.apply(get_place_description, axis=1)
-    desc_embeddings = sbert_model.encode(filtered_df['description'].tolist(), convert_to_tensor=True)
+    results_df['description'] = results_df.apply(compose_description, axis=1)
+    desc_vecs = embedder.encode(results_df['description'].tolist(), convert_to_tensor=True)
 
-    
     with torch.no_grad():
-        output = classifier(query_embedding.unsqueeze(0))  
+        output = classifier_model(user_embed.unsqueeze(0))
         probs = F.softmax(output, dim=1).squeeze(0)
-    predicted_idx = torch.argmax(probs).item()
-    predicted_class = label_classes[predicted_idx]
-    print(f"🧠 Classifier thinks this prompt relates to: '{predicted_class}'")
-    sig_prob_map = {label_classes[i]: probs[i].item() for i in range(num_classes)}
+
+    predicted_index = torch.argmax(probs).item()
+    guessed_class = labels_list[predicted_index]
+    print(f"🧠 Classifier thinks this prompt relates to: '{guessed_class}'")
 
     
-    sim_scores = util.pytorch_cos_sim(query_embedding, desc_embeddings)[0]
-
-    combined_scores = []
-    for idx, row in filtered_df.iterrows():  
-        significance = row['Significance']
-        prob_score = sig_prob_map.get(significance, 0)
-        sim_score = sim_scores[idx].item()   
-        combined_score = 0.6 * sim_score + 0.4 * prob_score
-        combined_scores.append((idx, combined_score))
-        
+    class_prob_map = {labels_list[i]: probs[i].item() for i in range(label_count)}
 
     
-    combined_scores.sort(key=lambda x: x[1], reverse=True)
-    print(combined_score)
-    
-    top_indices = [idx for idx, _ in combined_scores[:20]]
+    sim_vals = util.pytorch_cos_sim(user_embed, desc_vecs)[0]
 
-    recommendations = []
-    inferred = {}
+    ranked = []
+    for i, row in results_df.iterrows():
+        sig = row['Significance']
+        prob_val = class_prob_map.get(sig, 0)
+        sim_val = sim_vals[i].item()
+        score = 0.6 * sim_val + 0.4 * prob_val  
+        ranked.append((i, score))
 
-    for idx in top_indices:
-        row = filtered_df.loc[idx]
-        significance = row['Significance']
-        inferred[significance] = inferred.get(significance, 0) + 1
+    ranked.sort(key=lambda tup: tup[1], reverse=True)
 
-        recommendations.append(Recommendation(
-            sno=row['sno'],
-            name=row['Name'],
-            city=row['City'],
-            state=row['State'],
-            description=row['description'],
-            rating=row['Google review rating']
+    top_idxs = [i for i, _ in ranked[:20]]
+    final_recos = []
+    inferred_count = {}
+
+    for i in top_idxs:
+        rec_row = results_df.loc[i]
+        sig = rec_row['Significance']
+        inferred_count[sig] = inferred_count.get(sig, 0) + 1
+
+        final_recos.append(Recommendation(
+            sno=rec_row['sno'],
+            name=rec_row['Name'],
+            city=rec_row['City'],
+            state=rec_row['State'],
+            description=rec_row['description'],
+            rating=rec_row['Google review rating']
         ))
 
     
-    existing_doc = await prefs_collection.find_one({"user_id": user_id})
-    existing_prefs = existing_doc.get("inferred_preferences", {}) if existing_doc else {}
+    previous_prefs_doc = await prefs_collection.find_one({"user_id": user_id})
+    previous_prefs = previous_prefs_doc.get("inferred_preferences", {}) if previous_prefs_doc else {}
 
-    for k, v in inferred.items():
-        existing_prefs[k] = existing_prefs.get(k, 0) + v
+    for sig_type, count in inferred_count.items():
+        previous_prefs[sig_type] = previous_prefs.get(sig_type, 0) + count
 
     await prefs_collection.update_one(
         {"user_id": user_id},
-        {"$set": {"inferred_preferences": existing_prefs}},
+        {"$set": {"inferred_preferences": previous_prefs}},
         upsert=True
     )
     await prefs_collection.update_one(
         {"user_id": user_id},
-        {"$push": {"prompts": prompt}},  
+        {"$push": {"prompts": prompt}},
         upsert=True
     )
 
-    return recommendations
+    return final_recos
+
+
 
 async def get_inferred_based_recommendations(user_id: str):
-    user = await prefs_collection.find_one({"user_id": user_id})
-    if not user or "inferred_preferences" not in user:
+    user_data = await prefs_collection.find_one({"user_id": user_id})
+    if not user_data or "inferred_preferences" not in user_data:
         return []
 
-    type_scores = user["inferred_preferences"]
-    sorted_types = sorted(type_scores.items(), key=lambda x: x[1], reverse=True)
+    pref_scores = user_data["inferred_preferences"]
+    sorted_types = sorted(pref_scores.items(), key=lambda kv: kv[1], reverse=True)
 
-    recommended = []
-    seen = set()
+    picked_places = []
+    seen_keys = set()
 
-    for t, _ in sorted_types:
-        filtered = df[df['Significance'] == t].copy()
-        
-        # Shuffle the filtered DataFrame for randomness
-        filtered = filtered.sample(frac=1).reset_index(drop=True)
+    for category, _ in sorted_types:
+        temp_df = places_df[places_df['Significance'] == category].copy()
+        temp_df = temp_df.sample(frac=1).reset_index(drop=True)  
 
         count = 0
-        for _, row in filtered.iterrows():
-            key = f"{row['Name']}|{row['City']}"
-            if key not in seen:
-                recommended.append(Recommendation(
+        for _, row in temp_df.iterrows():
+            unique_id = f"{row['Name']}|{row['City']}"
+            if unique_id not in seen_keys:
+                picked_places.append(Recommendation(
                     sno=row['sno'],
                     name=row['Name'],
                     city=row['City'],
                     state=row['State'],
-                    description=get_place_description(row),
+                    description=compose_description(row),
                     rating=row['Google review rating']
                 ))
-                seen.add(key)
+                seen_keys.add(unique_id)
                 count += 1
             if count >= 5:
                 break
 
-    return recommended
-def safe_str(val):
-    if val is None:
-        return ""
-    if isinstance(val, float) and pd.isna(val):
-        return ""
-    return str(val)
+    return picked_places
 
-def safe_float(val):
-    if val is None:
+
+
+def safe_str(value):
+    if value is None:
+        return ""
+    if isinstance(value, float) and pd.isna(value):
+        return ""
+    return str(value)
+
+
+def safe_float(value):
+    if value is None:
         return 0.0
-    if isinstance(val, float) and pd.isna(val):
+    if isinstance(value, float) and pd.isna(value):
         return 0.0
-    return float(val)
+    return float(value)
+
 
 async def get_place_by_sno(sno: int):
-    if 'sno' in df.columns:
-        row = df[df['sno'] == sno]
-        if row.empty:
+    if 'sno' in places_df.columns:
+        row_match = places_df[places_df['sno'] == sno]
+        if row_match.empty:
             return None
-        row = row.iloc[0]
+        row = row_match.iloc[0]
     else:
-        if sno <= 0 or sno > len(df):
+        if sno <= 0 or sno > len(places_df):
             return None
-        row = df.iloc[sno - 1]
+        row = places_df.iloc[sno - 1]
 
     return DepthRecommendation(
         sno=row['sno'],
         name=row['Name'],
         city=row['City'],
         state=row['State'],
-        description=get_place_description(row),
+        description=compose_description(row),
         rating=float(row['Google review rating']),
         Entrance_Fee=float(row['Entrance Fee in INR']) if not math.isnan(row['Entrance Fee in INR']) else 0.0,
         Establishment_Year=safe_str(row['Establishment Year']),

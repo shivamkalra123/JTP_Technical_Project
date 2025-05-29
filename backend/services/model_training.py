@@ -11,13 +11,13 @@ class PlacesDataset(Dataset):
         self.model = model
         self.device = device
         
-        # Encode Significance labels as integers
+        
         self.le = LabelEncoder()
         self.df['sig_encoded'] = self.le.fit_transform(df['Significance'])
 
-        # Precompute embeddings for place descriptions
+        
         self.descriptions = df.apply(lambda row: f"{row['Name']} - {row['Type']} - {row['Significance']}", axis=1).tolist()
-        self.embeddings = model.encode(self.descriptions, convert_to_tensor=True).to(device)  # 🔥 Move embeddings to device
+        self.embeddings = model.encode(self.descriptions, convert_to_tensor=True).to(device)  
         
     def __len__(self):
         return len(self.df)
@@ -36,11 +36,11 @@ class SimpleClassifier(nn.Module):
         return self.fc(x)
 
 def train_model():
-    # Load data
+    
     df = pd.read_csv("Top Indian Places to Visit.csv")
     model = SentenceTransformer('all-MiniLM-L6-v2')
 
-    # Detect device
+    
     device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
     print(f"Using device: {device}")
 
@@ -72,7 +72,7 @@ def train_model():
 
         print(f"Epoch {epoch+1}/{epochs}, Loss: {total_loss/len(dataloader):.4f}")
 
-    # Save the model and label encoder classes
+    
     torch.save({
         'model_state_dict': classifier.state_dict(),
         'label_classes': dataset.le.classes_

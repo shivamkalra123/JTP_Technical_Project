@@ -7,10 +7,10 @@ def load_classifier(checkpoint_path="trained_recommendation_model.pth", device=N
     
     checkpoint = torch.load(checkpoint_path, map_location=device)
     label_classes = checkpoint['label_classes']
-    embedding_dim = 384  # Must match your sentence transformer embedding size
+    embedding_dim = 384  
     num_classes = len(label_classes)
 
-    # Create model structure
+    
     classifier = nn.Linear(embedding_dim, num_classes).to(device)
     classifier.load_state_dict(checkpoint['model_state_dict'])
     classifier.eval()

@@ -12,20 +12,17 @@ export default function PlacePage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Show loader for exactly 3 seconds
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);
 
-    // Fetch data and image immediately, no waiting for loader
     fetchPlaceDetails();
-
     return () => clearTimeout(timer);
   }, [id]);
 
   const fetchPlaceDetails = async () => {
     try {
-      const res = await fetch(`http://localhost:8000/place/${id}`);
+      const res = await fetch(`http://127.0.0.1:8000/place/${id}`);
       if (!res.ok) {
         navigate('/recommend');
         return;
