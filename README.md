@@ -50,27 +50,27 @@ git clone https://github.com/shivamkalra123/Recommendation_System.git
 cd Recommendation_System
 2. Directory Structure
 
-Recommendation_System/
-├── backend/
-│   ├── app/
-│   ├── db/
-│   ├── models/
-│   ├── routes/
-│   ├── services/
-│   ├── .env
-│   ├── Dockerfile
-│   ├── main.py
-│   ├── requirements.txt
-│   ├── Top Indian Places to Visit.csv
-│   └── trained_recommendation_model.pth
-├── frontend/
-│   ├── Dockerfile
-│   ├── public/
-│   └── src/
-│       ├── pages/
-│       └── App.js
-├── docker-compose.yml
-└── README.md
+- Recommendation_System/
+  - backend/
+    - app/
+    - db/
+    - models/
+    - routes/
+    - services/
+    - .env
+    - Dockerfile
+    - main.py
+    - requirements.txt
+    - Top Indian Places to Visit.csv
+    - trained_recommendation_model.pth
+  - frontend/
+    - Dockerfile
+    - public/
+    - src/
+      - pages/
+      - App.js
+  - docker-compose.yml
+  - README.md
 ```
 
 ### 3. Run with Docker 🐳
