@@ -45,16 +45,11 @@ This repository contains a full-stack AI travel recommendation system inspired b
 
 ## 📦 Installation & Running the Application
 
-### 1. Clone the Repository
-
-```bash
+1. Clone the Repository
 git clone https://github.com/shivamkalra123/Recommendation_System.git
 cd Recommendation_System
-````
+2. Directory Structure
 
-### 2. Directory Structure
-
-```
 Recommendation_System/
 ├── backend/
 │   ├── app/
