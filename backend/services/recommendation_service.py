@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer, util
 
 from models.prompt_model import Recommendation, DepthRecommendation
 from db.mongodb import prefs_collection
-from models.classifier_loader import load_classifier
+from models.classifier_loader import load_saved_classifier
 
 import random
 import math
@@ -27,7 +27,7 @@ places_df = pd.read_csv("Top Indian Places to Visit.csv")
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
 
-classifier_model, labels_list = load_classifier("trained_recomfmendation_model.pth")
+classifier_model, labels_list = load_saved_classifier("trained_recommendation_model.pth")
 label_count = len(labels_list)
 
 
@@ -81,7 +81,7 @@ async def get_recommendations(user_id: str, prompt: str):
 
     predicted_index = torch.argmax(probs).item()
     guessed_class = labels_list[predicted_index]
-    print(f"🧠 Classifier thinks this prompt relates to: '{guessed_class}'")
+
 
     
     class_prob_map = {labels_list[i]: probs[i].item() for i in range(label_count)}

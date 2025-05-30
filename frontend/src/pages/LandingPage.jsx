@@ -1,24 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useGoogleLogin } from '@react-oauth/google';
 import './LandingPage.css';
-import { FcGoogle } from 'react-icons/fc';
 
 export default function LandingPage() {
   const navigate = useNavigate();
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [isLoginMode, setIsLoginMode] = useState(true);
+  const [error, setError] = useState('');
 
-  const login = useGoogleLogin({
-    onSuccess: async tokenResponse => {
-      const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
-        headers: { Authorization: `Bearer ${tokenResponse.access_token}` },
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const endpoint = isLoginMode ? '/login' : '/signup';
+
+    try {
+      const res = await fetch(`http://localhost:8000${endpoint}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
       });
-      const profile = await res.json();
 
-      localStorage.setItem('userId', profile.sub);
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.detail || 'Authentication failed');
+        return;
+      }
+
+      localStorage.setItem('userId', data.user_id);
+      setShowAuthModal(false);
       navigate('/recommendations');
-    },
-    onError: () => alert('Login Failed'),
-  });
+    } catch (err) {
+      console.error(err);
+      setError('Something went wrong.');
+    }
+  };
 
   return (
     <div className="landing-container">
@@ -44,25 +61,71 @@ export default function LandingPage() {
           and we’ll tell you where to go.
         </p>
 
-        <button onClick={login} className="google-signin-btn">
-  <img
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-    alt="Google"
-    className="google-icon"
-  />
-  <span>Begin Your Journey with Google</span>
-</button>
-
-
-
-
+        <button
+          className="google-signin-btn"
+          onClick={() => {
+            setShowAuthModal(true);
+            setError('');
+          }}
+        >
+          Login / Sign Up
+        </button>
 
         <p className="landing-quote">
           <em>“Not all those who wander are lost — some just haven’t logged in yet.”</em>
         </p>
       </div>
 
-   
+      {/* Modal */}
+      {showAuthModal && (
+        <div className="modal-overlay" onClick={() => setShowAuthModal(false)}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <h2>{isLoginMode ? 'Login' : 'Sign Up'}</h2>
+
+            <form onSubmit={handleSubmit} className="auth-form">
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                required
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                required
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              {error && <p className="error-text">{error}</p>}
+              <button type="submit" className="google-signin-btn">
+                {isLoginMode ? 'Login' : 'Sign Up'}
+              </button>
+            </form>
+
+            <p className="switch-auth-mode">
+              {isLoginMode ? "Don't have an account?" : 'Already have an account?'}{' '}
+              <span
+                onClick={() => {
+                  setIsLoginMode(!isLoginMode);
+                  setError('');
+                }}
+                style={{ cursor: 'pointer', textDecoration: 'underline' }}
+              >
+                {isLoginMode ? 'Sign Up' : 'Login'}
+              </span>
+            </p>
+
+            <button
+              className="close-modal-btn"
+              onClick={() => setShowAuthModal(false)}
+              aria-label="Close Modal"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

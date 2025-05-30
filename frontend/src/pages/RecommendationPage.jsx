@@ -9,9 +9,7 @@ export default function RecommendationPage() {
   const [recommendations, setRecommendations] = useState([]);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
-  const [recentPrompts, setRecentPrompts] = useState(
-    JSON.parse(localStorage.getItem("recentPrompts")) || []
-  );
+  const [recentPrompts, setRecentPrompts] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
   useEffect(() => {
@@ -20,7 +18,23 @@ export default function RecommendationPage() {
       return;
     }
     fetchInferredRecommendations();
+    fetchUserPrompts();
   }, [userId]);
+
+  async function fetchUserPrompts() {
+    try {
+      const res = await fetch(`http://localhost:8000/user/${userId}/prompts`);
+      if (res.ok) {
+        const data = await res.json();
+        setRecentPrompts(data);
+        localStorage.setItem("recentPrompts", JSON.stringify(data)); // optional: for fallback
+      } else {
+        console.warn("Failed to fetch user prompts from backend.");
+      }
+    } catch (err) {
+      console.error("Error fetching prompts:", err);
+    }
+  }
 
   async function fetchInferredRecommendations() {
     setLoading(true);
@@ -51,10 +65,6 @@ export default function RecommendationPage() {
     if (!prompt.trim()) return;
     setLoading(true);
 
-    const updatedPrompts = [prompt, ...recentPrompts.filter(p => p !== prompt)].slice(0, 5);
-    setRecentPrompts(updatedPrompts);
-    localStorage.setItem("recentPrompts", JSON.stringify(updatedPrompts));
-
     try {
       const res = await fetch(`http://localhost:8000/recommend?user_id=${userId}`, {
         method: "POST",
@@ -74,8 +84,12 @@ export default function RecommendationPage() {
       setRecommendations([]);
       setMessage("Oops, network error. Try again later.");
     }
+
     setLoading(false);
     setShowSuggestions(false);
+
+    // Refresh prompts from backend (new one got added there)
+    fetchUserPrompts();
   }
 
   function handleRecommendationClick(place) {
@@ -93,8 +107,8 @@ export default function RecommendationPage() {
   }
 
   const filteredSuggestions = prompt
-    ? recentPrompts.filter((p) => p.toLowerCase().includes(prompt.toLowerCase()))
-    : recentPrompts;
+  ? recentPrompts.filter((p) => p.toLowerCase().includes(prompt.toLowerCase())).slice().reverse()
+  : recentPrompts.slice().reverse();
 
   return (
     <div className="BodyBack">

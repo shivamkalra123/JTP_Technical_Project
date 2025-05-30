@@ -175,3 +175,88 @@ body, html {
   width: 20px;
   height: 20px;
 }
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.modal-content {
+  background: #121212;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 0 10px #000;
+  color: white;
+  text-align: center;
+}
+
+/* Close button on top right */
+.close-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Reuse auth form styling */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.auth-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1e1e1e;
+  color: white;
+}
+
+.google-signin-btn {
+  background: linear-gradient(90deg, #4285F4, #357AE8);
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.google-signin-btn:hover {
+  background: linear-gradient(90deg, #357AE8, #4285F4);
+}
+
+.error-text {
+  color: #ff6b6b;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.switch-auth-mode {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}

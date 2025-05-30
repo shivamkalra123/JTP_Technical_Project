@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import recommendation_routes
+from routes import recommendation_routes,auth_routes
+
 
 app = FastAPI()
 
@@ -16,6 +17,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
+app.include_router(auth_routes.router)
 # Then include your routes
 app.include_router(recommendation_routes.router)

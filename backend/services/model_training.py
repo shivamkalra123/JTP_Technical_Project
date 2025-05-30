@@ -5,78 +5,97 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import LabelEncoder
 from sentence_transformers import SentenceTransformer
 
+# Custom dataset to hold places and their descriptions
 class PlacesDataset(Dataset):
-    def __init__(self, df, model, device):
-        self.df = df
-        self.model = model
+    def __init__(self, data_frame, sentence_model, device):
+        self.data_frame = data_frame
+        self.sentence_model = sentence_model
         self.device = device
-        
-        
-        self.le = LabelEncoder()
-        self.df['sig_encoded'] = self.le.fit_transform(df['Significance'])
 
-        
-        self.descriptions = df.apply(lambda row: f"{row['Name']} - {row['Type']} - {row['Significance']}", axis=1).tolist()
-        self.embeddings = model.encode(self.descriptions, convert_to_tensor=True).to(device)  
-        
+        # Encoding significance labels for classification
+        self.label_encoder = LabelEncoder()
+        self.data_frame['sig_encoded'] = self.label_encoder.fit_transform(self.data_frame['Significance'])
+
+        # Build a description string for each place — yeah, this could be cleaner
+        descs = []
+        for idx, row in self.data_frame.iterrows():
+            desc = f"{row['Name']} - {row['Type']} - {row['Significance']}"
+            descs.append(desc)
+
+        # Note: this model requires tensors on the correct device
+        self.embeddings = self.sentence_model.encode(descs, convert_to_tensor=True).to(device)
+
     def __len__(self):
-        return len(self.df)
-    
-    def __getitem__(self, idx):
-        embedding = self.embeddings[idx]
-        label = self.df.iloc[idx]['sig_encoded']
-        return embedding, label
+        return len(self.data_frame)
 
+    def __getitem__(self, index):
+        vector = self.embeddings[index]
+        label = self.data_frame.iloc[index]['sig_encoded']
+        return vector, label
+
+
+# Just a super simple linear layer classifier — nothing fancy
 class SimpleClassifier(nn.Module):
-    def __init__(self, embedding_dim, num_classes):
+    def __init__(self, input_dim, output_dim):
         super(SimpleClassifier, self).__init__()
-        self.fc = nn.Linear(embedding_dim, num_classes)
-    
+        self.classifier = nn.Linear(input_dim, output_dim)
+
     def forward(self, x):
-        return self.fc(x)
+        return self.classifier(x)
+
 
 def train_model():
-    
+    # Load the dataset (make sure this CSV exists!)
     df = pd.read_csv("Top Indian Places to Visit.csv")
-    model = SentenceTransformer('all-MiniLM-L6-v2')
 
-    
+    # Using a decent sentence transformer (there are better ones but this is lightweight)
+    sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
+
+  
     device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
-    print(f"Using device: {device}")
+    print(f"Running on: {device}")
 
-    dataset = PlacesDataset(df, model, device)
-    dataloader = DataLoader(dataset, batch_size=16, shuffle=True)
+    # Initialize our dataset and dataloader
+    data = PlacesDataset(df, sbert_model, device)
+    loader = DataLoader(data, batch_size=16, shuffle=True)
 
-    embedding_dim = dataset.embeddings.shape[1]
-    num_classes = len(dataset.le.classes_)
+    emb_dim = data.embeddings.shape[1]
+    num_labels = len(data.label_encoder.classes_)
 
-    classifier = SimpleClassifier(embedding_dim, num_classes).to(device)
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(classifier.parameters(), lr=0.001)
+    # Model, loss, optimizer setup
+    model = SimpleClassifier(emb_dim, num_labels).to(device)
+    loss_fn = nn.CrossEntropyLoss()
+    opt = optim.Adam(model.parameters(), lr=0.001)
 
-    epochs = 5
-    for epoch in range(epochs):
-        classifier.train()
-        total_loss = 0
-        for embeddings, labels in dataloader:
-            embeddings = embeddings.to(device)
-            labels = labels.to(device)
+    # Let’s train for a few epochs — adjust as needed
+    total_epochs = 5
+    for ep in range(total_epochs):
+        model.train()
+        running_loss = 0.0
 
-            optimizer.zero_grad()
-            outputs = classifier(embeddings)
-            loss = criterion(outputs, labels)
+        for batch in loader:
+            x_batch, y_batch = batch
+            x_batch = x_batch.to(device)
+            y_batch = y_batch.to(device)
+
+            # Gradient stuff
+            opt.zero_grad()
+            preds = model(x_batch)
+            loss = loss_fn(preds, y_batch)
             loss.backward()
-            optimizer.step()
+            opt.step()
 
-            total_loss += loss.item()
+            running_loss += loss.item()
 
-        print(f"Epoch {epoch+1}/{epochs}, Loss: {total_loss/len(dataloader):.4f}")
+        print(f"Epoch {ep + 1}/{total_epochs}, Avg Loss: {running_loss / len(loader):.4f}")
 
-    
-    torch.save({
-        'model_state_dict': classifier.state_dict(),
-        'label_classes': dataset.le.classes_
-    }, "trained_recommendation_model.pth")
+    # Saving model + label encoder info (super useful for inference later)
+    save_data = {
+        'model_state_dict': model.state_dict(),
+        'label_classes': data.label_encoder.classes_
+    }
+    torch.save(save_data, "trained_recommendation_model.pth")
 
+# Entry point
 if __name__ == "__main__":
     train_model()

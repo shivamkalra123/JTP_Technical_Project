@@ -1,5 +1,6 @@
 from typing import List, Dict
-from pydantic import BaseModel
+from pydantic import BaseModel,EmailStr
+
 
 class PromptRequest(BaseModel):
     prompt: str
@@ -27,3 +28,10 @@ class DepthRecommendation(BaseModel):
 class RecommendationResponse(BaseModel):
     recommendations: List[Recommendation]
     classifier_probabilities: Dict[str, float]
+class UserCreate(BaseModel):
+    email: EmailStr
+    password: str
+
+class UserLogin(BaseModel):
+    email: EmailStr
+    password: str
