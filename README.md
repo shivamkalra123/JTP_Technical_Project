@@ -37,27 +37,29 @@ Node.js (for manual run)
 📦 Installation & Running the Application
 
 1. Clone the Repository
-git clone https://github.com/your-username/travel-recommendation-app.git
-cd travel-recommendation-app
+git clone https://github.com/shivamkalra123/Recommendation_System.git
+cd Recommendation_System
 2. Directory Structure
+
 Recommendation_System/
 ├── backend/
+│   ├── app/
 │   ├── db/
 │   ├── models/
 │   ├── routes/
 │   ├── services/
-│   ├── Top Indian Places to Visit.csv
-│   ├── trained_recommendation_model.pth
-│   ├── requirements.txt
-│   ├── Dockerfile
 │   ├── .env
-│   └── main.py
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   └── pages/
 │   ├── Dockerfile
-│   └── package.json
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── Top Indian Places to Visit.csv
+│   └── trained_recommendation_model.pth
+├── frontend/
+│   ├── Dockerfile
+│   ├── public/
+│   └── src/
+│       ├── pages/
+│       └── App.js
 ├── docker-compose.yml
 └── README.md
 3. Run with Docker 🐳
