@@ -71,10 +71,7 @@ cd Recommendation_System
       - App.js
   - docker-compose.yml
   - README.md
-```
-
-### 3. Run with Docker 🐳
-
+### 2. Start the application
 ```bash
 docker-compose up --build
 ```
@@ -82,11 +79,13 @@ docker-compose up --build
 This will:
 
 * Build backend and frontend Docker images
+* ⚠️ Building the backend container may take some time due to dependency installation. Please ensure your computer has sufficient storage space available to avoid interruptions.
 * Start the MongoDB container
 * Serve backend at: [http://localhost:8000](http://localhost:8000)
 * Serve frontend at: [http://localhost:5173](http://localhost:5173)
+  
 
-### 4. Stop the Application
+### 3. Stop the Application
 
 ```bash
 docker-compose down
