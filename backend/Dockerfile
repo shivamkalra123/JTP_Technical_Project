@@ -2,8 +2,12 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
+# First install uv (the fast pip alternative)
+RUN pip install uv
+
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+
+RUN uv pip install --system -r requirements.txt
 
 COPY . .
 COPY .env .env
